@@ -1,0 +1,246 @@
+.dsx-numbers {
+    $root:&;
+
+    position:relative;
+    background: #f7f7ff;
+
+
+    &-gradient {
+        position: absolute;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F7F7FF 100%);
+        left: 0px;
+        width: 100%;
+        height: 560px;
+
+        @media #{$big} {
+            top: (264px - 560px);
+        }
+
+        @media #{$desktop} {
+            top: (352px - 560px);
+        }
+
+        @media #{$laptop} {
+            top: (497px - 560px);
+        }
+
+        @media #{$tablet} {
+            top: (455px - 560px);
+        }
+
+        @media #{$phone} {
+            top: (455px - 560px);
+        }
+    }
+
+
+
+    &-wrap {
+        @media #{$big} {
+            padding: 181px 0 0 0;
+        }
+
+        @media #{$desktop} {
+            padding: 184px 0 0 0;
+        }
+
+        @media #{$laptop} {
+            padding: 121px 0 0 0;
+        }
+
+        @media #{$tablet} {
+            padding: 86px 0 0 0;
+        }
+
+        @media #{$phone} {
+            padding: 49px 0 0 0;
+        }
+    }
+
+    &-container {
+        font-size: 0;
+        white-space: nowrap;
+
+        @media #{$phone} {
+            white-space: normal;
+        }
+    }
+
+    &-left {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+
+        @media #{$big}, #{$desktop} {
+            @include toGrid(desktop, 6, 0, left, 1, left);
+        }
+
+        @media #{$laptop} {
+            @include toGrid(laptop, 5, 1, left, 1, right);
+        }
+
+        @media #{$tablet} {
+            @include toGrid(tablet, 6, 0, left, 1, left);
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            margin-bottom: 77px;
+        }
+
+        p {
+            line-height: 1.25;
+            font-weight: 500;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                letter-spacing: -0.2px;
+                margin-top: 25px;
+            }
+
+            @media #{$laptop} {
+                font-size: 20px;
+                letter-spacing: 0.2px;
+                margin-top: 16px;
+            }
+
+            @media #{$tablet} {
+                font-size: 18px;
+                letter-spacing: 0.4px;
+                margin-top: 11px;
+            }
+
+            @media #{$phone} {
+                font-size: 18px;
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+
+    &-right {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+
+        @media #{$big}, #{$desktop} {
+            @include toGridCustomAttribute(desktop, 6, 1, 'width');
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 6, 1, 'width');
+        }
+
+        @media #{$tablet} {
+            @include toGridCustomAttribute(tablet, 6, 1, 'width');
+        }
+
+        @media #{$phone} {
+            width: 100%;
+        }
+    }
+
+    &-item {
+        @media #{$big} {
+
+        }
+
+        @media #{$desktop} {
+
+        }
+
+        @media #{$laptop} {
+
+        }
+
+        @media #{$tablet} {
+
+        }
+
+        @media #{$phone} {
+
+        }
+
+        &-value {
+            font-weight: 500;
+            line-height: 1.08;
+
+            &.-big {
+                font-weight: 400;
+            }
+
+            @media #{$big}, #{$desktop} {
+                font-size: 56px;
+                letter-spacing: -0.8px;
+
+                &.-big {
+                    font-size: 92px;
+                    margin-top: -18px;
+                    margin-bottom: -7px;
+                }
+            }
+
+            @media #{$laptop} {
+                font-size: 40px;
+                letter-spacing: -0.4px;
+
+                &.-big {
+                    font-size: 68px;
+                    margin-top: -21px;
+                    margin-bottom: -9px;
+                }
+            }
+
+            @media #{$tablet} {
+                font-size: 32px;
+                letter-spacing: -0.18px;
+
+                &.-big {
+                    font-size: 60px;
+                    margin-top: -25px;
+                    margin-bottom: -9px;
+                }
+            }
+
+            @media #{$phone} {
+                font-size: 32px;
+                letter-spacing: -0.4px;
+
+                &.-big {
+                    font-size: 48px;
+                    margin-top: -14px;
+                    margin-bottom: -3px;
+                }
+            }
+        }
+
+        &-caption {
+            line-height: 1.25;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                margin-top: 6px;
+                margin-bottom: 40px;
+            }
+
+            @media #{$laptop} {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 31px;
+            }
+
+            @media #{$tablet} {
+                font-size: 18px;
+                letter-spacing: 0.4px;
+                margin-top: 9px;
+                margin-bottom: 39px;
+            }
+
+            @media #{$phone} {
+                font-size: 18px;
+                margin-top: 5px;
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+}

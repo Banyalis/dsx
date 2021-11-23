@@ -1,0 +1,63 @@
+@import "variables";
+html.loading .dsx-view,
+html.loading .dsx-navbar {
+    //for loader time to prevent viewport scaling on mobile while css is loading
+    width: 0;
+    overflow: hidden;
+}
+
+.dsx-loader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2147483000 + 2; //above intercom and navbar
+    pointer-events:none;
+    background: #fff;
+
+
+    transition: opacity 0.5s ease-in-out, visibility 0.5s step-end;
+    visibility: hidden;
+    opacity: 0;
+
+    &.-visible {
+        transition: opacity 0.5s ease-in-out, visibility 0.5s step-start;
+        visibility: inherit;
+        opacity: 1;
+    }
+
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        @media #{$big}, #{$desktop} {
+            width: 437px;
+            height: 44px;
+            margin-top: (-44px / 2);
+            margin-left: (-437px / 2);
+        }
+
+        @media #{$laptop} {
+            width: 437px;
+            height: 44px;
+            margin-top: (-44px / 2);
+            margin-left: (-437px / 2);
+        }
+
+        @media #{$tablet} {
+            width: 311px;
+            height: 31px;
+            margin-top: (-31px / 2);
+            margin-left: (-311px / 2);
+        }
+
+        @media #{$phone} {
+            width: 233px;
+            height: 23px;
+            margin-top: (-23px / 2);
+            margin-left: (-233px / 2);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+extends ../_includes/layout
+
+block title
+    title !{__.AmlPolicy.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.AmlPolicy.META_TITLE)
+    meta(property="og:description" content=__.AmlPolicy.META_DESCRIPTION)
+    meta(property="og:image" content=__.AmlPolicy.META_IMAGE)
+
+block content
+    +loader()
+    +generic-page(documents.AmlPolicy)

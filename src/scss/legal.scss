@@ -1,0 +1,270 @@
+.dsx-legal {
+    $root:&;
+
+    position: relative;
+    display: block;
+
+    &-header {
+        font-weight: 700;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 64px;
+            line-height: 64px;
+            letter-spacing: -0.4px;
+            margin-top: 201px;
+        }
+
+        @media #{$laptop} {
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -0.3px;
+            margin-top: 129px;
+        }
+
+        @media #{$tablet} {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -0.25px;
+            margin-top: 79px;
+        }
+
+        @media #{$phone} {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -0.4px;
+            margin-top: 61px;
+        }
+
+        @media #{$phone-small} {
+            font-size: 35px;
+            line-height: 35px;
+        }
+    }
+
+    &-docs {
+        font-size: 0;
+        overflow: hidden;
+
+        @media #{$big} {
+            padding-top: 77px;
+            padding-bottom: 159px;
+        }
+
+        @media #{$desktop} {
+            padding-top: 69px;
+            padding-bottom: 128px;
+        }
+
+        @media #{$laptop} {
+            padding-top: 62px;
+            padding-bottom: 112px;
+        }
+
+        @media #{$tablet} {
+            padding-top: 38px;
+            padding-bottom: 96px;
+        }
+
+        @media #{$phone} {
+            padding-top: 31px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &-doc {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        text-decoration: none;
+        background: $color-card-bg;
+        height: 214px;
+
+        @media #{$big}, #{$desktop} {
+            @include toGridCustomAttribute(desktop, 3, 0, 'width');
+            @include toGridCustomAttribute(desktop, 0, 1, 'margin-right');
+            @include toGridCustomAttribute(desktop, 0, 1, 'margin-bottom');
+
+            &:nth-child(4n + 4) {
+                margin-right: 0;
+            }
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 4, 0, 'width');
+            @include toGridCustomAttribute(laptop, 0, 1, 'margin-right');
+            @include toGridCustomAttribute(laptop, 0, 1, 'margin-bottom');
+
+            &:nth-child(3n + 3) {
+                margin-right: 0;
+            }
+        }
+
+        @media #{$tablet} {
+            height: 156px;
+
+            @include toGridCustomAttribute(tablet, 6, 0, 'width');
+            @include toGridCustomAttribute(tablet, 0, 1, 'margin-right');
+            @include toGridCustomAttribute(tablet, 0, 1, 'margin-bottom');
+
+            &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
+        }
+
+        @media (min-width: 960px) and (max-width: 1023px) {
+            @include toGridCustomAttribute(tablet, 4, 0, 'width');
+
+            &:nth-child(2n + 2) {
+                @include toGridCustomAttribute(tablet, 0, 1, 'margin-right');
+            }
+
+            &:nth-child(3n + 3) {
+                margin-right: 0;
+            }
+        }
+
+        @media #{$phone} {
+            height: 156px;
+
+            @include toGridCustomAttribute(phone, 6, 0, 'width');
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 640px) and (max-width: 767px) {
+            @include toGridCustomAttribute(phone, 3, 0, 'width');
+            @include toGridCustomAttribute(phone, 0, 1, 'margin-right');
+
+            &:nth-child(2n + 2) {
+                margin-right: 0;
+            }
+        }
+
+
+        .desktop & {
+            transition: $d-hover background-color;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            cursor: pointer;
+            background: $color-text;
+
+            #{$root} {
+                &-doc-title {
+                    color: $color-base;
+                }
+
+                &-doc-link {
+                    opacity: 1;
+                    color: #FFC602;
+
+                    &:after {
+                        background: no-repeat url('/homepage/assets/img/right-arrow-yellow.svg');
+                    }
+                }
+            }
+        }
+
+        &-inner {
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            top: 30px;
+            bottom: 30px;
+
+            @media #{$tablet} {
+                left: 28px;
+                right: 28px;
+                top: 24px;
+                bottom: 24px;
+            }
+
+            @media #{$phone} {
+                left: 24px;
+                right: 24px;
+                top: 25px;
+                bottom: 24px;
+            }
+        }
+
+
+        &-title {
+            color: $color-gray-bg;
+            font-weight: 600;
+            text-decoration: none;
+
+            @media #{$big}, #{$desktop}, #{$laptop} {
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: -0.2px;
+            }
+
+            @media #{$tablet} {
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: -0.14px;
+            }
+
+            @media #{$phone} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+            }
+
+            .desktop & {
+                transition: $d-hover color;
+            }
+        }
+
+        &-link {
+            color: $color-button-bg;
+            font-weight: 500;
+            text-decoration: none;
+            opacity: 1;
+            position: absolute;
+            bottom: 0;
+
+            @media #{$big}, #{$desktop}, #{$laptop} {
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.4px;
+            }
+
+            @media #{$tablet}, #{$phone} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.36px;
+            }
+
+            .desktop & {
+                transition: $d-hover opacity, $d-hover color;
+                opacity: 0;
+                color: $color-button-orange-bg;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                background: no-repeat url('/homepage/assets/img/right-arrow-blue.svg');
+                width: 18px;
+                height: 16px;
+
+                @media #{$big}, #{$desktop}, #{$laptop} {
+                    bottom: 7px;
+                    right: -27px;
+                }
+
+                @media #{$tablet}, #{$phone} {
+                    bottom: 4px;
+                    right: -27px;
+                }
+
+                .desktop & {
+                    background: no-repeat url('/homepage/assets/img/right-arrow-yellow.svg');
+                }
+            }
+        }
+    }
+
+}

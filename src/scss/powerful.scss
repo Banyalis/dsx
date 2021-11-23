@@ -1,0 +1,535 @@
+.dsx-powerful {
+    $root:&;
+
+    position:relative;
+
+    &-wrap {
+        @media #{$big} {
+            padding: 149px 0 396px;
+        }
+
+        @media #{$desktop} {
+            padding: 149px 0 296px;
+        }
+
+        @media #{$laptop} {
+            padding: 140px 0 220px;
+        }
+
+        @media #{$tablet} {
+            padding: 128px 0 208px;
+        }
+
+        @media #{$phone} {
+            padding: 80px 0 252px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+        font-weight: 500;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 56px;
+            line-height: 64px;
+            letter-spacing: -0.8px;
+
+            // @include toGrid(desktop, 8, 2, center);
+            width: 836px;
+            margin: 0 auto;
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.33px;
+
+            // @include toGrid(laptop, 6, 4, center);
+            width: 530px;
+            margin: 0 auto;
+        }
+
+        @media #{$tablet} {
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.3px;
+
+            // @include toGrid(tablet, 8, 4, center);
+            width: 496px;
+            margin: 0 auto;
+        }
+
+        @media #{$phone} {
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.27px;
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    &-blocks {
+        @media #{$big}, #{$desktop} {
+            margin-top: 283px;
+        }
+
+        @media #{$laptop} {
+            margin-top: 229px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 212px;
+        }
+
+        @media #{$phone} {
+            margin-top: 145px;
+        }
+    }
+
+    $height_desktop: 128px;
+    $height_laptop: 104px;
+    $height_tablet: 80px;
+    $height_phone: 64px;
+
+    $gap_desktop: 40px;
+    $gap_laptop: 56px;
+    $gap_tablet: 56px;
+    $gap_phone: 80px;
+
+    &-title {
+        position: sticky;
+        color: #3725D3;
+        font-weight: 500;
+        margin: 0;
+        transition: 0.3s color linear;
+        will-change: color;
+
+        &.sticked {
+            color: #EEEDF9;
+        }
+
+        &.colored {
+            span {
+                opacity: 0;
+            }
+
+            div:after {
+                opacity: 1;
+                animation-play-state: running;
+            }
+        }
+
+        @media #{$big}, #{$desktop} {
+            font-size: $height_desktop;
+            line-height: $height_desktop;
+            letter-spacing: -1.07px;
+        }
+
+        @media #{$laptop} {
+            font-size: $height_laptop;
+            line-height: $height_laptop;
+            letter-spacing: -0.87px;
+        }
+
+        @media #{$tablet} {
+            font-size: $height_tablet;
+            line-height: $height_tablet;
+            letter-spacing: -0.67px;
+        }
+
+        @media #{$phone} {
+            font-size: $height_phone;
+            line-height: $height_phone;
+            letter-spacing: -0.53px;
+            width: 100%;
+        }
+
+
+
+        //intersection observer trigger
+        div {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            will-change: opacity;
+        }
+
+        //colored gradient text
+        div:after {
+            content: attr(data-content);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #FFC602;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            opacity: 0;
+            will-change: opacity;
+            background-size: 100% 300%;
+            background-position: 0% 0%;
+            animation-play-state: paused;
+            animation: gradient 4s infinite linear;
+
+            @keyframes gradient {
+                from {
+                    background-position: 0 0;
+                }
+
+                to {
+                    background-position: 100% 100%;
+                }
+            }
+        }
+
+
+        &--1 {
+
+            span {
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 2;
+            }
+
+            div:after {
+                background-image: linear-gradient(-10deg, rgba(208,152,27,1) 0%, rgba(255,198,2,1) 25%, rgba(208,152,27,1) 50%, rgba(255,198,2,1) 75%, rgba(208,152,27,1) 100%);
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 2;
+            }
+
+            @media #{$big}, #{$desktop} {
+                margin-bottom: 2 * ($height_desktop + $gap_desktop);
+                top: calc(50vh - 1.5 * #{$height_desktop} - #{$gap_desktop});
+
+                @include toGrid(desktop, 6, 0, left, 1, left);
+
+                div {
+                    height: calc(50vh - 1.5 * #{$height_desktop} - #{$gap_desktop} + #{$height_desktop} + 1px); //+1px to trigger intersection observer
+                }
+            }
+
+            @media #{$laptop} {
+                margin-bottom: 2 * ($height_laptop + $gap_laptop);
+                top: calc(50vh - 1.5 * #{$height_laptop} - #{$gap_laptop});
+
+                @include toGrid(laptop, 7, 0, left, 1, left);
+
+                div {
+                    height: calc(50vh - 1.5 * #{$height_laptop} - #{$gap_laptop} + #{$height_laptop} + 1px);
+                }
+            }
+
+            @media #{$tablet} {
+                margin-bottom: 2 * ($height_tablet + $gap_tablet);
+                top: calc(50vh - 1.5 * #{$height_tablet} - #{$gap_tablet});
+
+                @include toGrid(tablet, 7, 0, left, 1, left);
+
+                div {
+                    height: calc(50vh - 1.5 * #{$height_tablet} - #{$gap_tablet} + #{$height_tablet} + 1px);
+                }
+            }
+
+            @media #{$phone} {
+                margin-bottom: 2 * ($height_phone + $gap_phone);
+                top: calc(50vh - 1.5 * #{$height_phone} - #{$gap_phone});
+
+                div {
+                    height: calc(50vh - 1.5 * #{$height_phone} - #{$gap_phone} + #{$height_phone} + 1px);
+                }
+            }
+        }
+
+        &--2 {
+
+            span {
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 1;
+            }
+
+            div:after {
+                background-image: linear-gradient(-10deg, rgba(255,198,2,1) 0%, rgba(208,152,27,1) 25%, rgba(255,198,2,1) 50%, rgba(208,152,27,1) 75%, rgba(255,198,2,1) 100%);
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 1;
+            }
+
+            @media #{$big}, #{$desktop} {
+                margin-bottom: $height_desktop + $gap_desktop;
+                top: calc(50vh - 0.5 * #{$height_desktop});
+
+                @include toGrid(desktop, 6, 0, left, 4, left);
+
+                div {
+                    height: calc(50vh - 0.5 * #{$height_desktop} + #{$height_desktop} + 1px);
+                }
+            }
+
+            @media #{$laptop} {
+                margin-bottom: $height_laptop + $gap_laptop;
+                top: calc(50vh - 0.5 * #{$height_laptop});
+
+                @include toGrid(laptop, 6, 0, left, 4, left);
+
+                div {
+                    height: calc(50vh - 0.5 * #{$height_laptop} + #{$height_laptop} + 1px);
+                }
+            }
+
+            @media #{$tablet} {
+                margin-bottom: $height_tablet + $gap_tablet;
+                top: calc(50vh - 0.5 * #{$height_tablet});
+
+                @include toGrid(tablet, 7, 0, left, 4, left);
+
+                div {
+                    height: calc(50vh - 0.5 * #{$height_tablet} + #{$height_tablet} + 1px);
+                }
+            }
+
+            @media #{$phone} {
+                margin-bottom: $height_phone + $gap_phone;
+                top: calc(50vh - 0.5 * #{$height_phone});
+
+                div {
+                    height: calc(50vh - 0.5 * #{$height_phone} + #{$height_phone} + 1px);
+                }
+            }
+        }
+
+        &--3 {
+
+            span {
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 0;
+            }
+
+            div:after {
+                background-image: linear-gradient(-10deg, rgba(208,152,27,1) 0%, rgba(255,198,2,1) 25%, rgba(208,152,27,1) 50%, rgba(255,198,2,1) 75%, rgba(208,152,27,1) 100%);
+
+                transition: 2330ms opacity cubic-bezier(0.19, 1, 0.22, 1) 83ms * 0;
+            }
+
+            @media #{$big}, #{$desktop} {
+                top: calc(50vh + 0.5 * #{$height_desktop} + #{$gap_desktop});
+
+                @include toGrid(desktop, 6, 0, left, 7, left);
+
+                div {
+                    height: calc(50vh + 0.5 * #{$height_desktop} + #{$gap_desktop} + #{$height_desktop} + 1px);
+                }
+            }
+
+            @media #{$laptop} {
+                top: calc(50vh + 0.5 * #{$height_laptop} + #{$gap_laptop});
+
+                @include toGrid(laptop, 6, 0, left, 7, left);
+
+                div {
+                    height: calc(50vh + 0.5 * #{$height_laptop} + #{$gap_laptop} + #{$height_laptop} + 1px);
+                }
+            }
+
+            @media #{$tablet} {
+                top: calc(50vh + 0.5 * #{$height_tablet} + #{$gap_tablet});
+
+                @include toGrid(tablet, 6, 0, left, 7, left);
+
+                div {
+                    height: calc(50vh + 0.5 * #{$height_tablet} + #{$gap_tablet} + #{$height_tablet} + 1px);
+                }
+            }
+
+            @media #{$phone} {
+                top: calc(50vh + 0.5 * #{$height_phone} + #{$gap_phone});
+
+                div {
+                    height: calc(50vh + 0.5 * #{$height_phone} + #{$gap_phone} + #{$height_phone} + 1px);
+                }
+            }
+        }
+    }
+
+    &-text {
+        position: relative;
+        color: #141222;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -0.4px;
+            margin-bottom: 477px;
+            top: 34px;
+            padding-left: 9px;
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.33px;
+            margin-bottom: 328px;
+            top: 27px;
+            padding-left: 9px;
+        }
+
+        @media #{$tablet} {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.27px;
+            margin-bottom: 218px;
+            top: 24px;
+            padding-left: 6px;
+
+        }
+
+        @media #{$phone} {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.2px;
+            margin-bottom: 148px;
+            width: 100%;
+            top: 20px;
+            padding-left: 5px;
+        }
+
+
+        &--1 {
+            @media #{$big}, #{$desktop} {
+                margin-top: -(2 * ($height_desktop + $gap_desktop));
+
+                @include toGrid(desktop, 6, 0, left, 1, left);
+            }
+
+            @media #{$laptop} {
+                margin-top: -(2 * ($height_laptop + $gap_laptop));
+
+                @include toGrid(laptop, 7, 0, left, 1, left);
+            }
+
+            @media #{$tablet} {
+                margin-top: -(2 * ($height_tablet + $gap_tablet));
+
+                @include toGrid(tablet, 7, 0, left, 1, left);
+            }
+
+            @media #{$phone} {
+                margin-top: -(2 * ($height_phone + $gap_phone));
+            }
+        }
+
+        &--2 {
+            @media #{$big}, #{$desktop} {
+                margin-top: -($height_desktop + $gap_desktop);
+
+                @include toGrid(desktop, 6, 0, left, 4, left);
+            }
+
+            @media #{$laptop} {
+                margin-top: -($height_laptop + $gap_laptop);
+
+                @include toGrid(laptop, 7, 0, left, 4, left);
+            }
+
+            @media #{$tablet} {
+                margin-top: -($height_tablet + $gap_tablet);
+
+                @include toGrid(tablet, 7, 0, left, 4, left);
+            }
+
+            @media #{$phone} {
+                margin-top: -($height_phone + $gap_phone);
+            }
+        }
+
+        &--3 {
+            margin-bottom: 0;
+
+            @media #{$big}, #{$desktop} {
+                @include toGrid(desktop, 6, 0, left, 7, left);
+            }
+
+            @media #{$laptop} {
+                @include toGrid(laptop, 6, 0, left, 7, left);
+            }
+
+            @media #{$tablet} {
+                @include toGrid(tablet, 6, 0, left, 7, left);
+            }
+        }
+    }
+
+    &-stub {
+        height: 100vh;
+    }
+
+
+    &-bottom {
+        margin: 0;
+        font-weight: 500;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -0.4px;
+            margin-top: 136px;
+
+            @include toGrid(desktop, 6, 1, left, 2, left);
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.33px;
+            margin-top: 163px;
+
+            @include toGrid(laptop, 7, 0, left, 2, left);
+        }
+
+        @media #{$tablet} {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.27px;
+            margin-top: 128px;
+
+            @include toGrid(tablet, 8, 0, left, 2, left);
+        }
+
+        @media #{$phone} {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.2px;
+            width: 100%;
+            margin-top: 80px;
+        }
+    }
+
+    button {
+         @media #{$big}, #{$desktop} {
+            margin-top: 48px;
+            padding: 0 34px 2px;
+
+            @include toGridCustomAttribute(desktop, 1, 1, 'margin-left');
+        }
+
+        @media #{$laptop} {
+            margin-top: 48px;
+            padding: 0 34px 2px;
+
+            @include toGridCustomAttribute(laptop, 1, 1, 'margin-left');
+        }
+
+        @media #{$tablet} {
+            margin-top: 32px;
+            padding: 0 34px 2px;
+
+            @include toGridCustomAttribute(tablet, 1, 1, 'margin-left');
+        }
+
+        @media #{$phone} {
+            margin-top: 32px;
+            padding: 0 34px 2px;
+        }
+    }
+}

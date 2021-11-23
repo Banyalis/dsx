@@ -1,0 +1,339 @@
+.dsx-faq {
+    $root:&;
+
+    position:relative;
+    background: #242424;
+
+
+    &-wrap {
+        @media #{$big} {
+            padding: 141px 0 160px 0;
+        }
+
+        @media #{$desktop} {
+            padding: 137px 0 122px 0;
+        }
+
+        @media #{$laptop} {
+            padding: 89px 0 100px 0;
+        }
+
+        @media #{$tablet} {
+            padding: 86px 0 96px 0;
+        }
+
+        @media #{$phone} {
+            padding: 64px 0 63px 0;
+        }
+    }
+
+    &-container {
+        font-size: 0;
+        white-space: nowrap;
+
+        @media #{$tablet} {
+            white-space: normal;
+        }
+
+        @media #{$phone} {
+            white-space: normal;
+        }
+    }
+
+    &-left {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+
+        @media #{$big}, #{$desktop} {
+            @include toGridCustomAttribute(desktop, 4, 1, 'width');
+            @include toGridCustomAttribute(desktop, 1, 1, 'margin-right');
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 4, 1, 'width');
+            @include toGridCustomAttribute(laptop, 1, 1, 'margin-right');
+        }
+
+        @media #{$tablet} {
+            width: 100%;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+        }
+
+        h2 {
+            color: $color-base;
+            font-weight: 500;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.4px;
+            }
+
+            @media #{$laptop} {
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -0.33px;
+            }
+
+            @media #{$tablet} {
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -0.3px;
+            }
+
+            @media #{$phone} {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+
+        button {
+            @media #{$big}, #{$desktop} {
+                margin-top: 27px;
+            }
+
+            @media #{$laptop} {
+                margin-top: 20px;
+            }
+
+            @media #{$tablet}, #{$phone} {
+                display: none;
+            }
+        }
+    }
+
+    &-right {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+
+        @media #{$big}, #{$desktop} {
+            @include toGrid(laptop, 7, 0, right, -1, right);
+            padding-top: 11px;
+        }
+
+        @media #{$laptop} {
+            @include toGrid(laptop, 7, 0, right, -1, right);
+            padding-top: 8px;
+        }
+
+        @media #{$tablet} {
+            width: 100%;
+            padding-top: 31px;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            padding-top: 15px;
+        }
+
+        button {
+            @media #{$big}, #{$desktop}, #{$laptop} {
+                display: none;
+            }
+
+            @media #{$tablet} {
+                margin-top: 42px;
+            }
+
+            @media #{$phone} {
+                margin-top: 31px;
+            }
+        }
+    }
+
+    &-item {
+        position: relative;
+        white-space: normal;
+        box-sizing: content-box;
+
+        @media #{$big}, #{$desktop} {
+            width: 100%;
+            margin-top: 7px;
+        }
+
+        @media #{$laptop} {
+            width: 100%;
+            margin-top: 7px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 3px;
+        }
+
+        @media #{$phone} {
+            margin-top: 7px;
+        }
+
+        &-question {
+            position: relative;
+            font-weight: 700;
+            color: $color-base;
+            cursor: pointer;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.2px;
+                padding: 16px 117px 17px 0;
+            }
+
+            @media #{$laptop} {
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: -0.17px;
+                padding: 14px 79px 15px 0;
+            }
+
+            @media #{$tablet} {
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: -0.17px;
+                padding: 14px 83px 15px 0;
+            }
+
+            @media #{$phone} {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 500;
+                padding: 12px 42px 13px 0;
+            }
+
+            //extend click area
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -20px;
+                right: -20px;
+                top: 0;
+                bottom: 0;
+
+                @media #{$phone-small} {
+                    right: -10px;
+                }
+            }
+
+            &.-active {
+                span:after,
+                span div:first-child:after {
+                    transform: rotate(0);
+                }
+            }
+
+            &.splitted span:after {
+                display: none;
+            }
+
+            .desktop &:hover,
+            .mobile &:active {
+                span:after,
+                span div:first-child:after {
+                    background-color: #FFC602;
+                    border: 2px solid transparent;
+                    color: #242424;
+                    box-shadow: 0px 6px 20px rgba(26, 8, 177, 0.25);
+                    background-image: url('/homepage/assets/img/bottom-arrow.svg');
+                }
+            }
+
+            span {
+                position: relative;
+                display: block;
+
+                &:after,
+                div:first-child:after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    border: 2px solid rgba(209, 203, 255, 0.24);
+                    right: 0;
+                    box-shadow: 0px 6px 20px rgba(26, 8, 177, 0.0);
+                    background-image: url('/homepage/assets/img/bottom-arrow-white.svg');
+                    background-size: 52px 52px;
+                    background-position: center center;
+                    transform: rotate(-180deg);
+
+                    .desktop & {
+                        transition: $d-hover background-color ease, $d-hover border ease, $d-hover box-shadow ease, 0.4s transform ease;
+                    }
+
+                    @media #{$big}, #{$desktop} {
+                        width: 52px;
+                        height: 52px;
+                        top: -11px;
+                        right: -117px;
+                    }
+
+                    @media #{$laptop} {
+                        width: 48px;
+                        height: 48px;
+                        top: -9px;
+                        right: -79px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 48px;
+                        height: 48px;
+                        top: -9px;
+                        right: -83px;
+                    }
+
+                    @media #{$phone} {
+                        width: 40px;
+                        height: 40px;
+                        top: -7px;
+                        right: -48px;
+                    }
+                }
+            }
+        }
+
+        &-wrapper {
+            display: none;
+        }
+
+        &-answer {
+            color: #BEBCCE;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0.3px;
+                padding: 0 117px 22px 0;
+                margin-top: -2px;
+            }
+
+            @media #{$laptop} {
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.4px;
+                padding: 0 79px 21px 0;
+                margin-top: 3px;
+            }
+
+            @media #{$tablet} {
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.27px;
+                padding: 0 87px 25px 0;
+                margin-top: -3px;
+            }
+
+            @media #{$phone} {
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                padding: 0 0 20px 0;
+                margin-top: 4px;
+            }
+        }
+    }
+
+}

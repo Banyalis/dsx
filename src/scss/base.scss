@@ -1,0 +1,61 @@
+
+
+html {
+    //disable double tap zoom
+    //so fastclick is no more needed (it caused bugs with input labels clicks and others)
+    touch-action: manipulation;
+
+    &[lang="ru"] body,
+    &[lang="ru"] input {
+        font-family: $font-family-secondary;
+    }
+
+
+    &.no-transitions {
+        * {
+            transition: none !important;
+        }
+    }
+}
+
+body {
+    margin:0;
+    padding:0;
+
+    color:$color-text;
+    font-family:$font-family;
+    font-size:$font-size;
+    letter-spacing:$letter-spacing;
+    line-height:$line-height;
+    overflow-x: hidden;
+
+    text-decoration-skip: ink;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    -moz-font-feature-settings: "kern";
+    -ms-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern";
+    font-variant-ligatures: normal;
+
+    font-variant-numeric: normal;
+}
+
+input {
+    font-family: $font-family;
+}
+
+* {
+    &:focus {
+        outline:none !important;
+    }
+}
+
+.-g-hidden {
+    display: none !important;
+}

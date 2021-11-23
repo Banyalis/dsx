@@ -1,0 +1,327 @@
+.dsx-latest {
+    $root:&;
+
+    position:relative;
+    background: linear-gradient(180deg, #FDFDFD 1.12%, #FAFAFF 99.85%);
+
+    @media #{$tablet}, #{$phone} {
+        background: transparent;
+    }
+
+
+    &-wrap {
+        text-align: center;
+        padding-bottom: 0 !important; //till latest is hidden
+
+        @media #{$big} {
+            padding: 243px 0 128px 0;
+        }
+
+        @media #{$desktop} {
+            padding: 195px 0 88px 0;
+        }
+
+        @media #{$laptop} {
+            padding: 102px 0 88px 0;
+        }
+
+        @media #{$tablet} {
+            padding: 80px 0 56px 0;
+        }
+
+        @media #{$phone} {
+            padding: 97px 0 64px 0;
+        }
+    }
+
+    h2 {
+        position: relative;
+        white-space: normal;
+        line-height: 1;
+        text-align: center;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 48px;
+            letter-spacing: 0.8px;
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            letter-spacing: 0.67px;
+        }
+
+        @media #{$tablet} {
+            font-size: 36px;
+            letter-spacing: 0.6px;
+        }
+
+        @media #{$phone} {
+            font-size: 32px;
+            letter-spacing: -0.4px;
+            padding: 0 24px;
+            margin-bottom: -11px;
+        }
+    }
+
+    &-blocks {
+        position: relative;
+        text-align: left;
+
+        @media #{$big} {
+            margin-top: 66px;
+        }
+
+        @media #{$desktop} {
+            margin-top: 66px;
+        }
+
+        @media #{$laptop} {
+            margin-top: 48px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 41px;
+        }
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            //leave as set in dsx grid container
+        }
+
+        @media (max-width: 567px) {
+            width: 100%;
+        }
+    }
+
+    &-block {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        text-decoration: none !important;
+
+        .desktop &:hover,
+        .mobile &:active {
+            h3 {
+                color: #3725D3;
+            }
+
+            .dsx-latest-block-image-hover {
+                transform: scale(1.05);
+            }
+        }
+
+
+        @media #{$big},#{$desktop} {
+            @include toGridCustomAttribute(desktop, 6, 0, 'width');
+
+            &:first-child {
+                @include toGridCustomAttribute(desktop, 0, 1, 'margin-right');
+            }
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 6, 0, 'width');
+
+            &:first-child {
+                @include toGridCustomAttribute(laptop, 0, 1, 'margin-right');
+            }
+        }
+
+        @media #{$tablet} {
+            @include toGridCustomAttribute(tablet, 6, 0, 'width');
+
+            &:first-child {
+                @include toGridCustomAttribute(tablet, 0, 1, 'margin-right');
+            }
+        }
+
+        @media #{$phone} {
+            margin-top: 62px;
+            width: 100%;
+        }
+
+
+
+
+        &-image {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            &-aspect {
+                position: relative;
+                height: 0;
+                padding-top: (100% * 281px / 375px);
+            }
+
+            &-clipper {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            &-hover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+
+                .desktop & {
+                    transition: 2s transform cubic-bezier(0.19, 1, 0.22, 1);
+                }
+            }
+
+            &-wrapper {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100% * (441px + 40px) / 441px;
+
+                img {
+                    display: block;
+                    @include fill-image();
+                }
+            }
+        }
+
+        &-texts {
+            @media #{$big}, #{$desktop} {
+                width: 100%;
+            }
+
+            @media #{$laptop} {
+                width: 100%;
+            }
+
+            @media #{$tablet} {
+                width: 100%;
+            }
+
+            @media (min-width: 568px) and (max-width: 767px) {
+                width: 100%;
+            }
+
+            @media (max-width: 567px) {
+                //leave as set in dsx grid container
+            }
+        }
+
+        p {
+            position: relative;
+            line-height: 1;
+            font-weight: 500;
+            color: #ABA9B8;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            margin-top: 26px;
+
+            @media #{$big}, #{$desktop} {
+                @include toGrid(desktop, 6, 0, left, 1, left);
+            }
+
+            @media #{$laptop} {
+                @include toGrid(laptop, 6, 0, left, 1, left);
+            }
+
+            @media #{$tablet} {
+                margin-top: 18px;
+                @include toGrid(tablet, 6, 0, left, 1, left);
+            }
+
+            @media #{$phone} {
+                @include toGrid(phone, 6, 0, left, 1, left);
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-weight: 700;
+
+            .desktop & {
+                transition: $d-hover color ease;
+            }
+
+            @media #{$big}, #{$desktop} {
+                width: 509px;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: -0.2px;
+                margin-top: -3px;
+            }
+
+            @media #{$laptop} {
+                width: 454px;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+                margin-top: -4px;
+            }
+
+            @media #{$tablet} {
+                width: 329px;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: -0.14px;
+                margin-top: -4px;
+            }
+
+            @media #{$phone} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+            }
+        }
+
+        time {
+            display: inline-block;
+            line-height: 1;
+            color: #ABA9B8;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+
+            @media #{$big} {
+                margin-top: 11px;
+            }
+
+            @media #{$desktop} {
+                margin-top: 11px;
+            }
+
+            @media #{$laptop} {
+                margin-top: 8px;
+            }
+
+            @media #{$tablet} {
+                margin-top: 9px;
+            }
+
+            @media #{$phone} {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    button.dsx-btn {
+        display: inline-block;
+        color: #000;
+
+        @media #{$big}, #{$desktop} {
+            margin-top: 53px;
+        }
+
+        @media #{$laptop} {
+            margin-top: 58px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 47px;
+        }
+
+        @media #{$phone} {
+            margin-top: 46px;
+        }
+    }
+}

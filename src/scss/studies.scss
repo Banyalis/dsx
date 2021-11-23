@@ -1,0 +1,504 @@
+.dsx-studies {
+    $root:&;
+
+    position:relative;
+
+    &-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #141222;
+    }
+
+    &-wrap {
+        @media #{$big}, #{$desktop} {
+            padding-top: 276px;
+            padding-bottom: 220px;
+        }
+
+        @media #{$laptop} {
+            padding-top: 168px;
+            padding-bottom: 160px;
+        }
+
+        @media #{$tablet} {
+            padding-top: 171px;
+            padding-bottom: 120px;
+        }
+
+        @media #{$phone} {
+            padding-top: 64px;
+            padding-bottom: 104px;
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        color: #fff;
+        margin: 0;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 56px;
+            letter-spacing: -0.8px;
+            line-height: 56px;
+            margin-bottom: 104px;
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            letter-spacing: -0.75px;
+            line-height: 48px;
+            margin-bottom: 64px;
+        }
+
+        @media #{$tablet} {
+            font-size: 40px;
+            letter-spacing: -0.75px;
+            line-height: 48px;
+            margin-bottom: 56px;
+        }
+
+        @media #{$phone} {
+            font-size: 32px;
+            letter-spacing: -0.27px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-case ~ &-case {
+        @media #{$big}, #{$desktop} {
+            margin-top: 192px;
+        }
+
+        @media #{$laptop} {
+            margin-top: 104px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 96px;
+        }
+
+        @media #{$phone} {
+            margin-top: 66px;
+        }
+    }
+
+    &-case {
+        position: relative;
+        width: 100%;
+
+        &:nth-child(odd) &-image-column {
+            float: right;
+
+            img {
+                object-position: 65% center;
+            }
+        }
+
+        &:nth-child(even) &-image-column {
+            float: left;
+
+            img {
+                object-position: 35% center;
+            }
+        }
+
+        &:nth-child(odd) &-texts-column {
+            float: left;
+        }
+
+        &:nth-child(even) &-texts-column {
+            float: right;
+        }
+
+        &-image-column {
+            @media #{$big}, #{$desktop} {
+                @include toGridCustomAttribute(desktop, 5, 0, 'width');
+            }
+
+            @media #{$laptop} {
+                @include toGridCustomAttribute(laptop, 5, 0, 'width');
+            }
+
+            @media #{$tablet} {
+                @include toGridCustomAttribute(tablet, 5, 1, 'width');
+            }
+
+            @media #{$phone} {
+                width: 100%;
+                margin-bottom: 24px;
+                float: none !important;
+            }
+        }
+
+
+        &-texts-column {
+            @media #{$big}, #{$desktop} {
+                @include toGridCustomAttribute(desktop, 6, 0, 'width');
+            }
+
+            @media #{$laptop} {
+                @include toGridCustomAttribute(laptop, 6, 0, 'width');
+            }
+
+            @media #{$tablet} {
+                @include toGridCustomAttribute(tablet, 6, 0, 'width');
+            }
+
+            @media #{$phone} {
+                width: 100%;
+                float: none !important;
+            }
+        }
+
+        &-image {
+            position: relative;
+            overflow: hidden;
+
+            &-aspect {
+                position: relative;
+                height: 0;
+                padding-top: (100% * 580px / 487px);
+
+                @media #{$laptop} {
+                    padding-top: (100% * 448px / 375px);
+                }
+
+                @media #{$tablet} {
+                    padding-top: (100% * 328px / 285px);
+                }
+
+                @media #{$phone} {
+                    padding-top: (100% * 256px / 327px);
+                }
+            }
+
+            &-clipper {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            &-wrapper {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100% * (580px + 40px) / 580px;
+
+                img {
+                    display: block;
+                    @include fill-image();
+                }
+            }
+
+            &-logo {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                &--1 {
+                    @media #{$big}, #{$desktop} {
+                        width: 100% * 106px / 487px;
+                        height: 100% * 113px / 580px;
+                    }
+
+                    @media #{$laptop} {
+                        width: 100% * 90px / 375px;
+                        height: 100% * 96px / 448px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 100% * 75px / 285px;
+                        height: 100% * 80px / 328px;
+                    }
+
+                    @media #{$phone} {
+                        width: 100% * 64px / 327px;
+                        height: 100% * 68px / 256px;
+                    }
+                }
+
+                &--2 {
+                    @media #{$big}, #{$desktop} {
+                        width: 100% * 121px / 487px;
+                        height: 100% * 106px / 580px;
+                    }
+
+                    @media #{$laptop} {
+                        width: 100% * 96px / 375px;
+                        height: 100% * 84px / 448px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 100% * 80px / 285px;
+                        height: 100% * 70px / 328px;
+                    }
+
+                    @media #{$phone} {
+                        width: 100% * 73px / 327px;
+                        height: 100% * 64px / 256px;
+                    }
+                }
+
+
+                img {
+                    display: block;
+                    @include fill-image();
+                }
+            }
+        }
+
+        &-category {
+            color: #FFC602;
+            font-weight: 500;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                line-height: 64px;
+                letter-spacing: 0.4px;
+            }
+
+            @media #{$laptop} {
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.57px;
+            }
+
+            @media #{$tablet} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+            }
+
+            @media #{$phone} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+            }
+        }
+
+        &-title {
+            color: #fff;
+            font-weight: 500;
+            margin: 0;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.2px;
+                padding-right: 80px;
+                margin-top: -11px;
+            }
+
+            @media #{$laptop} {
+                font-size: 40px;
+                line-height: 44px;
+                letter-spacing: -0.2px;
+                margin-top: 16px;
+            }
+
+            @media #{$tablet} {
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+                margin-top: 7px;
+            }
+
+            @media #{$phone} {
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+                margin-top: 8px;
+            }
+        }
+
+        &-text {
+            color: #fff;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.4px;
+                padding-right: 80px;
+                margin-top: 24px;
+            }
+
+            @media #{$laptop} {
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.4px;
+                margin-top: 24px;
+            }
+
+            @media #{$tablet} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                margin-top: 16px;
+            }
+
+            @media #{$phone} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                margin-top: 16px;
+            }
+        }
+
+        &-improvements {
+            white-space: nowrap;
+            font-size: 0;
+
+            @media #{$big}, #{$desktop} {
+                margin-top: 58px;
+            }
+
+            @media #{$laptop} {
+                margin-top: 49px;
+            }
+
+            @media #{$tablet} {
+                margin-top: 39px;
+            }
+
+            @media #{$phone} {
+                margin-top: 39px;
+            }
+
+        }
+
+        &-improvement {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            width: 50%;
+
+            &:first-child {
+                @media #{$big}, #{$desktop} {
+                    padding-right: (22px / 2);
+                }
+
+                @media #{$laptop} {
+                    padding-right: (19px / 2);
+                }
+
+                @media #{$tablet} {
+                    padding-right: (13px / 2);
+                }
+
+                @media #{$phone} {
+                    padding-right: (15px / 2);
+                }
+            }
+
+            &:last-child {
+                @media #{$big}, #{$desktop} {
+                    padding-left: (22px / 2);
+                }
+
+                @media #{$laptop} {
+                    padding-left: (19px / 2);
+                }
+
+                @media #{$tablet} {
+                    padding-left: (13px / 2);
+                }
+
+                @media #{$phone} {
+                    padding-left: (15px / 2);
+                }
+            }
+
+            &-image {
+                position: relative;
+                width: 100%;
+
+                @media #{$big}, #{$desktop} {
+                    height: 54px;
+                    margin-left: 3px;
+                }
+
+                @media #{$laptop} {
+                    height: 47px;
+                    margin-left: 2px;
+                }
+
+                @media #{$tablet} {
+                    height: 40px;
+                    margin-left: 2px;
+                }
+
+                @media #{$phone} {
+                    height: 40px;
+                    margin-left: 3px;
+                }
+
+                img {
+                    display: block;
+                    @include fill-image(contain, left center);
+                }
+            }
+
+            &-text {
+                color: #fff;
+                width: 80%;
+
+                @media #{$big}, #{$desktop} {
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.4px;
+                    margin-top: 10px;
+                }
+
+                @media #{$laptop} {
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.4px;
+                    margin-top: 14px;
+                }
+
+                @media #{$tablet} {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    margin-top: 12px;
+                }
+
+                @media #{$phone} {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        button {
+            @media #{$big}, #{$desktop} {
+                margin-top: 48px;
+                padding: 0 32px 2px;
+            }
+
+            @media #{$laptop} {
+                margin-top: 40px;
+                padding: 0 32px 2px;
+            }
+
+            @media #{$tablet} {
+                margin-top: 40px;
+                padding: 0 32px 2px;
+            }
+
+            @media #{$phone} {
+                margin-top: 40px;
+                padding: 0 32px 2px;
+            }
+        }
+    }
+}

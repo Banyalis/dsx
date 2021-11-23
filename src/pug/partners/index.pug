@@ -1,0 +1,158 @@
+extends /_includes/layout
+
+block title
+    title #{__.partners.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.partners.META_TITLE)
+    meta(property="og:description" content=__.partners.META_DESCRIPTION)
+    meta(property="og:image" content=__.partners.META_IMAGE)
+
+block content
+    +loader()
+    +navbar({navActive: 0})
+    .dsx-view(data-controller="partnersController")#view-main
+        article.dsx-partners
+            .dsx-navbar-outer
+
+                header.dsx-partnering(data-theme="light")
+                    .dsx-partnering-wrap
+                        .dsx-partnering-container.dsx-grid-container
+                            .dsx-partnering-texts
+                                h1 #{__.partners.HERO_TITLE}
+                                p #{__.partners.HERO_TEXT}
+
+                        .dsx-partnering-image
+                            .dsx-partnering-image-aspect
+                                .dsx-partnering-image-clipper
+                                    .dsx-partnering-image-wrapper
+                                        +picture("/homepage/assets/img/partners/hero.jpg", "/homepage/assets/img/partners/hero@2x.jpg")
+
+                section.dsx-studies(data-theme="purple")
+                    .dsx-studies-bg
+                    .dsx-studies-wrap
+                        .dsx-studies-container.dsx-grid-container
+                            h2 #{__.partners.STUDIES_HEADER}
+
+                            .dsx-studies-case.clearfix
+                                .dsx-studies-case-image-column
+                                    .dsx-studies-case-image
+                                        .dsx-studies-case-image-aspect
+                                            .dsx-studies-case-image-clipper
+                                                .dsx-studies-case-image-wrapper
+                                                    +picture("/homepage/assets/img/partners/studies_1.jpg", "/homepage/assets/img/partners/studies_1@2x.jpg")
+                                                .dsx-studies-case-image-logo.dsx-studies-case-image-logo--1
+                                                    img(src="/homepage/assets/img/partners/studies_icon_1.svg", alt="")
+                                .dsx-studies-case-texts-column
+                                    .dsx-studies-case-category #{__.partners.STUDIES_CATEGORY_1}
+                                    h3.dsx-studies-case-title #{__.partners.STUDIES_TITLE_1}
+                                    p.dsx-studies-case-text #{__.partners.STUDIES_TEXT_1}
+                                    .dsx-studies-case-improvements
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image
+                                                img(src="/homepage/assets/img/partners/studies_1_imp_1.png", srcset="/homepage/assets/img/partners/studies_1_imp_1@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text #{__.partners.STUDIES_IMPROVED_1_1}
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image(data-delay="66")
+                                                img(src="/homepage/assets/img/partners/studies_1_imp_2.png", srcset="/homepage/assets/img/partners/studies_1_imp_2@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text(data-delay="66") #{__.partners.STUDIES_IMPROVED_2_1}
+                                    button.dsx-btn.dsx-btn_stroke-yellow #{__.partners.STUDIES_BUTTON_1}
+
+                            .dsx-studies-case.clearfix
+                                .dsx-studies-case-image-column
+                                    .dsx-studies-case-image
+                                        .dsx-studies-case-image-aspect
+                                            .dsx-studies-case-image-clipper
+                                                .dsx-studies-case-image-wrapper
+                                                    +picture("/homepage/assets/img/partners/studies_2.jpg", "/homepage/assets/img/partners/studies_2@2x.jpg")
+                                                .dsx-studies-case-image-logo.dsx-studies-case-image-logo--2
+                                                    img(src="/homepage/assets/img/partners/studies_icon_2.png", alt="")
+                                .dsx-studies-case-texts-column
+                                    .dsx-studies-case-category #{__.partners.STUDIES_CATEGORY_2}
+                                    h3.dsx-studies-case-title #{__.partners.STUDIES_TITLE_2}
+                                    p.dsx-studies-case-text #{__.partners.STUDIES_TEXT_2}
+                                    .dsx-studies-case-improvements
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image
+                                                img(src="/homepage/assets/img/partners/studies_2_imp_1.png", srcset="/homepage/assets/img/partners/studies_2_imp_1@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text #{__.partners.STUDIES_IMPROVED_1_2}
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image(data-delay="66")
+                                                img(src="/homepage/assets/img/partners/studies_2_imp_2.png", srcset="/homepage/assets/img/partners/studies_2_imp_2@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text(data-delay="66") #{__.partners.STUDIES_IMPROVED_2_2}
+                                    button.dsx-btn.dsx-btn_stroke-yellow #{__.partners.STUDIES_BUTTON_2}
+
+                            .dsx-studies-case.clearfix
+                                .dsx-studies-case-image-column
+                                    .dsx-studies-case-image
+                                        .dsx-studies-case-image-aspect
+                                            .dsx-studies-case-image-clipper
+                                                .dsx-studies-case-image-wrapper
+                                                    +picture("/homepage/assets/img/partners/studies_3.jpg", "/homepage/assets/img/partners/studies_3@2x.jpg")
+                                .dsx-studies-case-texts-column
+                                    .dsx-studies-case-category #{__.partners.STUDIES_CATEGORY_3}
+                                    h3.dsx-studies-case-title #{__.partners.STUDIES_TITLE_3}
+                                    p.dsx-studies-case-text #{__.partners.STUDIES_TEXT_3}
+                                    .dsx-studies-case-improvements
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image
+                                                img(src="/homepage/assets/img/partners/studies_3_imp_1.png", srcset="/homepage/assets/img/partners/studies_3_imp_1@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text #{__.partners.STUDIES_IMPROVED_1_3}
+                                        .dsx-studies-case-improvement
+                                            .dsx-studies-case-improvement-image(data-delay="66")
+                                                img(src="/homepage/assets/img/partners/studies_3_imp_2.png", srcset="/homepage/assets/img/partners/studies_3_imp_2@2x.png 2x", alt="")
+                                            .dsx-studies-case-improvement-text(data-delay="66") #{__.partners.STUDIES_IMPROVED_2_3}
+                                    button.dsx-btn.dsx-btn_stroke-yellow #{__.partners.STUDIES_BUTTON_3}
+
+
+                section.dsx-powerful(data-theme="light")
+                    .dsx-powerful-wrap
+                        .dsx-powerful-container.dsx-grid-container
+                            h2 #{__.partners.POWERFUL_HEADER}
+
+                            div.dsx-powerful-blocks
+                                h3.dsx-powerful-title.dsx-powerful-title--1
+                                    div(data-content=__.partners.POWERFUL_BLOCK_TITLE_1)
+                                    span #{__.partners.POWERFUL_BLOCK_TITLE_1}
+                                .dsx-powerful-text.dsx-powerful-text--1 #{__.partners.POWERFUL_BLOCK_TEXT_1}
+
+                                h3.dsx-powerful-title.dsx-powerful-title--2
+                                    div(data-content=__.partners.POWERFUL_BLOCK_TITLE_2)
+                                    span  #{__.partners.POWERFUL_BLOCK_TITLE_2}
+                                .dsx-powerful-text.dsx-powerful-text--2 #{__.partners.POWERFUL_BLOCK_TEXT_2}
+
+                                h3.dsx-powerful-title.dsx-powerful-title--3
+                                    div(data-content=__.partners.POWERFUL_BLOCK_TITLE_3)
+                                    span  #{__.partners.POWERFUL_BLOCK_TITLE_3}
+                                .dsx-powerful-text.dsx-powerful-text--3 #{__.partners.POWERFUL_BLOCK_TEXT_3}
+                                .dsx-powerful-stub
+
+                            p.dsx-powerful-bottom !{__.partners.POWERFUL_BOTTOM}
+                            button.dsx-btn.dsx-btn_fill_blue #{__.partners.POWERFUL_BUTTON}
+
+
+                section.dsx-safe(data-theme="grey")
+                    .dsx-safe-wrap
+                        .dsx-safe-image-container.dsx-grid-container
+                            .dsx-safe-image
+                                .dsx-safe-image-aspect
+                                    .dsx-safe-image-clipper
+                                        .dsx-safe-image-wrapper
+                                            +picture("/homepage/assets/img/partners/safe.jpg", "/homepage/assets/img/partners/safe@2x.jpg")
+
+                        .dsx-safe-container.dsx-grid-container
+                            .dsx-safe-texts
+                                div.dsx-safe-texts-subheader #{__.partners.SAFE_SUBTITLE}
+                                h2.dsx-safe-texts-header #{__.partners.SAFE_TITLE}
+                                p.dsx-safe-texts-text !{__.partners.SAFE_TEXT}
+
+
+                +quotes(__.partners.QUOTES, "dsx-quotes--partners")
+
+                +faq(__.partners.FAQ)
+
+                +ready(__.partners.READY)
+
+        +cookies
+        +footer

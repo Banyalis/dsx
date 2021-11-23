@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "dsx-homepage",
+    "cwd": "/home/user/dsx-homepage",
+    "script": "server/index.js",
+    "args": [],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "error_file": "log/dsx-homepage.stderr.log",
+    "out_file": "log/dsx-homepage.stdout.log",
+    "instances": 1,
+    "exec_mode": "cluster",
+    "min_uptime": 2000
+  }]
+}

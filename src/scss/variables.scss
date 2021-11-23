@@ -1,0 +1,41 @@
+$color-base: #fff;
+$color-text: #141222;
+$color-graybase:#000;
+$color-text1: #A7A5B8;
+$color-small-heading: #3725D3;
+$color-button-bg: #3725D3;
+$color-button-orange-bg: #FFC602;
+$color-button-orange-bg-stroke: rgba(255, 198, 2, 0.8);
+$color-button-stroke: rgba(55, 37, 211, 0.08);
+$color-button-bg-hover: #2c14fe;
+$color-gray-bg: #242424;
+$color-gray-border: #444152;
+$color-gray-font: #B3AFCC;
+$color-card-bg: #F7F7FF;
+
+$d-hover: 0.2s;
+$d-dropdown: 0.3s;
+$d-menu: 0.4s;
+$d-text: 0.5s;
+$d-image: 1s;
+
+//wraps.css grid container has its own media settings!
+$big: "(min-width: 1920px)";
+$desktop: "(min-width: 1440px) and (max-width: 1919px)";
+$laptop: "(min-width: 1024px) and (max-width: 1439px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$phone: "(max-width: 767px)";
+$phone-small: "(max-width: 374px)";
+
+$font-family: "Aeonik", sans-serif;
+$font-family-secondary: "Aeroport", serif;
+$font-size: 14px;
+$font-weight: normal;
+$letter-spacing: normal;
+$line-height: normal;
+
+//bootstrap settings
+$link-color:            inherit;
+$link-hover-color:      inherit;
+$link-hover-decoration: none;
+

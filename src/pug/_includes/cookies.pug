@@ -1,0 +1,10 @@
+mixin cookies(options)
+    .dsx-cookies&attributes(attributes)
+        .dsx-cookies-gradient.dsx-cookies-gradient--white
+        .dsx-cookies-gradient.dsx-cookies-gradient--dark
+        .dsx-cookies-gradient.dsx-cookies-gradient--grey
+        .dsx-cookies-wrapper
+            .dsx-cookies-text
+                span #{__.cookies.TEXT}
+                a.dsx-cookies-link#cookies_link_more(href='/docs/cookie_notice.pdf') #{__.cookies.LINK}
+                button.dsx-btn.dsx-btn_stroke-blue.dsx-btn_small #{__.cookies.OK}

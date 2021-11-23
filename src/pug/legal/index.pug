@@ -1,0 +1,63 @@
+extends ../_includes/layout
+
+block title
+    title #{__.legal.TITLE}
+
+block meta
+    meta(property='og:type' content='website')
+    meta(property='og:title' content=__.legal.META_TITLE)
+    meta(property='og:description' content=__.legal.META_DESCRIPTION)
+    meta(property="og:image" content=__.legal.META_IMAGE)
+
+block content
+    +loader()
+    +navbar()
+
+    .dsx-view(data-controller="legalController")#view-main
+        .dsx-navbar-outer
+            section.dsx-legal(data-theme="light")
+                .dsx-grid-container
+                    h1.dsx-legal-header #{__.legal.HEADER}
+
+                    .dsx-legal-docs
+                        a.dsx-legal-doc(internal href=link("/legal/terms-conditions"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.DIGITAL_WALLET_TERMS}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/aml-policy"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.AML_POLICY}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/complaints-policy"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.COMPLAINTS_POLICY}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/refund-policy"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.REFUND_POLICY}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/risk-warning"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.RISK_WARNING}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/privacy-notice"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.PRIVACY_NOTES}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/cookie-notice"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.COOKIE_NOTES}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+
+                        a.dsx-legal-doc(internal href=link("/legal/cookie-list"))
+                            .dsx-legal-doc-inner
+                                .dsx-legal-doc-title #{__.legal.COOKIE_LIST}
+                                .dsx-legal-doc-link #{__.legal.LINK}
+        +cookies
+        +footer

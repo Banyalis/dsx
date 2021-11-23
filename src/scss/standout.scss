@@ -1,0 +1,367 @@
+.dsx-standout {
+    $root:&;
+
+    position: relative;
+    background: #000;
+    z-index: 1; //to be bottom photo above next section
+
+
+    &-image-container {
+        position: relative;
+        width: 100%;
+
+        @media #{$big}, #{$desktop} {
+            top: -115px;
+        }
+
+        @media #{$laptop} {
+            top: -62px;
+        }
+
+        @media #{$tablet} {
+            top: -75px;
+        }
+
+        @media #{$phone} {
+            top: -50px;
+        }
+
+        .dsx-grid-container {
+            @media #{$laptop}, #{$tablet}, #{$phone} {
+                width: 100%;
+            }
+        }
+    }
+
+    &-image {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        @media #{$big}, #{$desktop} {
+            @include toGrid(desktop, 0, 0, right, 6, left);
+
+            width: 102.5vw * 629px / 1440px;
+            max-width: 780px;
+        }
+
+        @media #{$laptop} {
+            @include toGrid(laptop, 0, 0, left, 1, left);
+
+            width: 100vw * 424px / 1024px;
+            max-width: 629px;
+        }
+
+        @media #{$tablet} {
+            @include toGrid(tablet, 0, 0, left, 1, left);
+
+            width: 100vw * 378px / 768px;
+            max-width: 424px;
+        }
+
+        @media #{$phone} {
+            @include toGrid(phone, 0, 0, left, 1, left);
+
+            width: 100vw * 309px / 375px;
+            max-width: 378px;
+        }
+
+        &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: (100% * 408px / 629px);
+        }
+
+        &-clipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100% * (408px + 40px) / 408px;
+
+            img {
+                display: block;
+                @include fill-image();
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+         @media #{$big}, #{$desktop} {
+            margin-top: -269px;
+            height: 200%;
+        }
+
+        @media #{$laptop} {
+            margin-top: -138px;
+            height: 200%;
+        }
+
+        @media #{$tablet} {
+            height: 200%;
+            margin-top: -95px;
+        }
+
+        @media #{$phone} {
+            height: 200%;
+            margin-top: 63px;
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media #{$big}, #{$desktop} {
+                width: 1313px;
+                margin-left: 99px;
+            }
+
+            @media #{$laptop} {
+                width: 100% * 943px / 1024px;
+                margin-left: 77px;
+            }
+
+            @media #{$tablet} {
+                width: 100%;
+                margin-left: 77px;
+            }
+
+            @media #{$phone} {
+                width: 100% * 370px / 375px;
+                margin-left: 29px;
+            }
+        }
+    }
+
+
+    &-text {
+        position: relative;
+
+        h2 {
+            font-weight: 500;
+            color: $color-base;
+            text-align: center;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.2px;
+                margin-top: 60px;
+
+                @include toGrid(desktop, 8, 0, center);
+            }
+
+            @media #{$laptop} {
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -0.33px;
+                margin-top: 74px;
+
+                @include toGrid(laptop, 8, 2, center);
+            }
+
+            @media #{$tablet} {
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -0.3px;
+                margin-top: 52px;
+
+                @include toGrid(tablet, 10, 0, center);
+            }
+
+            @media #{$phone} {
+                text-align: left;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: -0.27px;
+                margin-top: 52px;
+
+                @include toGrid(phone, 6, 0, center);
+            }
+        }
+
+        p {
+            color: $color-base;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: 0.2px;
+                margin-top: 112px;
+
+                @include toGrid(desktop, 6, 2, center);
+            }
+
+            @media #{$laptop} {
+                font-size: 22px;
+                line-height: 36px;
+                margin-top: 40px;
+
+                @include toGrid(laptop, 6, 2, center);
+            }
+
+            @media #{$tablet} {
+                font-size: 20px;
+                line-height: 28px;
+                margin-top: 40px;
+
+                @include toGrid(tablet, 8, 0, center);
+            }
+
+            @media #{$phone} {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.4px;
+                margin-top: 61px;
+
+                @include toGrid(phone, 6, 0, center);
+            }
+        }
+    }
+
+    &-founder-container {
+
+        @media (max-width: 567px) {
+            width: 100%;
+        }
+    }
+
+    &-founder {
+        position: relative;
+
+        @media #{$big}, #{$desktop} {
+            top: 80px;
+            margin-top: 89px;
+
+            @include toGrid(desktop, 6, 2, center);
+        }
+
+        @media #{$laptop} {
+            top: 92px;
+            margin-top: 26px;
+
+            @include toGrid(laptop, 6, 2, center);
+        }
+
+        @media #{$tablet} {
+            top: 155px;
+            margin-top: -37px;
+
+            @include toGrid(tablet, 8, 0, center);
+        }
+
+        @media #{$phone} {
+            top: 190px;
+            margin-top: 76px - 200px;
+
+            @include toGrid(phone, 6, 0, center);
+        }
+
+
+
+        &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: (100% * 232px / 376px);
+        }
+
+        &-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+
+            &-clipper {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            &-wrapper {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100% * (391px + 40px) / 391px;
+
+                img {
+                    display: block;
+                    @include fill-image();
+                }
+            }
+        }
+
+        &-text {
+            position: absolute;
+            font-weight: 500;
+
+            @media #{$big}, #{$desktop} {
+                top: 40px;
+                left: 44px;
+                right: 44px;
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: -0.4px;
+            }
+
+            @media #{$laptop} {
+                top: 34px;
+                left: 33px;
+                right: 33px;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+            }
+
+            @media #{$tablet} {
+                top: 26px;
+                left: 24px;
+                right: 24px;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.57px;
+            }
+
+            @media #{$phone} {
+                top: 27px;
+                left: 24px;
+                right: 24px;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+            }
+        }
+
+        &-name {
+            color: #242424;
+        }
+
+        &-position {
+            color: #ABA9B8;
+        }
+    }
+}

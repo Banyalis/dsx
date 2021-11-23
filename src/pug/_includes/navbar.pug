@@ -1,0 +1,132 @@
+mixin navbar(options)
+    - options = options || {};
+    -
+        var navs = [
+            {id: 1, internal: true, name: __.navbar.ABOUT, href: '/about/'},
+            // {id: 2, internal: true, name: __.navbar.STORIES, href: '/stories/'},
+            {id: 3, internal: false, name: __.navbar.HELP, href: 'https://docs.dsx.uk/dsx/en'},
+            {id: 4, internal: true, name: __.navbar.CONTACT, href: '/contact/'},
+        ];
+
+    nav#navbar.dsx-navbar&attributes(attributes)
+        .dsx-navbar-wrap
+            .dsx-navbar-container
+                .dsx-navbar-links
+                    a.dsx-navbar-logo#navbar_logo(internal href=link('/'))
+                        include ../_includes/svg/logo.svg
+                    each nav in navs
+                        a.dsx-navbar-nav-item(internal=nav.internal target=(nav.internal ? "_self" : "_blank") href=(nav.internal ? link(nav.href) : nav.href) class=((options.navActive && options.navActive === nav.id ? '-active' : ''))) #{nav.name}
+
+                .dsx-navbar-actions
+                    a.dsx-navbar-nav-item.-non-auth(href='/login/')
+                        span #{__.navbar.SIGN_IN}
+
+                    a.dsx-btn.dsx-btn_menu.-non-auth(href='/chooseAccountType/')
+                        |#{__.navbar.CREATE_ACCOUNT}
+                    a.dsx-btn.dsx-btn_menu.-auth-non-verified(href='/profile/')
+                        |#{__.navbar.CONTINUE_VERIFICATION}
+                    a.dsx-btn.dsx-btn_menu.-auth-verified(href='/exchange/')
+                        |#{__.navbar.EXCHANGE}
+                    a.dsx-btn.dsx-btn_menu.-update-password(href='/login/')
+                        |#{__.navbar.EXCHANGE}
+                    a.dsx-btn.dsx-btn_menu.-add-phone(href='/chooseAccountType/')
+                        |#{__.navbar.EXCHANGE}
+                    a.dsx-btn.dsx-btn_menu.-auth-rejected(href='/profile/')
+                        |#{__.navbar.FIX_ISSUES}
+                    a.dsx-btn.dsx-btn_menu.-auth-processing(href='/trade/')
+                        |#{__.navbar.DEMO_TRADE}
+                    a.dsx-btn.dsx-btn_menu.-in-register(href='/registration/')
+                        |#{__.navbar.CONTINUE_REGISTRATION}
+
+                    .dsx-dropdown-user.-in-register.-auth-non-verified.-auth-processing.-auth-rejected.-auth-verified.-add-phone.-update-password(data-dropdown)
+                        a.dsx-dropdown-user-toggle(data-dropdown-toggle)
+                            .icon-user
+                                +svgsprite('user')
+                            .icon-state.-auth-processing
+                                +svgsprite('auth_processing')
+                            .icon-state.-auth-rejected
+                                +svgsprite('auth_rejected')
+                            .icon-state.-in-register.-auth-verified.-update-password.-add-phone
+                                +svgsprite('auth_verified')
+                        .dsx-dropdown-user-menu
+                            a.dsx-dropdown-user-menu-item.-in-register(href='/registration/')
+                                |#{__.navbar.CONTINUE_REGISTRATION}
+                            a.dsx-dropdown-user-menu-item.-auth-processing.-auth-rejected(href='/profile/')
+                                |#{__.navbar.PROFILE}
+                            a.dsx-dropdown-user-menu-item.-auth-verified(href='/balances/')
+                                |#{__.navbar.ADD_FUNDS}
+                            a.dsx-dropdown-user-menu-item.-update-password(href='/login/')
+                                |#{__.navbar.ADD_FUNDS}
+                            a.dsx-dropdown-user-menu-item.-add-phone(href='/chooseAccountType/')
+                                |#{__.navbar.ADD_FUNDS}
+                            a.dsx-dropdown-user-menu-item.-auth-non-verified.-auth-processing.-auth-rejected.-auth-verified(href='/settings/')
+                                |#{__.navbar.SETTINGS}
+                            a.dsx-dropdown-user-menu-item.-update-password(href='/login/')
+                                |#{__.navbar.SETTINGS}
+                            a.dsx-dropdown-user-menu-item.-add-phone(href='/chooseAccountType/')
+                                |#{__.navbar.SETTINGS}
+                            a.dsx-dropdown-user-menu-item(logout)
+                                |#{__.navbar.LOG_OUT}
+
+                    button.dsx-navbar-toggle
+
+        .dsx-navbar-menu
+            .dsx-navbar-menu-body
+                .dsx-navbar-menu-scrollbox
+                    .dsx-navbar-menu-content.dsx-grid-container
+                        .dsx-navbar-menu-links
+                            each nav in navs
+                                .dsx-navbar-menu-nav-item
+                                    a(internal=nav.internal target=(nav.internal ? "_self" : "_blank") href=(nav.internal ? link(nav.href) : nav.href) class=((options.navActive && options.navActive === nav.id ? '-active' : ''))) #{nav.name}
+
+                        .dsx-navbar-menu-actions
+                            .dsx-navbar-menu-nav-item.-non-auth
+                                a(href='/login/') #{__.navbar.SIGN_IN}
+
+                            a.dsx-btn.dsx-btn_menu.-non-auth(href='/chooseAccountType/')
+                                |#{__.navbar.CREATE_ACCOUNT}
+                            a.dsx-btn.dsx-btn_menu.-auth-non-verified(href='/profile/')
+                                |#{__.navbar.CONTINUE_VERIFICATION}
+                            a.dsx-btn.dsx-btn_menu.-auth-verified(href='/exchange/')
+                                |#{__.navbar.EXCHANGE}
+                            a.dsx-btn.dsx-btn_menu.-update-password(href='/login/')
+                                |#{__.navbar.EXCHANGE}
+                            a.dsx-btn.dsx-btn_menu.-add-phone(href='/chooseAccountType/')
+                                |#{__.navbar.EXCHANGE}
+                            a.dsx-btn.dsx-btn_menu.-auth-rejected(href='/profile/')
+                                |#{__.navbar.FIX_ISSUES}
+                            a.dsx-btn.dsx-btn_menu.-auth-processing(href='/trade/')
+                                |#{__.navbar.DEMO_TRADE}
+                            a.dsx-btn.dsx-btn_menu.-in-register(href='/registration/')
+                                |#{__.navbar.CONTINUE_REGISTRATION}
+
+                            .dsx-dropdown-user.-in-register.-auth-non-verified.-auth-processing.-auth-rejected.-auth-verified.-add-phone.-update-password(data-dropdown)
+                                a.dsx-dropdown-user-toggle (data-dropdown-toggle)
+                                    .icon-user
+                                        +svgsprite('user')
+                                    .icon-state.-auth-processing
+                                        +svgsprite('auth_processing')
+                                    .icon-state.-auth-rejected
+                                        +svgsprite('auth_rejected')
+                                    .icon-state.-in-register.-auth-verified.-update-password.-add-phone
+                                        +svgsprite('auth_verified')
+                                .dsx-dropdown-user-menu.-top
+                                    a.dsx-dropdown-user-menu-item.-in-register(href='/registration/')
+                                        |#{__.navbar.CONTINUE_REGISTRATION}
+                                    a.dsx-dropdown-user-menu-item.-auth-processing.-auth-rejected(href='/profile/')
+                                        |#{__.navbar.PROFILE}
+                                    a.dsx-dropdown-user-menu-item.-auth-verified(href='/balances/')
+                                        |#{__.navbar.ADD_FUNDS}
+                                    a.dsx-dropdown-user-menu-item.-update-password(href='/login/')
+                                        |#{__.navbar.ADD_FUNDS}
+                                    a.dsx-dropdown-user-menu-item.-add-phone(href='/chooseAccountType/')
+                                        |#{__.navbar.ADD_FUNDS}
+                                    a.dsx-dropdown-user-menu-item.-auth-non-verified.-auth-processing.-auth-rejected.-auth-verified(href='/settings/')
+                                        |#{__.navbar.SETTINGS}
+                                    a.dsx-dropdown-user-menu-item.-update-password(href='/login/')
+                                        |#{__.navbar.SETTINGS}
+                                    a.dsx-dropdown-user-menu-item.-add-phone(href='/chooseAccountType/')
+                                        |#{__.navbar.SETTINGS}
+                                    a.dsx-dropdown-user-menu-item(logout)
+                                        |#{__.navbar.LOG_OUT}
+

@@ -1,0 +1,665 @@
+.dsx-footer {
+    $bg: #242424;
+    position: relative;
+    background: $bg;
+    overflow: hidden;
+
+    &.-pb &-bottom {
+        padding-bottom: 64px;
+
+        @media #{$tablet} {
+            padding-bottom: 90px;
+        }
+
+        @media #{$phone} {
+            padding-bottom: 135px;
+        }
+    }
+
+    &-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 75px;
+            background: linear-gradient(to bottom,  rgba($bg, 0) 0%,  rgba($bg, 1) 100%);
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 75px;
+            bottom: 0;
+            background: $bg;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    &-wrap {
+        @media #{$big} {
+            padding: 141px 0 0 0;
+        }
+
+        @media #{$desktop} {
+            padding: 141px 0 0 0;
+        }
+
+        @media #{$laptop} {
+            padding: 104px 0 0 0;
+        }
+
+        @media #{$tablet} {
+            padding: 96px 0 0 0;
+        }
+
+        @media #{$phone} {
+            padding: 64px 0 0 0;
+        }
+    }
+
+
+    .dsx-footer-top,
+    .dsx-footer-middle,
+    .dsx-footer-bottom {
+        //clearfix
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    .dsx-footer-middle {
+        margin-top: 82px;
+
+        @media #{$tablet} {
+            margin-top: 58px;
+        }
+
+        @media #{$phone} {
+            margin-top: 57px;
+        }
+    }
+
+
+    .dsx-footer-bottom {
+        background: $color-base;
+        text-align: center;
+        transition: 0.2s padding-bottom;
+    }
+
+
+
+
+    &-links-block {
+        float: right;
+
+        //clearfix
+        &:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media #{$big}, #{$desktop} {
+            @include toGridCustomAttribute(desktop, 6, 0, 'width');
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 6, 0, 'width');
+        }
+
+        @media #{$tablet} {
+            width: 100%;
+            float: none;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            float: none;
+        }
+
+        &-category {
+            float: left;
+            margin-bottom: 83px;
+
+            &:nth-child(even) {
+                margin-right: 0;
+
+                @media #{$phone} {
+                    width: 107px;
+                }
+
+                @media #{$phone-small} {
+                    width: 94px;
+                }
+            }
+
+            @media #{$big}, #{$desktop} {
+                @include toGridCustomAttribute(desktop, 6, 0, 'width');
+                @include toGridCustomAttribute(desktop, 0, 1, 'margin-right');
+            }
+
+            @media #{$laptop} {
+                @include toGridCustomAttribute(laptop, 6, 0, 'width');
+                @include toGridCustomAttribute(laptop, 0, 1, 'margin-right');
+            }
+
+            @media #{$tablet} {
+                margin-bottom: 53px;
+                @include toGridCustomAttribute(tablet, 6, 0, 'width');
+                @include toGridCustomAttribute(tablet, 0, 1, 'margin-right');
+            }
+
+            @media #{$phone} {
+                margin-bottom: 16px;
+                @include toGridCustomAttribute(phone, 3, 0, 'width');
+                @include toGridCustomAttribute(phone, 0, 1, 'margin-right');
+            }
+
+            p {
+                color: #BEBCCE;
+
+                @media #{$big}, #{$desktop} {
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 9px;
+                }
+
+                @media #{$laptop} {
+                    font-size: 15px;
+                    line-height: 32px;
+                    letter-spacing: 0.19px;
+                    margin-bottom: 9px;
+
+                }
+
+                @media #{$tablet} {
+                    font-size: 16px;
+                    line-height: 32px;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 9px;
+                }
+
+                @media #{$phone} {
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.35px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        color: $color-base;
+                        font-weight: 500;
+                        text-decoration: none;
+                        display: inline-block;
+
+                        .desktop & {
+                            transition: $d-hover color;
+                        }
+
+                        &:not([href]) {
+                            color: #FFC602;
+                            pointer-events: none;
+                        }
+
+                        .desktop &:hover,
+                        .mobile &:active {
+                            color: #FFC602;
+                        }
+
+                        @media #{$big}, #{$desktop} {
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0.4px;
+                            margin-bottom: 14px;
+                        }
+
+                        @media #{$laptop} {
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: 0.38px;
+                            margin-bottom: 14px;
+                        }
+
+                        @media #{$tablet} {
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0.4px;
+                            margin-bottom: 14px;
+                        }
+
+                        @media #{$phone} {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.17px;
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-description-block {
+        position: relative;
+        float: left;
+
+        @media #{$big}, #{$desktop} {
+            @include toGridCustomAttribute(desktop, 4, 0, 'width');
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 5, 0, 'width');
+        }
+
+        @media #{$tablet} {
+            width: 100%;
+            margin-top: 84px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 200vw;
+                left: 50%;
+                margin-left: -100vw;
+                background: #35363d;
+                height: 1px;
+                top: -68px;
+            }
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            float: none;
+            margin-top: 49px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 200vw;
+                left: 50%;
+                margin-left: -100vw;
+                background: #35363d;
+                height: 1px;
+                top: -45px;
+            }
+        }
+
+        img {
+            width: 68px;
+            height: 17px;
+            margin-bottom: 19px;
+            margin-top: 4px;
+
+            @media #{$phone} {
+                margin-bottom: 23px;
+            }
+        }
+
+        p {
+            color: #BEBCCE;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                margin-bottom: 59px;
+            }
+
+            @media #{$laptop} {
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.19px;
+                margin-bottom: 59px;
+            }
+
+            @media #{$tablet} {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                margin-bottom: 59px;
+            }
+
+            @media #{$phone} {
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                margin-bottom: 57px;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $color-base;
+                    display: inline-block;
+
+                    .desktop & {
+                        transition: $d-hover color;
+                    }
+
+                    &:not([href]) {
+                        color: #FFC602;
+                        pointer-events: none;
+                    }
+
+                    .desktop &:hover,
+                    .mobile &:active {
+                        color: #FFC602;
+                    }
+
+                    @media #{$big}, #{$desktop} {
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 14px;
+                    }
+
+                    @media #{$laptop} {
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: 0.38px;
+                        margin-bottom: 14px;
+                    }
+
+                    @media #{$tablet} {
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0.4px;
+                        margin-bottom: 14px;
+                    }
+
+                    @media #{$phone} {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.17px;
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &-social-block {
+        // float: right;
+
+        @media #{$big}, #{$desktop} {
+            margin-top: 15px;
+        }
+
+        @media #{$laptop} {
+            margin-top: 15px;
+        }
+
+        @media #{$tablet} {
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        @media #{$phone} {
+            margin-top: 15px;
+            margin-bottom: 30px;
+            float: none;
+        }
+
+        ul {
+            font-size: 0;
+            white-space: nowrap;
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+
+                    &.-facebook {
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 28px;
+                    }
+
+                    &.-twitter {
+                        width: 23px;
+                        height: 18px;
+                        margin-right: 26px;
+                    }
+
+                    &.-linkedin {
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 27px;
+                    }
+
+                    &.-vk {
+                        width: 25px;
+                        height: 14px;
+                        margin-top: 2px;
+                    }
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        fill: $color-base;
+
+                        .desktop & {
+                            transition: $d-hover fill;
+                        }
+
+                        .desktop &:hover,
+                        .mobile &:active {
+                            fill: #FFC602;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-copyright-block {
+        p {
+            color: #BEBCCE;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 28px;
+
+                @include toGridCustomAttribute(desktop, 4, 0, 'width');
+
+                br {
+                    display: none;
+                }
+            }
+
+            @media #{$laptop} {
+                font-size: 15px;
+                line-height: 24px;
+                margin-bottom: 28px;
+
+                @include toGridCustomAttribute(laptop, 5, 0, 'width');
+
+                br {
+                    display: none;
+                }
+            }
+
+            @media #{$tablet} {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 34px;
+            }
+
+            @media #{$phone} {
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.26px;
+                margin-bottom: 19px;
+            }
+
+        }
+    }
+
+
+    &-payment-block {
+        float: left;
+
+        @media #{$phone} {
+            float: none;
+        }
+
+        ul {
+            white-space: nowrap;
+
+            @media #{$big}, #{$desktop} {
+                padding: 15px 0 21px;
+            }
+
+            @media #{$laptop} {
+                padding: 15px 0 21px;
+            }
+
+            @media #{$tablet} {
+                padding: 15px 0 21px;
+            }
+
+            @media #{$phone} {
+                padding: 22px 0 21px;
+            }
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+
+                img {
+
+                    &.-visa {
+                        width: 50px;
+                        height: 16px;
+                        margin-right: 28px;
+                        margin-top: 8px;
+                        margin-left: -3px;
+
+                        @media #{$phone} {
+                            margin-right: 36px;
+                        }
+
+                        @media #{$phone-small} {
+                            margin-right: 16px;
+                        }
+                    }
+
+                    &.-mastercard {
+                        width: 39px;
+                        height: 24px;
+                        margin-right: 30px;
+                        margin-top: 4px;
+
+                        @media #{$phone} {
+                            margin-right: 38px;
+                        }
+
+                        @media #{$phone-small} {
+                            margin-right: 18px;
+                        }
+                    }
+
+                    &.-visa_secure {
+                        width: 50px;
+                        height: 28px;
+                        margin-right: 32px;
+
+                        @media #{$phone} {
+                            margin-right: 40px;
+                        }
+
+                        @media #{$phone-small} {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    &.-mastercard_secure {
+                        width: 63px;
+                        height: 22px;
+                        margin-top: 6px;
+
+                        @media #{$phone} {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &-language {
+        float: right;
+        white-space: nowrap;
+        user-select: none;
+        margin-top: 12px;
+        margin-right: -4px;
+
+        @media #{$phone} {
+            float: none;
+            margin: 7px 0 25px;
+            display: inline-block;
+        }
+
+
+        &-label {
+            display: inline-block;
+            vertical-align: -1px;
+
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: 0.3px;
+            margin-right: 13px;
+        }
+
+        &-dropdown {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: normal;
+        }
+    }
+
+    .dsx-meta-org {
+        display:none;
+    }
+}

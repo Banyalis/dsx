@@ -1,0 +1,145 @@
+.dsx-view {
+    position:relative;
+    height:100%;
+}
+
+
+//site grid settings based on layouts and description:;
+//https://paper.dropbox.com/doc/DSX-About-Breakpoints-MluDI3zHL1avtD8yun4uA#:uid=199967079251710636015625&h2=768%E2%86%921023
+//https://paper.dropbox.com/doc/DSX-Breakpoints--AoA8J~4UmPJilOZDolEI5kJWAg-gwx72bCYKq780iQPPBNOc
+
+.dsx-grid-container {
+    position: relative;
+    margin: 0 auto;
+
+    //desktop
+    @media (min-width: 1440px) {
+        width: 1200px;
+    }
+
+    //laptop
+    @media (min-width: 1108px) and (max-width: 1439px) {
+        width: calc(100% - 90px * 2);
+    }
+    @media (min-width: 1024px) and (max-width: 1107px) {
+        width: 928px;
+    }
+
+    //tablet
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: calc(100% - 48px * 2);
+    }
+
+    //phone
+    @media (min-width: 408px) and (max-width: 767px) {
+        width: calc(100% - 40px * 2);
+    }
+    @media (min-width: 375px) and (max-width: 407px) {
+        width: 327px;
+    }
+    @media (max-width: 374px) {
+        width: 288px;
+    }
+}
+
+
+//$layout: layout used for calculation: desktop, laptop, tablet, phone
+//$columns: desired block width in columns
+//$gaps: number of gaps which should be added to width, common case is 0 or 2 (used mainly for centered items when we need width with adjusent gaps included)
+//$alignSide: block alignment: left, center (alignColumn and alignColumnSide is ignored) and right
+//$alignColumn: index of column align to (in case of right block alignment indexes, nevertheless, goes as for left alignment, from left to right, as goes in specification), but index can be explicitly set negative, to specify counting from right to left
+//$alignColumnSide: side of the column align to: left, center, right (no matter left or right block alignment used)
+@mixin toGrid($layout, $columns, $gaps, $alignSide, $alignColumn: 0, $alignColumnSide: left, $position: relative) {
+    $columnsGrid: 12;
+    $gutter: 22px;
+
+    @if $layout == laptop {
+        $gutter: 19px;
+    }
+
+    @if $layout == tablet {
+        $gutter: 13px;
+    }
+
+    @if $layout == phone {
+        $columnsGrid: 6;
+        $gutter: 15px;
+    }
+
+    @if $columns > 0 {
+        @include toGridCustomAttribute($layout, $columns, $gaps, 'width');
+    }
+
+    //shorthand for centered block (so no need for specifying $alignColumn and $alignColumnSide)
+    @if $alignSide == center {
+        // may be made another way: simply set margin: 0 auto, but i decided to just tune variables to calculate center
+        // $alignColumn: ($columnsGrid - $columns) / 2 + 1;
+        // $alignColumnSide: left;
+        @if $position == relative {
+            margin-left: auto; //will not work if block is wider than container, but previous version (commented above) gots to complicated after $gaps param added
+            margin-right: auto;
+        } @else {
+            //TODO
+        }
+    } @else {
+        //negative alignColumn means count from the end
+        @if $alignColumn < 0 {
+            $alignColumn: $columnsGrid + $alignColumn + 1;
+        }
+
+        @if $alignSide == left {
+            $colN: $alignColumn;
+            $tmp: nth([1, 0.5, 0], index([left, center, right], $alignColumnSide));
+            $res: calc((100% - #{$gutter} * (#{$columnsGrid} - 1)) * (#{$colN} - #{$tmp}) / #{$columnsGrid} + #{$gutter} * (#{$colN} - 1));
+            @if $position == relative {
+                margin-left: $res;
+            } @else {
+                left: $res;
+            }
+        }
+
+        @if $alignSide == right {
+            $colN: $columnsGrid - $alignColumn + 1;
+            $tmp: nth([0, 0.5, 1], index([left, center, right], $alignColumnSide));
+            $res: calc((100% - #{$gutter} * (#{$columnsGrid} - 1)) * (#{$colN} - #{$tmp}) / #{$columnsGrid} + #{$gutter} * (#{$colN} - 1));
+
+            @if $position == relative {
+                right: $res;
+                margin-right: 0; //using right to shift, because if block goes beyond left boundary it stops when using margin-right
+                margin-left: auto;
+            } @else {
+                right: $res;
+            }
+        }
+    }
+}
+
+//$layout: layout used for calculation: desktop, laptop, tablet, phone
+//$columns: desired block width in columns
+//$gaps: number of gaps which should be added to width, common case is 0 or 2 (used mainly for centered items when we need width with adjusent gaps included)
+//$attribute: attribute to be set resulted value
+@mixin toGridCustomAttribute($layout, $columns, $gaps, $attribute) {
+    $columnsGrid: 12;
+    $gutter: 22px;
+
+    @if $layout == laptop {
+        $gutter: 19px;
+    }
+
+    @if $layout == tablet {
+        $gutter: 13px;
+    }
+
+    @if $layout == phone {
+        $columnsGrid: 6;
+        $gutter: 15px;
+    }
+
+    $guttersBetweenColumnsWidth: $gutter * ($columns - 1);
+
+    @if $columns == 0 {
+        $guttersBetweenColumnsWidth: 0px;
+    }
+
+    #{$attribute}: calc((100% - #{$gutter} * (#{$columnsGrid} - 1)) * #{$columns} / #{$columnsGrid} + #{$guttersBetweenColumnsWidth} + #{$gutter} * #{$gaps});
+}

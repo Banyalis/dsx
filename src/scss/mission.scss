@@ -1,0 +1,395 @@
+.dsx-mission {
+    $root:&;
+
+    position:relative;
+
+    //for ie
+    &:before {
+        position: relative;
+        display: block;
+        content: '';
+        height: 100vh;
+    }
+
+    @supports (position: sticky) {
+        &:before {
+            display: none;
+        }
+    }
+
+
+    .dsx-mission-bg-1,
+    .dsx-mission-bg-2 {
+        //for ie
+        position: fixed;
+
+        height: 100vh;
+        top: 0;
+        width: 100%;
+
+        @supports (position: sticky) {
+            position: sticky;
+        }
+    }
+
+    .dsx-mission-bg-1 {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F4F4F7 67.49%, #F5F5FA 83.76%, #E9EEF7 100%), linear-gradient(180deg, #F5F5FA 1.12%, #F2F4FB 37.79%, #ECF3FE 100%);
+        opacity: 0;
+    }
+
+    .dsx-mission-bg-2 {
+        background: linear-gradient(360deg, #F5F2ED 0%, #F4F3F1 15.58%, #F8F8F8 36.16%, #FDFDFD 100%);
+        opacity: 0;
+
+        @supports (position: sticky) {
+            margin-top: -100vh;
+        }
+    }
+
+    &-wrap {
+
+        @supports (position: sticky) {
+            margin-top: -100vh;
+        }
+    }
+
+    &-container {
+        &:after {
+            content: '';
+            display: block;
+
+            @media #{$big} {
+                height: 490px + 150px;
+            }
+
+            @media #{$desktop} {
+                height: 533px + 150px;
+            }
+
+            @media #{$laptop} {
+                height: 479px + 150px;
+            }
+
+            @media #{$tablet} {
+                height: 424px + 150px;
+            }
+
+            @media #{$phone} {
+                height: 285px + 170px;
+            }
+        }
+
+        @media #{$phone} {
+            width: 100%;
+        }
+    }
+
+
+    &-texts {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        //for ie
+        position: fixed;
+        top: 50%;
+        margin-top: -250px;
+        left: 50%;
+        width: 900px;
+        margin-left: -450px;
+        z-index: 0;
+
+        @supports (position: sticky) {
+            position: sticky;
+            width: 100%;
+            left: auto;
+            margin-left: auto;
+            top: 0;
+            margin-top: 0;
+            z-index: 1;
+        }
+
+        @media (min-width: 408px) and (max-width: 767px) {
+            width: calc(100% - 24px * 2);
+        }
+        @media (min-width: 375px) and (max-width: 407px) {
+            width: 327px;
+        }
+        @media (max-width: 374px) {
+            width: 288px;
+        }
+    }
+
+    &-text {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        padding: 100px 0;
+
+        @media #{$big}, #{$desktop} {
+            @include toGrid(desktop, 10, 0, center);
+        }
+
+        @media #{$laptop} {
+            @include toGrid(laptop, 8, 0, center);
+        }
+
+        @media #{$tablet} {
+            @include toGrid(tablet, 10, 0, center);
+
+            padding: 70px 0 130px;
+        }
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            @include toGrid(phone, 4, 0, center);
+
+            padding: 70px 0 130px;
+        }
+
+        @media (max-width: 567px) {
+            @include toGrid(phone, 6, 0, center);
+
+            padding: 70px 0 130px;
+        }
+
+
+        h1 {
+            transition: all $d-text ease-out;
+            font-weight: 700;
+            line-height: 1;
+            color: #242424;
+
+            span {
+                transition: opacity $d-text ease-out;
+            }
+
+            &.-collapsed {
+                opacity: 0.4;
+                font-weight: 500;
+
+                @media #{$big}, #{$desktop} {
+                    font-size: 24px;
+                    letter-spacing: 0.4px;
+                    margin: 24px 0;
+                }
+
+                @media #{$laptop} {
+                    font-size: 20px;
+                    margin: 21px 0;
+                }
+
+                @media #{$tablet} {
+                    font-size: 20px;
+                    margin: 21px 0;
+                }
+
+                @media #{$phone} {
+                    font-size: 18px;
+                    margin: 19px 0;
+                    letter-spacing: 0.3px;
+                }
+
+                span {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+
+            @media #{$big}, #{$desktop} {
+                font-size: 104px;
+                letter-spacing: -2px;
+            }
+
+            @media #{$laptop} {
+                font-size: 80px;
+                letter-spacing: -0.8px;
+            }
+
+            @media #{$tablet} {
+                font-size: 64px;
+                letter-spacing: -0.64px;
+            }
+
+            @media #{$phone} {
+                font-size: 40px;
+                letter-spacing: -0.4px;
+            }
+        }
+
+        &-answers {
+            position: relative;
+        }
+
+        p {
+            padding-bottom: 10px; //to prevent bottom glyphs clip
+            width: 100% ;
+            font-weight: 500;
+            color: #242424;
+            overflow: hidden;
+
+            &.-answer1 {
+                span {
+                    // color: #3725D3;
+                }
+            }
+
+            &.-answer2 {
+                position: absolute;
+                top: 0;
+
+                span {
+                    // color: #F5BE02;
+                }
+            }
+
+            @media #{$big}, #{$desktop} {
+                font-size: 64px;
+                line-height: 68px;
+                letter-spacing: -1.2px;
+            }
+
+            @media #{$laptop} {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.9px;
+            }
+
+            @media #{$tablet} {
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -0.75px;
+            }
+
+            @media #{$phone} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.1px;
+                padding-bottom: 3px; //to prevent bottom glyphs clip
+            }
+
+            @media #{$phone-small} {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-image {
+        position: relative;
+        overflow: hidden;
+
+        &.-image1 {
+            margin-top: -10vh;
+
+            @media #{$big}, #{$desktop} {
+                @include toGrid(desktop, 0, 0, right, 3, center);
+
+                width: 100vw * 294px / 1440px;
+                max-width: 436px;
+            }
+
+            @media #{$laptop} {
+                @include toGrid(laptop, 0, 0, left, 1, left);
+
+                width: 100vw * 235px / 1024px;
+                max-width: 294px;
+            }
+
+            @media #{$tablet} {
+                @include toGrid(tablet, 0, 0, left, 1, left);
+
+                width: 100vw * 224px / 768px;
+                max-width: 235px;
+            }
+
+            @media #{$phone} {
+                @include toGrid(phone, 0, 0, left, 1, left);
+
+                width: 100vw * 138px / 375px;
+                max-width: 224px;
+            }
+        }
+
+        &.-image1 &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: 100% * 205px / 294px;
+        }
+
+        &.-image1 &-wrapper {
+            height: 100% * (205px + 40px) / 205px;
+        }
+
+        &.-image2 {
+            margin-left: auto;
+
+            @media #{$big} {
+                margin-top: 341px;
+                width: 100vw * 320px / 1920px;
+                max-width: 380px;
+            }
+
+            @media (min-width: 1630px) {
+                right: 50%;
+                margin-right: (-1630px / 2);
+            }
+
+            @media #{$desktop} {
+                margin-top: 393px;
+                width: 100vw * 240px / 1440px;
+                max-width: 320px;
+            }
+
+            @media #{$laptop} {
+                margin-top: 338px;
+                width: 100vw * 236px / 1024px;
+                max-width: 240px;
+            }
+
+            @media #{$tablet} {
+                margin-top: 458px;
+                width: 100vw * 220px / 768px;
+                max-width: 236px;
+            }
+
+            @media #{$phone} {
+                margin-top: 317px;
+                width: 100vw * 180px / 375px;
+                max-width: 220px;
+            }
+        }
+
+        &.-image2 &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: 100% * 320px / 240px;
+        }
+
+        &.-image2 &-wrapper {
+            height: 100% * (320px + 40px) / 320px;
+        }
+
+
+        &-clipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        &-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+
+            img {
+                display: block;
+                @include fill-image();
+            }
+        }
+
+    }
+}

@@ -1,0 +1,7 @@
+if ! DEV
+    script(src='/homepage/assets/js/credentials.js')
+each bundle in (jsBundles || [])
+    script(src=`/homepage/assets/js/${bundle}`)
+
+each bundle in (cssBundles || [])
+    link(rel='stylesheet', href=`/homepage/assets/css/${bundle}`)

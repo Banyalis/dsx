@@ -1,0 +1,140 @@
+extends ../_includes/layout
+
+block title
+    title !{__.stories.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.stories.META_TITLE)
+    meta(property="og:description" content=__.stories.META_DESCRIPTION)
+    meta(property="og:image" content=__.stories.META_IMAGE)
+
+block content
+    +loader()
+    +navbar({navActive: 2})
+    .dsx-view(data-controller="storiesController")#view-main
+        .dsx-stories.dsx-navbar-outer
+            +search(__.stories.SEARCH, "All")
+
+            .dsx-stories-content-wrapper
+                section.dsx-stories-general(data-theme="light")
+                    .dsx-stories-general-articles.dsx-grid-container
+                        each item in __.stories.GENERAL_ARTICLES
+                            a(href="" class="dsx-stories-general-articles__item" class= item["MODIFIER"])
+                                .dsx-stories-general-articles__item-image
+                                    .dsx-stories-general-articles__item-image__inner
+                                        .dsx-stories-general-articles__item-image__box
+                                            picture
+                                                source(srcset= item["IMAGE"] + ", " + item["IMAGE2X"] + " 2x")
+                                                img(src= item["IMAGE"] alt="")
+                                .dsx-stories-general-articles__item-inner
+                                    .dsx-stories-general-articles__item-type= item["TYPE"]
+                                    .dsx-stories-general-articles__item-title= item["TITLE"]
+
+                section.dsx-stories-announcements(data-theme="grey")
+                    .dsx-grid-container
+                        .dsx-stories-announcements-title
+                            .dsx-stories-announcements-title__text !{__.stories.ANNOUNCEMENTS_TITLE}
+                            a(href="").dsx-stories-announcements-title__button !{__.stories.ANNOUNCEMENTS_BUTTON}
+                    .dsx-stories-announcements__container
+                        .dsx-stories-announcements__hover-area-left
+                        .dsx-stories-announcements__hover-area-right
+                        .dsx-stories-announcements-articles
+                            .dsx-grid-container
+                                .dsx-stories-announcements-articles__inner
+                                    .dsx-stories-announcements-articles__slider
+                                        each item in __.stories.ANNOUNCEMENTS_ARTICLES
+                                            a(href="").dsx-stories-announcements-articles__item
+                                                .dsx-stories-announcements-articles__item-image
+                                                    .dsx-stories-announcements-articles__item-image__inner
+                                                        .dsx-stories-announcements-articles__item-image__box
+                                                            picture
+                                                                source(srcset= item["IMAGE"] + ", " + item["IMAGE2X"] + " 2x")
+                                                                img(src= item["IMAGE"] alt="")
+                                                .dsx-stories-announcements-articles__item-date= item["DATE"]
+                                                .dsx-stories-announcements-articles__item-title= item["TITLE"]
+                    .dsx-grid-container
+                        a(href="").dsx-stories-announcements__button !{__.stories.ANNOUNCEMENTS_BUTTON}
+
+                section.dsx-stories-started(data-theme="purple")
+                    .dsx-grid-container
+                        .dsx-stories-started-title
+                            .dsx-stories-started-title__text !{__.stories.STARTED_TITLE}
+                            a(href="").dsx-stories-started-title__button !{__.stories.STARTED_BUTTON}
+                    .dsx-stories-started__container
+                        .dsx-stories-started__hover-area-left
+                        .dsx-stories-started__hover-area-right
+                        .dsx-stories-started-articles
+                            .dsx-grid-container
+                                .dsx-stories-started-articles__inner
+                                    .dsx-stories-started-articles__slider
+                                        each item in __.stories.STARTED_ARTICLES
+                                            a(href="").dsx-stories-started-articles__item
+                                                .dsx-stories-started-articles__item-image
+                                                    .dsx-stories-started-articles__item-image__inner
+                                                        .dsx-stories-started-articles__item-image__box
+                                                            picture
+                                                                source(srcset= item["IMAGE"] + ", " + item["IMAGE2X"] + " 2x")
+                                                                img(src= item["IMAGE"] alt="")
+                                                .dsx-stories-started-articles__item-title= item["TITLE"]
+                    .dsx-grid-container
+                        a(href="").dsx-stories-started__button !{__.stories.STARTED_BUTTON}
+
+                section.dsx-stories-studies(data-theme="light")
+                    .dsx-grid-container
+                        .dsx-stories-studies-title
+                            .dsx-stories-studies-title__text !{__.stories.STUDIES_TITLE}
+                            a(href="").dsx-stories-studies-title__button !{__.stories.STUDIES_BUTTON}
+                    .dsx-stories-studies__container
+                        .dsx-stories-studies__hover-area-left
+                        .dsx-stories-studies__hover-area-right
+                        .dsx-stories-studies-articles
+                            .dsx-grid-container
+                                .dsx-stories-studies-articles__inner
+                                    .dsx-stories-studies-articles__slider
+                                        each item in __.stories.STUDIES_ARTICLES
+                                            a(href="").dsx-stories-studies-articles__item
+                                                .dsx-stories-studies-articles__item-image
+                                                    .dsx-stories-studies-articles__item-image__box
+                                                        picture
+                                                            source(srcset= item["IMAGE"] + ", " + item["IMAGE2X"] + " 2x")
+                                                            img(src= item["IMAGE"] alt="")
+                                                .dsx-stories-studies-articles__item-type= item["TYPE"]
+                                                .dsx-stories-studies-articles__item-title= item["TITLE"]
+                    .dsx-grid-container
+                        a(href="").dsx-stories-studies__button !{__.stories.STUDIES_BUTTON}
+
+                section.dsx-stories-industry(data-theme="light")
+                    .dsx-grid-container
+                        .dsx-stories-industry-title
+                            .dsx-stories-industry-title__text !{__.stories.INDUSTRY_TITLE}
+                            a(href="").dsx-stories-industry-title__button !{__.stories.INDUSTRY_BUTTON}
+                    .dsx-stories-industry__container
+                        .dsx-stories-industry__hover-area-left
+                        .dsx-stories-industry__hover-area-right
+                        .dsx-stories-industry-articles
+                            .dsx-grid-container
+                                .dsx-stories-industry-articles__inner
+                                    .dsx-stories-industry-articles__slider
+                                        each item in __.stories.INDUSTRY_ARTICLES
+                                            a(href="").dsx-stories-industry-articles__item
+                                                .dsx-stories-industry-articles__item-image
+                                                    .dsx-stories-industry-articles__item-image__inner
+                                                        .dsx-stories-industry-articles__item-image__box
+                                                            picture
+                                                                source(srcset= item["IMAGE"] + ", " + item["IMAGE2X"] + " 2x")
+                                                                img(src= item["IMAGE"] alt="")
+                                                .dsx-stories-industry-articles__item-title= item["TITLE"]
+                                                p.dsx-stories-industry-articles__item-text= item["TEXT"]
+                    .dsx-grid-container
+                        a(href="").dsx-stories-industry__button !{__.stories.INDUSTRY_BUTTON}
+
+                section.dsx-stories-offer(data-theme="dark")
+                    .dsx-grid-container
+                        .dsx-stories-offer__inner
+                            .dsx-stories-offer__title !{__.stories.OFFER_TITLE}
+                            form(action="").dsx-stories-offer__form
+                                input(type="text" placeholder="Email").dsx-stories-offer__input
+                                button(type="submit").dsx-stories-offer__button !{__.stories.OFFER_BUTTON}
+        +cookies
+        +footer

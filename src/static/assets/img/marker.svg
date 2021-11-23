@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="62px" viewBox="0 0 42 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contacts_768" transform="translate(-187.000000, -412.000000)" fill-rule="nonzero" fill="#3625D3">
+            <g id="Bitmap-Copy">
+                <path d="M208,412 C196.402453,412 187,421.471468 187,433.154143 C187,447.423212 208,474 208,474 C208,474 229,447.390483 229,433.154143 C229,421.471468 219.597547,412 208,412 Z M208,441.381908 C203.490151,441.381908 199.832981,437.69949 199.832981,433.154143 C199.832981,428.611191 203.489358,424.927975 208,424.927975 C212.510642,424.927975 216.167019,428.610393 216.167019,433.154143 C216.167019,437.698692 212.509849,441.381908 208,441.381908 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

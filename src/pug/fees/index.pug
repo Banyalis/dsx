@@ -1,0 +1,142 @@
+extends ../_includes/layout
+
+block title
+    title !{__.fees.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.fees.META_TITLE)
+    meta(property="og:description" content=__.fees.META_DESCRIPTION)
+    meta(property="og:image" content=__.fees.META_IMAGE)
+
+block content
+    +loader
+    +navbar
+    .dsx-view(data-controller="feesController")#view-main
+        .dsx-fees.dsx-navbar-outer
+            section.dsx-fees-intro(data-theme="purple")
+                .dsx-grid-container
+                    .dsx-fees-intro__content
+                        h1.dsx-fees-intro__title !{__.fees.INTRO_TITLE}
+                        p.dsx-fees-intro__text !{__.fees.INTRO_TEXT}
+                        .dsx-fees-intro-benefits
+                            each item in __.fees.INTRO_BENEFITS
+                                .dsx-fees-intro-benefits__item
+                                    .dsx-fees-intro-benefits__item-title !{item["TITLE"]}
+                                    p.dsx-fees-intro-benefits__item-text= item["TEXT"]
+                .dsx-fees-intro-image
+                    .dsx-fees-intro-image__inner
+                        +picture("/homepage/assets/img/fees/intro.jpg", "/homepage/assets/img/fees/intro@2x.jpg")
+
+            section.dsx-fees-calculation(data-theme="light")
+                .dsx-grid-container
+                    h3.dsx-fees-calculation__title !{__.fees.CALCULATION_TITLE}
+                    .dsx-fees-calculation__container
+                        .dsx-fees-calculation-control
+                            .dsx-fees-calculation-control__info
+                                .dsx-fees-calculation-control__info-inner
+                                    .dsx-fees-calculation-control__title !{__.fees.CALCULATION_TRADE_TITLE}
+                                    p.dsx-fees-calculation-control__text !{__.fees.CALCULATION_TRADE_TEXT}
+                                .dsx-fees-calculation-control-value
+                                    each com, i in (commissions || [])
+                                        .dsx-fees-calculation-control-value__item #{i + 1 < commissions.length ? '≤' : '>'} $#{com.bonusPointsVolume}
+                            .dsx-fees-calculation-control-slider
+                                .dsx-fees-calculation-control-slider__track
+                                    .dsx-fees-calculation-control-slider__thumb
+                                    .dsx-fees-calculation-control-slider__level
+                                input(type="range" value="0" min="0" max="12000").dsx-fees-calculation-control-slider__input
+                            .dsx-fees-calculation-control__hints
+                                .dsx-fees-calculation-control__hints-item ≤ $ 100,000
+                                .dsx-fees-calculation-control__hints-item > $ 15 mln
+                        //- .dsx-fees-calculation-info(data-commissions= commissions)
+                        .dsx-fees-calculation-info
+                            each com, i in (commissions || [])
+                                div(class="dsx-fees-calculation-info__item")
+                                    .dsx-fees-calculation-info__type
+                                        .dsx-fees-calculation-info__type-title !{__.fees.CALCULATION_STANDART}
+                                        ul.dsx-fees-calculation-info__type-list
+                                            li.dsx-fees-calculation-info__type-list__item
+                                                .dsx-fees-calculation-info__type-list__item-title !{__.fees.CALCULATION_MAKER}
+                                                .dsx-fees-calculation-info__type-list__item-value #{parseFloat(com.standardPassiveCom) ? `${com.standardPassiveCom}%` : __.fees.FREE}
+                                            li.dsx-fees-calculation-info__type-list__item
+                                                .dsx-fees-calculation-info__type-list__item-title !{__.fees.CALCULATION_TAKER}
+                                                .dsx-fees-calculation-info__type-list__item-value #{parseFloat(com.standardAgressiveCom) ? `${com.standardAgressiveCom}%` : __.fees.FREE}
+                                    .dsx-fees-calculation-info__type
+                                        .dsx-fees-calculation-info__type-title !{__.fees.CALCULATION_REFERRAL}
+                                        ul.dsx-fees-calculation-info__type-list
+                                            li.dsx-fees-calculation-info__type-list__item
+                                                .dsx-fees-calculation-info__type-list__item-title !{__.fees.CALCULATION_MAKER}
+                                                .dsx-fees-calculation-info__type-list__item-value #{parseFloat(com.refPassiveCom) ? `${com.refPassiveCom}%` : __.fees.FREE}
+                                            li.dsx-fees-calculation-info__type-list__item
+                                                .dsx-fees-calculation-info__type-list__item-title !{__.fees.CALCULATION_TAKER}
+                                                .dsx-fees-calculation-info__type-list__item-value #{parseFloat(com.refAgressiveCom) ? `${com.refAgressiveCom}%` : __.fees.FREE}
+
+            section.dsx-fees-commission(data-theme="light")
+                .dsx-grid-container
+                    h3.dsx-fees-commission__title !{__.fees.COMMISSION_TITLE}
+                    .dsx-fees-commission__container.dsx-fees-js-tabs
+                        .dsx-fees-commission__sidebar
+                            .dsx-fees-commission-select
+                                .dsx-fees-commission-select__inner
+                                    .dsx-fees-commission-select__value
+                                    +svgsprite("arrow-white-bottom")
+                                .dsx-fees-commission-select__switch
+                                    each crypto, index in cryptos
+                                        div(class="dsx-fees-commission-select__switch-item dsx-fees-js-open-tab", class= index == 0 ? "--active" : "", data-value= crypto.currencyLabel) !{crypto.currencyLabel}
+                            a(href="").dsx-fees-commission__more
+                                | !{__.fees.COMMISSION_BUTTON}
+                                +svgsprite("arrow-more")
+                        .dsx-fees-commission__content
+                            each crypto, index in cryptos
+                                div(class="dsx-fees-commission-info dsx-fees-js-tab", class= index == 0 ? "--open" : "")
+                                    .dsx-fees-commission-info__item
+                                        .dsx-fees-commission-info__item-title !{__.fees.COMMISSION_DEPOSIT}
+                                        .dsx-fees-commission-info__item-value !{crypto.depositMinCommission > 0 ? `${crypto.currencyName} ${crypto.depositMinCommission}` : __.fees.FREE}
+                                    .dsx-fees-commission-info__item
+                                        .dsx-fees-commission-info__item-title !{__.fees.COMMISSION_WITHDRAW}
+                                        .dsx-fees-commission-info__item-value !{crypto.withdrawMinCommission > 0 ? `${crypto.currencyName} ${crypto.withdrawMinCommission}` : __.fees.FREE}
+                                    .dsx-fees-commission-info__item
+                                        .dsx-fees-commission-info__item-title !{__.fees.COMMISSION_NETWORK}
+                                        .dsx-fees-commission-info__item-value !{crypto.minConfirmations}
+                            p.dsx-fees-commission__text !{__.fees.COMMISSION_TEXT}
+
+            section.dsx-fees-methods(data-theme="dark")
+                .dsx-grid-container
+                    h3.dsx-fees-methods__title !{__.fees.METHODS_TITLE}
+                .dsx-fees-js-tabs
+                    .dsx-fees-methods-switch
+                        .dsx-grid-container
+                            .dsx-fees-methods-switch__inner
+                                each fiat, index in fiats
+                                    div(class="dsx-fees-methods-switch__item dsx-fees-js-open-tab", class= index == 0 ? "--active" : "") !{fiat.currencyName}
+                    .dsx-fees-methods__inner
+                        .dsx-grid-container
+                            each fiat, index in fiats
+                                div(class="dsx-fees-methods-info dsx-fees-js-tab", class= index == 0 ? "--open" : "")
+                                    .dsx-fees-methods-info__type
+                                        .dsx-fees-methods-info__type-title !{__.fees.METHODS_TRANSFER}
+                                        ul.dsx-fees-methods-info__type-list
+                                            li.dsx-fees-methods-info__type-list__item
+                                                .dsx-fees-methods-info__type-list__item-title !{__.fees.METHODS_DEPOSIT}
+                                                .dsx-fees-methods-info__type-list__item-value !{fiat.bankSwift.depositString}
+                                            li.dsx-fees-methods-info__type-list__item
+                                                .dsx-fees-methods-info__type-list__item-title !{__.fees.METHODS_WITHDRAW}
+                                                .dsx-fees-methods-info__type-list__item-value !{fiat.bankSwift.withdrawString}
+                                    .dsx-fees-methods-info__type
+                                        .dsx-fees-methods-info__type-title !{__.fees.METHODS_WALLET}
+                                        ul.dsx-fees-methods-info__type-list
+                                            li.dsx-fees-methods-info__type-list__item
+                                                .dsx-fees-methods-info__type-list__item-title !{__.fees.METHODS_DEPOSIT}
+                                                .dsx-fees-methods-info__type-list__item-value !{fiat.ePayments.depositString}
+                                            li.dsx-fees-methods-info__type-list__item
+                                                .dsx-fees-methods-info__type-list__item-title !{__.fees.METHODS_WITHDRAW}
+                                                .dsx-fees-methods-info__type-list__item-value !{fiat.ePayments.withdrawString}
+                                    .dsx-fees-methods-info__type
+                                        .dsx-fees-methods-info__type-title !{__.fees.METHODS_CARD}
+                                        ul.dsx-fees-methods-info__type-list
+                                            li.dsx-fees-methods-info__type-list__item
+                                                .dsx-fees-methods-info__type-list__item-title !{__.fees.METHODS_DEPOSIT}
+                                                .dsx-fees-methods-info__type-list__item-value !{fiat.card != null ? fiat.card.depositString : ''}
+                +ready(__.fees.READY)
+        +cookies
+        +footer

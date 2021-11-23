@@ -1,0 +1,64 @@
+extends ../_includes/layout
+
+block title
+    title #{__.contact.TITLE}
+
+block meta
+    meta(property='og:type' content='website')
+    meta(property='og:title' content=__.contact.META_TITLE)
+    meta(property='og:description' content=__.contact.META_DESCRIPTION)
+    meta(property="og:image" content=__.contact.META_IMAGE)
+
+block content
+    +loader()
+    +navbar({navActive: 4})
+
+    .dsx-view(data-controller="contactsController")#view-main
+        .dsx-navbar-outer
+            section.dsx-contacts(data-theme="light")
+                .dsx-contacts-container
+                    .dsx-contacts-wrap
+                        .dsx-contacts-header-wrapper
+                            .dsx-contacts-header
+                                .dsx-contacts-header-title
+                                    h1 !{__.contact.TEXT}
+                                    p !{__.contact.DESCRIPTION}
+                            //.dsx-contacts-box-wrapper
+                                .dsx-contacts-box(itemscope itemtype='http://schema.org/Organization')
+                                    form.dsx-contacts-form(novalidate)
+                                        .dsx-contacts-form-group
+                                            .dsx-input_dark.dsx-contacts-input
+                                                input(type='text' placeholder=__.contact.FORM_NAME)#dsx-contacts_input_1
+                                            .dsx-input_dark.dsx-contacts-input
+                                                input(type='email' placeholder=__.contact.FORM_EMAIL)#dsx-contacts_input_2
+                                            .dsx-input_dark.dsx-contacts-input
+                                                input(type='phone' placeholder=__.contact.FORM_PHONE)#dsx-contacts_input_3
+                                            .dsx-input_dark.dsx-contacts-input
+                                                input(type='message' placeholder=__.contact.FORM_MSG)#dsx-contacts_input_4
+                                        .dt-form-submit
+                                            button.dsx-contacts-button.dsx-btn.dsx-btn_fill_yellow(type="submit"): span #{__.contact.FORM_SUBMIT}
+                        .dsx-contacts-map-wrapper
+                            .dsx-contacts-map
+                                .dsx-map#map
+                        .dsx-contacts-info-wrapper
+                            .dsx-contacts-info-wrapper-phone
+                                .dsx-contacts-info-container
+                                    .dsx-contacts-info
+                                        .dsx-contacts-info-email-wrapper
+                                            p.dsx-contacts-info-title #{__.contact.INFO_EMAIL}
+                                            a.dsx-contacts-info-email#contacts_mail(href='mailto:hello@dsx.uk' itemprop='mail') hello@dsx.uk
+                                            button.dsx-btn.dsx-btn_stroke-blue #{__.contact.INFO_LIVE_CHAT}
+                                        .dsx-contacts-info-tablet
+                                            .dsx-contacts-info-phone-wrapper
+                                                p.dsx-contacts-info-title #{__.contact.INFO_PHONE}
+                                                a.dsx-contacts-info-phone#contacts_phone(href='tel:+443338806060' itemprop='telephone') +44 333 880 6060
+                                            .dsx-contacts-info-address
+                                                p.dsx-contacts-info-title #{__.contact.INFO_ADDRESS}
+                                                span(itemprop='streetAddress') #{__.contact.ADDRESS_STREET}
+                                                br
+                                                span(itemprop='addressLocality') #{__.contact.ADDRESS_LOCALITY}
+                                                br
+                                                span(itemprop='addressCountry') #{__.contact.ADDRESS_COUNTRY}
+
+        +cookies
+        +footer

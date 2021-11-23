@@ -1,0 +1,271 @@
+.dsx-spontaneous {
+    $root:&;
+
+    position:relative;
+    background: #FFF; //for ie
+
+    &-wrap {
+        @media #{$big} {
+            padding: 322px 0 0 0;
+        }
+
+        @media #{$desktop} {
+            padding: 322px 0 0 0;
+        }
+
+        @media #{$laptop} {
+            padding: 252px 0 0 0;
+        }
+
+        @media #{$tablet} {
+            padding: 263px 0 0 0;
+        }
+
+        @media #{$phone} {
+            padding: 270px 0 0 0;
+        }
+    }
+
+
+    &-text {
+        font-weight: 500;
+        color: #242424;
+        box-sizing: content-box;
+
+        span {
+            color: #FFC602;
+        }
+
+        @media #{$big}, #{$desktop} {
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -0.4px;
+
+            @include toGrid(desktop, 7, 1, left, 4, left);
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.33px;
+
+            @include toGrid(laptop, 7, 1, left, 4, left);
+        }
+
+        @media #{$tablet} {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.27px;
+
+            @include toGrid(tablet, 8, 0, center);
+        }
+
+        @media #{$phone} {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.27px;
+
+            @include toGrid(phone, 6, 0, center);
+        }
+    }
+
+
+    &-image-container {
+
+        @media #{$big}, #{$desktop} {
+            width: 100% * 1352px / 1440px;
+            max-width: 1440px;
+        }
+
+        @media #{$laptop} {
+            width: 100% * 928px / 1024px;
+        }
+
+        @media #{$tablet} {
+            width: 100% * 704px / 768px;
+        }
+
+        @media (max-width: 567px) {
+            width: 100%;
+        }
+    }
+
+    &-image {
+        position: relative;
+        overflow: hidden;
+        z-index: 1; //to be above next block
+        width: 100%;
+
+        @media #{$big} {
+            top: 296px;
+            margin-top: -90px;
+        }
+
+        @media #{$desktop} {
+            top: 247px;
+            margin-top: -40px;
+        }
+
+        @media #{$laptop} {
+            top: 147px;
+            margin-top: 13px;
+        }
+
+        @media #{$tablet} {
+            top: 129px;
+            margin-top: 0;
+        }
+
+        @media #{$phone} {
+            margin-top: 104px;
+        }
+
+        &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: (100% * 816px / 1440px);
+
+        }
+
+        &-clipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100% * (816px + 40px) / 816px;
+
+            img {
+                display: block;
+                @include fill-image(cover, center 20%);
+            }
+        }
+
+        &-text {
+            position: absolute;
+            left: 51%;
+            top: 51%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 100%;
+            }
+
+            &--1 {
+                @media #{$big}, #{$desktop} {
+                    width: 100% * 547px / 1352px;
+                    height: 100% * 235px / 766px;
+                }
+
+                @media #{$laptop} {
+                    width: 547px; //not scaling
+                    height: 235px;
+                }
+
+                @media #{$tablet} {
+                    width: 100% * 420px / 704px;
+                    height: 100% * 180px / 399px;
+                }
+
+                @media #{$phone} {
+                    width: 100% * 224px / 375px;
+                    height: 100% * 96px / 212px;
+                }
+            }
+
+            &--2 {
+                @media #{$big}, #{$desktop} {
+                    width: 100% * 710px / 1352px;
+                    height: 100% * 224px / 766px;
+                }
+
+                @media #{$laptop} {
+                    width: 710px; //not scaling
+                    height: 224px;
+                }
+
+                @media #{$tablet} {
+                    width: 100% * 545px / 704px;
+                    height: 100% * 172px / 399px;
+                }
+
+                @media #{$phone} {
+                    width: 100% * 291px / 375px;
+                    height: 100% * 92px / 212px;
+                }
+            }
+
+            &--3 {
+                @media #{$big}, #{$desktop} {
+                    width: 100% * 570px / 1352px;
+                    height: 100% * 191px / 766px;
+                }
+
+                @media #{$laptop} {
+                    width: 570px; //not scaling
+                    height: 191px;
+                }
+
+                @media #{$tablet} {
+                    width: 100% * 438px / 704px;
+                    height: 100% * 147px / 399px;
+                }
+
+                @media #{$phone} {
+                    width: 100% * 233px / 375px;
+                    height: 100% * 78px / 212px;
+                }
+            }
+
+            &--4 {
+                @media #{$big}, #{$desktop} {
+                    width: 100% * 531px / 1352px;
+                    height: 100% * 187px / 766px;
+                }
+
+                @media #{$laptop} {
+                    width: 531px; //not scaling
+                    height: 187px;
+                }
+
+                @media #{$tablet} {
+                    width: 100% * 408px / 704px;
+                    height: 100% * 144px / 399px;
+                }
+
+                @media #{$phone} {
+                    width: 100% * 217px / 375px;
+                    height: 100% * 77px / 212px;
+                }
+            }
+
+            &--5 {
+                @media #{$big}, #{$desktop} {
+                    width: 100% * 590px / 1352px;
+                    height: 100% * 174px / 766px;
+                }
+
+                @media #{$laptop} {
+                    width: 590px; //not scaling
+                    height: 174px;
+                }
+
+                @media #{$tablet} {
+                    width: 100% * 453px / 704px;
+                    height: 100% * 134px / 399px;
+                }
+
+                @media #{$phone} {
+                    width: 100% * 242px / 375px;
+                    height: 100% * 71px / 212px;
+                }
+            }
+        }
+    }
+}

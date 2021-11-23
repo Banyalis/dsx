@@ -1,0 +1,20 @@
+mixin quotes(data, className="")
+    section.dsx-quotes(class=className, data-theme="light")
+        .dsx-quotes-wrap
+            .dsx-quotes-container.dsx-grid-container
+                .dsx-quotes-wrapper
+                    each item in data
+                        .dsx-quotes-item
+                            .dsx-quotes-item-text
+                                span #{item.TEXT}
+                            .dsx-quotes-item-author #{item.AUTHOR}
+                .dsx-quotes-controls
+                    .dsx-quotes-numbers
+                        span 1
+                        span /#{data.length}
+                    .dsx-quotes-progress
+                        .dsx-quotes-progress-indicator
+                    .dsx-quotes-arrow-left
+                        include /_includes/svg/arrow-left.svg
+                    .dsx-quotes-arrow-right
+                        include /_includes/svg/arrow-right.svg

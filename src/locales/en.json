@@ -1,0 +1,1016 @@
+{
+    "lang": "en",
+    "language": "English",
+    "home": {
+        "META_TITLE": "DSX | Professional cryptocurrency exchange",
+        "META_DESCRIPTION": "With DSX trading crypto has never been easier or more exciting",
+        "META_IMAGE": "/homepage/assets/img/share/home.png",
+        "TITLE": "DSX | Professional cryptocurrency exchange",
+        "HERO_TITLE": "Where will crypto take you?",
+        "HERO_TEXT": "With DSX trading crypto has never been easier or more exciting",
+        "HERO_BUTTON": "Create Account",
+        "NUMBERS_TITLE": "DSX by numbers",
+        "NUMBERS_EXCHANGED": "Cryptocurrency exchanged",
+        "NUMBERS_ACTIVE": "Active customers",
+        "NUMBERS_TRADED": "Cryptocurrencies traded",
+        "NUMBERS_TRADED_VAL": "Most Popular",
+        "NUMBERS_REGISTERED": "FCA registered (FRN 900410)",
+        "NUMBERS_REGISTERED_VAL": "Regulated Foundation",
+        "NUMBERS_DREAMS": "Dreams empowered",
+        "WHY_TITLE": "Why use DSX for your crypto journey?",
+        "WHY_TITLE_NEED": "There when you need us",
+        "WHY_TEXT_NEED": "Our dedicated support team are here to give you that helping hand, whenever you need it.",
+        "WHY_TITLE_TRANSFERS": "Transfers done your way",
+        "WHY_TEXT_TRANSFERS": "You decide how you want to fund your account and where you want your withdrawals made.",
+        "WHY_TITLE_COINS": "Multiple currencies and coins",
+        "WHY_TEXT_COINS": "From Bitcoin to USD, Ether to EUR, you choose your pair.",
+        "WHY_TITLE_MONEY": "Your money, our responsibility",
+        "WHY_TEXT_MONEY": "We keep your money safe. We’ve done our homework to make sure you’re always covered. Less time worrying about your investment, more time enjoying it.",
+        "DISCOVER_TITLE": "Already on your crypto <br>adventure and want more?",
+        "DISCOVER_COMING_SOON": "Coming soon",
+        "DISCOVER_TITLE_PROFESSIONALS": "Professionals",
+        "DISCOVER_TEXT_PROFESSIONALS": "Already a crypto pro? We've got you covered",
+        "DISCOVER_TITLE_PARTNERS": "Partners",
+        "DISCOVER_TEXT_PARTNERS": "Looking for an authentic cryptocurrency partner? Let's talk",
+        "DISCOVER_BUTTON": "See more",
+        "QUOTES": [
+            {
+                "TEXT": "I have used DSX as my sole crypto exchange for the past 5 years and would highly recommend them to others. For me, their ease of use, expertise and great customer support is what separates them from the competition.",
+                "AUTHOR": "Peter Wood"
+            },
+            {
+                "TEXT": "During our time working with DSX, we’ve come to know not only the reliability of the company, but also the highest standards of professionalism and technical knowledge of its specialists. Their specialists have made huge efforts to make working together very fruitful, and we’re incredibly grateful to work with them.",
+                "AUTHOR": "Anton Chashchin, CBDO of OKONTO"
+            },
+            {
+                "TEXT": "DSX is a very competent and responsive team with great product and business approach.",
+                "AUTHOR": "Aximetria"
+            }
+        ],
+        "LATEST": {
+            "TITLE": "Latest Stories",
+            "URL_1": "/stories/1/",
+            "CATEGORY_1": "Getting Started",
+            "TITLE_1": "Understanding crypto: What is a hard fork?",
+            "DATE_1": "20 Aug 2019",
+            "IMAGE_1": "/homepage/assets/img/home/story_1.jpg",
+            "IMAGE2x_1": "/homepage/assets/img/home/story_1@2x.jpg",
+            "URL_2": "/stories/2/",
+            "CATEGORY_2": "Getting Started",
+            "TITLE_2": "What is the Initiative for CryptoCurrencies & Contracts (IC3)?",
+            "DATE_2": "7 Aug 2019",
+            "IMAGE_2": "/homepage/assets/img/home/story_2.jpg",
+            "IMAGE2x_2": "/homepage/assets/img/home/story_2@2x.jpg",
+            "BUTTON": "More Stories",
+            "BUTTON_URL": "/stories/"
+        },
+        "FAQ": {
+            "TITLE": "Frequently Asked Questions",
+            "BUTTON": "Learn More",
+            "ITEMS": [
+                {
+                    "QUESTION": "Which currencies and coins does the DSX platform support?",
+                    "ANSWER": "We're always on the hunt for new currencies and coins to add to our platform. Currently, we support USD, EUR, GBP, RUB, TRY, BTC, LTC, ETH, BCH, BTG, EURS, USDT, BSV, EOS, XRP."
+                },
+                {
+                    "QUESTION": "How do I fund my account?",
+                    "ANSWER": "The simple answer is: however you like! Choose from bank transfers, debit and credit cards or our seamless integration with ePayments wallets."
+                },
+                {
+                    "QUESTION": "Is my money safe?",
+                    "ANSWER": "We have two-factor authentication, cold storage, smart backup and manual withdrawals to ensure DSX is the most exciting and safest platform for crypto trading."
+                },
+                {
+                    "QUESTION": "How fast are you?",
+                    "ANSWER": "Is instantaneous good enough? All trades are immediate, and we provide you with up to level II market data, to ensure you can react to changes in the market quickly."
+                }
+            ]
+        },
+        "READY": {
+            "TITLE": "Ready for tomorrow?",
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg",
+            "TEXT": "",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Create account",
+                    "CLASS": "-non-auth",
+                    "URL": "/chooseAccountType/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                },
+                {
+                    "CAPTION": "About Us",
+                    "CLASS": "-in-register -auth-non-verified -auth-processing -auth-rejected -auth-verified -add-phone -update-password",
+                    "URL": "/about/",
+                    "INTERNAL": true,
+                    "TARGET": "_self"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "META_TITLE": "Contact | DSX",
+        "META_DESCRIPTION": "On email? On the phone? Over a cuppa? <br>You decide. Drop us a line.",
+        "META_IMAGE": "/homepage/assets/img/share/contact.png",
+        "TITLE": "Contact | DSX",
+        "TEXT": "Hey you! <br>Fancy a chat?",
+        "DESCRIPTION": "On email? On the phone? Over a cuppa? <br>You decide. Drop us a line. ",
+        "ADDRESS_STREET": "24 Savile Row",
+        "ADDRESS_LOCALITY": "London, W1S 2ES",
+        "ADDRESS_COUNTRY": "United Kingdom",
+        "FORM_NAME": "Name",
+        "FORM_EMAIL": "Email address",
+        "FORM_PHONE": "Phone number",
+        "FORM_MSG": "Your message",
+        "FORM_SUBMIT": "Send a message",
+        "INFO_EMAIL": "General enquiries email",
+        "INFO_LIVE_CHAT": "Live chat",
+        "INFO_PHONE": "Phone number",
+        "INFO_ADDRESS": "Address"
+    },
+    "about": {
+        "META_TITLE": "About | DSX",
+        "META_DESCRIPTION": "Our mission to get the hell out of the way and let you trade – your way.",
+        "META_IMAGE": "/homepage/assets/img/share/about.png",
+        "TITLE": "About | DSX",
+        "DESCRIPTION": "Our mission to get the hell out of the way and let you trade – your way.",
+        "MISSION_QUESTION": "Our mission<span>?</span>",
+        "MISSION_ANSWER1": "To get the hell out of the way and let <span>you</span> trade – <span>your</span> way.",
+        "MISSION_ANSWER2": "To give you the <span>confidence </span><span>you’ve </span><span>never </span><span>felt</span> with any other crypto platform.",
+        "STANDOUT_TITLE": "A professional exchange platform for cryptocurrency traders.",
+        "STANDOUT_TEXT": "At DSX we wanted to create an environment that captures the adventure of the crypto universe in a platform that is safe, trusted and beautiful to use. We've built a platform that's the sidekick to those taking their first steps.<br><br>We've developed a team that's an ally for traders realising their everyday dreams and the engine for our partners. We make exchanging, trading and using crypto easy so you can focus on where it takes you.",
+        "STANDOUT_NAME": "Mike Rymanov,",
+        "STANDOUT_POSITION": "CEO and Founder",
+        "SPONTANEOUS_TEXT": "<span>The </span><span>smartest, </span><span>most </span><span>inspiring </span><span>and </span><span>intuitive </span><span>crypto </span><span>technology </span><span>out </span><span>there. </span>It’s tech you want to tell your friends about.",
+        "SERVICES_TITLE": "Discover all of our services",
+        "SERVICES_COMING_SOON": "Coming soon",
+        "SERVICES_ITEM_TITLE_1": "Pioneers",
+        "SERVICES_ITEM_TEXT_1": "Looking for an authentic cryptocurrency partner? Let's talk",
+        "SERVICES_ITEM_TITLE_2": "Professionals",
+        "SERVICES_ITEM_TEXT_2": "Already a crypto pro? We've got you covered",
+        "SERVICES_ITEM_TITLE_3": "Partners",
+        "SERVICES_ITEM_TEXT_3": "Looking for an authentic cryptocurrency partner? Let's talk",
+        "TEAM_TITLE": "Team DSX",
+        "TEAM_TEXT_TOP": "Bankers without bowlers. <br>Techies without tears. <br>Crypto with credibility.",
+        "TEAM_TEXT_BOTTOM": "Born out of London, DSX has harnessed the essence of crypto and combined it with the professionalism of the financial world. <br><br>It’s the adventure you’ve been looking for, with the perfect partner to get you there.",
+        "PERSONS": [
+            {
+                "IMAGE": "01-Mike",
+                "NAME": "Mike",
+                "JOB": "CEO",
+                "INFO": "I ensure that every aspect of DSX delivers a crypto experience that is safe, trusted and beautiful to use"
+            },
+            {
+                "IMAGE": "02-George",
+                "NAME": "George",
+                "JOB": "COO",
+                "INFO": "I keep everyone pulling in the same direction, ensuring that we realise the promise of cryptocurrency"
+            },
+            {
+                "IMAGE": "03-Ivan",
+                "NAME": "Ivan",
+                "JOB": "CXO",
+                "INFO": "I'm passionate about creating simple solutions to difficult problems and making our customers' lives easier"
+            },
+            {
+                "IMAGE": "07-Comrade-Alex",
+                "NAME": "Comrade Alex",
+                "JOB": "Account Manager",
+                "INFO": "I'm our customers' safety net and partner, ensuring they make the most of the opportunities crypto has to offer"
+            },
+            {
+                "IMAGE": "09-Alexandr",
+                "NAME": "Alexander",
+                "JOB": "CTO/Chief Architect",
+                "INFO": "Sapienti sat"
+            },
+            {
+                "IMAGE": "11-Sergei",
+                "NAME": "Serg",
+                "JOB": "Head of QA",
+                "INFO": "I'm relentlessly focused on making sure we're doing the right things, in the right way and with the right outcomes"
+            },
+            {
+                "IMAGE": "13-Valentina",
+                "NAME": "Valentina",
+                "JOB": "Head of Customer Services ",
+                "INFO": "Without customers, a platform is pointless. I ensure our customer experience matches the promises our business makes"
+            },
+            {
+                "IMAGE": "17-Thony",
+                "NAME": "Thony",
+                "JOB": "QA Engineer",
+                "INFO": "I make sure your mobile experience delivers on the promise of crypto"
+            },
+            {
+                "IMAGE": "15-Aleksey",
+                "NAME": "Aleksey",
+                "JOB": "Software Architect",
+                "INFO": "I create the tools which makes our platform work - and I get it right first time"
+            },
+            {
+                "IMAGE": "19-Semen",
+                "NAME": "Semen",
+                "JOB": "QA Engineer",
+                "INFO": "I ensure our website delivers a best in class customer experience"
+            },
+            {
+                "IMAGE": "21-Pavel",
+                "NAME": "Pavel",
+                "JOB": "Back&#8209end Developer",
+                "INFO": "I make sure our code lives up to your expectations"
+            },
+            {
+                "IMAGE": "23-Dmitrii",
+                "NAME": "Dmitrii",
+                "JOB": "Web Developer",
+                "INFO": "Everything starts somewhere and with DSX your crypto adventure starts with my code"
+            },
+            {
+                "IMAGE": "24-Alina",
+                "NAME": "Alina",
+                "JOB": "Office Manager",
+                "INFO": "I create the environment where things get done"
+            },
+            {
+                "IMAGE": "16-Phil",
+                "NAME": "Phil",
+                "JOB": "Blockchain Developer",
+                "INFO": "Blockchain is the future. I'm one of the people helping make that future a reality"
+            },
+            {
+                "IMAGE": "20-Evgeniia",
+                "NAME": "Evgeniia",
+                "JOB": "Web Developer",
+                "INFO": "I write beautiful code which powers your crypto currency adventure"
+            },
+            {
+                "IMAGE": "22-Ekaterina",
+                "NAME": "Ekaterina",
+                "JOB": "Back&#8209end Developer",
+                "INFO": "I write the scripts which make DSX sing"
+            },
+            {
+                "IMAGE": "18-Anthony",
+                "NAME": "Anthony",
+                "JOB": "Web Developer",
+                "INFO": "I find the solutions to our challenges."
+            },
+            {
+                "IMAGE": "14-Igor",
+                "NAME": "Igor",
+                "JOB": "Product Manager",
+                "INFO": "I fix problems - no matter how big or small"
+            },
+            {
+                "IMAGE": "12-Alena",
+                "NAME": "Alena",
+                "JOB": "QA Engineer",
+                "INFO": "Something strange with your interface? Who you gonna call? Bugbusters!"
+            },
+            {
+                "IMAGE": "10-Anton",
+                "NAME": "Anton",
+                "JOB": "QA Engineer",
+                "INFO": "I squash bugs and keep a smile on the team's face"
+            },
+            {
+                "IMAGE": "08-Vladimir",
+                "NAME": "Vladimir",
+                "JOB": "iOS Developer",
+                "INFO": "Wherever you are, you deserve a great crypto experience. I work to make that happen"
+            },
+            {
+                "IMAGE": "06-Alex",
+                "NAME": "Alex",
+                "JOB": "Account Manager",
+                "INFO": "Every adventurer needs a helping hand along the way - and that's what I provide to people exploring the world of crypto"
+            },
+            {
+                "IMAGE": "04-Nikita",
+                "NAME": "Nik",
+                "JOB": "Data Analyst",
+                "INFO": "I track everything which happens across DSX and keep the team informed on what this means"
+            },
+            {
+                "IMAGE": "05-Evgeny",
+                "NAME": "Eugene",
+                "JOB": "Lead Devops Engineer",
+                "INFO": "I ensure the team deliver our promises"
+            }
+        ],
+        "LATEST": {
+            "TITLE": "Latest Stories",
+            "URL_1": "/stories/1/",
+            "CATEGORY_1": "Getting Started",
+            "TITLE_1": "Understanding crypto: What is a hard fork?",
+            "DATE_1": "20 Aug 2019",
+            "IMAGE_1": "/homepage/assets/img/home/story_1.jpg",
+            "IMAGE2x_1": "/homepage/assets/img/home/story_1@2x.jpg",
+            "URL_2": "/stories/2/",
+            "CATEGORY_2": "Getting Started",
+            "TITLE_2": "What is the Initiative for CryptoCurrencies & Contracts (IC3)?",
+            "DATE_2": "7 Aug 2019",
+            "IMAGE_2": "/homepage/assets/img/home/story_2.jpg",
+            "IMAGE2x_2": "/homepage/assets/img/home/story_2@2x.jpg",
+            "BUTTON": "More Stories",
+            "BUTTON_URL": "/stories/"
+        }
+    },
+    "legal": {
+        "META_TITLE": "Legal | DSX",
+        "META_DESCRIPTION": "Legal documents",
+        "META_IMAGE": "/homepage/assets/img/share/legal.png",
+        "TITLE": "Legal | DSX",
+        "HEADER": "Privacy & Terms",
+        "LINK": "Read the doc",
+        "DIGITAL_WALLET_TERMS": "Terms & Conditions",
+        "AML_POLICY": "AML & CTF Policy",
+        "COMPLAINTS_POLICY": "Complaints Policy",
+        "REFUND_POLICY": "Refund Policy",
+        "RISK_WARNING": "Risk Warning",
+        "PRIVACY_NOTES": "Privacy Notice",
+        "COOKIE_NOTES": "Cookie Notice",
+        "COOKIE_LIST": "Cookie List"
+    },
+    "cookies": {
+        "TEXT": "This website uses cookies to ensure you get the best experience on our website.",
+        "LINK": "Learn more",
+        "OK": "Got it"
+    },
+    "footer": {
+        "DISCLAMER": "The e-money associated with your DSX account is issued by ePayments Systems Limited. ePayments Systems Limited is authorised by the Financial Conduct Authority (FCA) under the Electronic Money Regulations 2011 (register reference 900172) for the issuing of electronic money.",
+        "COPYRIGHT": "Copyright © 2014-2020 Digital Securities Exchange <br>Limited. All rights reserved.",
+        "LEGAL": "Legal",
+        "COOKIE_POLICY": "Cookie policy",
+        "USEFUL_INFORMATION": "Useful Information",
+        "API_DOCUMENTATION": "API Documentation",
+        "GITHUB": "GitHub",
+        "STATUS": "Status",
+        "FEES": "Fees",
+        "PRIVACY_POLICY": "Privacy Policy",
+        "TERMS_AND_CONDITIONS": "Terms and Conditions",
+        "HELP_CENTRE": "Help Centre",
+        "COMPANY": "Company",
+        "ABOUT": "About",
+        "STORIES": "Stories",
+        "CONTACT": "Contact",
+        "LANGUAGE": "Language",
+        "RU": "Russian",
+        "EN": "English",
+        "TR": "Turkish"
+    },
+    "navbar": {
+        "ABOUT": "About",
+        "STORIES": "Stories",
+        "HELP": "Help",
+        "CONTACT": "Contact",
+        "ADD_FUNDS": "Add funds",
+        "CONTINUE_REGISTRATION": "Continue Registration",
+        "CONTINUE_VERIFICATION": "Continue Verification",
+        "DEMO_TRADE": "Demo Trade",
+        "EXCHANGE": "Exchange",
+        "FIX_ISSUES": "Fix Issues",
+        "LOG_OUT": "Log out",
+        "PROFILE": "Profile",
+        "REGISTER": "Register",
+        "CREATE_ACCOUNT": "Create Account",
+        "SETTINGS": "Settings",
+        "SIGN_IN": "Sign in"
+    },
+    "generic": {
+        "INTRO_BACK": "Back",
+        "DOWNLOAD_TITLE": "Download"
+    },
+    "TermsConditions": {
+        "META_TITLE": "Terms & Conditions | DSX",
+        "META_DESCRIPTION": "Terms and conditions",
+        "META_IMAGE": "/homepage/assets/img/share/terms-conditions.png",
+        "TITLE": "Terms & Conditions | DSX",
+        "INTRO_TITLE": "Terms and conditions",
+        "DOWNLOAD_LINK": "/homepage/docs/terms_and_conditions.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "98 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "AmlPolicy": {
+        "META_TITLE": "AML & CTF Policy | DSX",
+        "META_DESCRIPTION": "DSX anti-money laundering and counter-terrorist financing policy",
+        "META_IMAGE": "/homepage/assets/img/share/aml-policy.png",
+        "TITLE": "AML & CTF Policy | DSX",
+        "INTRO_TITLE": "DSX anti-money laundering and counter-terrorist financing policy",
+        "DOWNLOAD_LINK": "/homepage/docs/aml_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "49 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "ComplaintsPolicy": {
+        "META_TITLE": "Complaints Policy | DSX",
+        "META_DESCRIPTION": "Epayments systems limited complaints policy relating to the dsx account digital wallet",
+        "META_IMAGE": "/homepage/assets/img/share/complaints-policy.png",
+        "TITLE": "Complaints Policy | DSX",
+        "INTRO_TITLE": "Epayments systems limited complaints policy relating to the dsx account digital wallet",
+        "DOWNLOAD_LINK": "/homepage/docs/complaints_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "25 kb"
+    },
+    "RefundPolicy": {
+        "META_TITLE": "Refund Policy | DSX",
+        "META_DESCRIPTION": "Refund Policy",
+        "META_IMAGE": "/homepage/assets/img/share/refund-policy.png",
+        "TITLE": "Refund Policy | DSX",
+        "INTRO_TITLE": "DSX Refund Policy",
+        "DOWNLOAD_LINK": "/homepage/docs/refund_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "33 kb"
+    },
+    "RiskWarning": {
+        "META_TITLE": "Risk Warning | DSX",
+        "META_DESCRIPTION": "DSX website disclaimer and risk statement",
+        "META_IMAGE": "/homepage/assets/img/share/risk-warning.png",
+        "TITLE": "Risk Warning | DSX",
+        "INTRO_TITLE": "DSX website disclaimer and risk statement",
+        "DOWNLOAD_LINK": "/homepage/docs/risk_warning.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "49 kb"
+    },
+    "PrivacyNotice": {
+        "META_TITLE": "Privacy Notice | DSX",
+        "META_DESCRIPTION": "Digital Securities Exchange Limited Privacy Notice",
+        "META_IMAGE": "/homepage/assets/img/share/privacy-notice.png",
+        "TITLE": "Privacy Notice | DSX",
+        "INTRO_TITLE": "Digital Securities Exchange Limited Privacy Notice",
+        "DOWNLOAD_LINK": "/homepage/docs/privacy_notice.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "238 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "CookieNotice": {
+        "META_TITLE": "Cookie Notice | DSX",
+        "META_DESCRIPTION": "Cookie Notice",
+        "META_IMAGE": "/homepage/assets/img/share/cookie-notice.png",
+        "TITLE": "Cookie Notice | DSX",
+        "INTRO_TITLE": "Cookies Notice",
+        "DOWNLOAD_LINK": "/homepage/docs/cookie_notice.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "197 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "CookieList": {
+        "META_TITLE": "Cookie List | DSX",
+        "META_DESCRIPTION": "Cookie List",
+        "META_IMAGE": "/homepage/assets/img/share/cookie-list.png",
+        "TITLE": "Cookie List | DSX",
+        "INTRO_TITLE": "Cookie List",
+        "DOWNLOAD_LINK": "/homepage/docs/cookie_list.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "217 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "fees": {
+        "META_TITLE": "Fees | DSX",
+        "META_DESCRIPTION": "Account fees",
+        "META_IMAGE": "/homepage/assets/img/share/fees.png",
+        "TITLE": "Fees | DSX",
+        "INTRO_TITLE": "Account fees",
+        "INTRO_TEXT": "We'll never charge you account opening or maintenance fees, nor will we ever hit you with account termination charges.",
+        "INTRO_BENEFITS": [
+            {
+                "TITLE": "Account opening & maintenance",
+                "TEXT": "Free"
+            },
+            {
+                "TITLE": "Account termination",
+                "TEXT": "Free"
+            },
+            {
+                "TITLE": "Abandoned account<div class=\"dsx-fees-intro-benefits__item-decor\">after 12 month of inactivity</div>",
+                "TEXT": "€5/month"
+            }
+        ],
+        "CALCULATION_TITLE": "Trading services charges",
+        "CALCULATION_TRADE_TITLE": "Trade volume",
+        "CALCULATION_TRADE_TEXT": "Trailing 30 day avg",
+        "CALCULATION_STANDART": "Standart",
+        "CALCULATION_REFERRAL": "Referral",
+        "CALCULATION_MAKER": "Maker fees",
+        "CALCULATION_TAKER": "Taker fees",
+        "COMMISSION_TITLE": "Cryptocurrency processing fees",
+        "COMMISSION_BUTTON": "More",
+        "COMMISSION_TEXT": "In the event of a crosschain or a deposit of an unsupported token, we will attempt to recover the funds and refund your wallet. A 10% commission, in the crypto equivalent, of the total value recovered will be charged (min. €5 max €100).",
+        "COMMISSION_DEPOSIT": "Deposit",
+        "COMMISSION_WITHDRAW": "Withdraw",
+        "COMMISSION_NETWORK": "Min. network confirmations",
+        "METHODS_TITLE": "Payments methods and fees",
+        "METHODS_DEPOSIT": "Deposit",
+        "METHODS_WITHDRAW": "Withdraw",
+        "METHODS_TRANSFER": "Bank transfer (SWIFT)",
+        "METHODS_WALLET": "ePayments wallet",
+        "METHODS_CARD": "Bank card",
+        "FREE": "Free",
+        "READY": {
+            "TITLE": "Have questions?",
+            "TEXT": "Get advice and answers from the DSX Team",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Visit Help Centre",
+                    "CLASS": "",
+                    "URL": "https://docs.dsx.uk/dsx/en",
+                    "INTERNAL": false,
+                    "TARGET": "_blank"
+                }
+            ],
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg"
+        }
+    },
+    "stories": {
+        "META_TITLE": "Stories | DSX",
+        "META_DESCRIPTION": "Stories list",
+        "META_IMAGE": "/homepage/assets/img/share/stories.png",
+        "TITLE": "Stories | DSX",
+        "SEARCH": {
+            "LIST": [
+                {
+                    "TITLE": "Announcements",
+                    "URL": "/stories/announcements/"
+                },
+                {
+                    "TITLE": "Getting Started",
+                    "URL": "/stories/getting-started/"
+                },
+                {
+                    "TITLE": "Industry",
+                    "URL": "/stories/industry/"
+                },
+                {
+                    "TITLE": "Case Studies",
+                    "URL": "/stories/case-studies/"
+                }
+            ]
+        },
+        "GENERAL_ARTICLES": [
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/13.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/13@2x.jpg",
+                "TYPE": "Industry",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/12.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/12@2x.jpg",
+                "TYPE": "News",
+                "TITLE": "Understanding crypto: What is a hard fork?"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TYPE": "Industry",
+                "TITLE": "What is a… CBDC (Central Bank Digital Currency)?"
+            }
+        ],
+        "ANNOUNCEMENTS_TITLE": "Announcements",
+        "ANNOUNCEMENTS_BUTTON": "View All",
+        "ANNOUNCEMENTS_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/10.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/10@2x.jpg",
+                "DATE": "4 Sep 2019",
+                "TITLE": "DSX announces a partnership with Yubico"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/11.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/11@2x.jpg",
+                "DATE": "22 Aug 2019",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "DATE": "20 Feb 2019",
+                "TITLE": "EOS is now available on DSX"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/10.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/10@2x.jpg",
+                "DATE": "4 Sep 2019",
+                "TITLE": "DSX announces a partnership with Yubico"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/11.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/11@2x.jpg",
+                "DATE": "22 Aug 2019",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "DATE": "20 Feb 2019",
+                "TITLE": "EOS is now available on DSX"
+            }
+        ],
+        "STARTED_TITLE": "Getting Started",
+        "STARTED_BUTTON": "View All",
+        "STARTED_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/6.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/6@2x.jpg",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/7.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/7@2x.jpg",
+                "TITLE": "Understanding crypto: What is a hard fork?"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/8.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/8@2x.jpg",
+                "TITLE": "How to understand… public-key cryptography"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/9.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/9@2x.jpg",
+                "TITLE": "Crypto Guide: Why do cryptocurrencies have a finite number of coins?"
+            }
+        ],
+        "STUDIES_TITLE": "Case Studies",
+        "STUDIES_BUTTON": "View All",
+        "STUDIES_ARTICLES": [
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/3@2x.jpg",
+                "TYPE": "Food Industry",
+                "TITLE": "Case study: How blockchain is improving trust and transparency in the food industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/5.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/3@2x.jpg",
+                "TYPE": "Food Industry",
+                "TITLE": "Case study: How blockchain is improving trust and transparency in the food industry"
+            },
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/5.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            }
+        ],
+        "INDUSTRY_TITLE": "Industry",
+        "INDUSTRY_BUTTON": "View All",
+        "INDUSTRY_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            }
+        ],
+        "OFFER_TITLE": "Get our latest news",
+        "OFFER_BUTTON": "Subscribe"
+    },
+    "partners": {
+        "META_TITLE": "Partners | DSX",
+        "META_DESCRIPTION": "Partnering with DSX",
+        "META_IMAGE": "/homepage/assets/img/share/partners.png",
+        "TITLE": "Partners | DSX",
+        "HERO_TITLE": "Partnering with DSX",
+        "HERO_TEXT": "Secure and instant exchanges and conversions for your customers. Your business is our business.",
+        "STUDIES_HEADER": "Case studies",
+        "STUDIES_CATEGORY_1": "ePayments",
+        "STUDIES_TITLE_1": "Keeping the money moving",
+        "STUDIES_TEXT_1": "Anyone who uses crypto knows the financial establishment’s limitations can get in the way. Trying to send or receive payments across borders can be a real challenge. Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_1": "something improved",
+        "STUDIES_IMPROVED_2_1": "something improved",
+        "STUDIES_BUTTON_1": "Read case",
+        "STUDIES_CATEGORY_2": "Energy industry",
+        "STUDIES_TITLE_2": "LO3 Energy and the Brooklyn Microgrid",
+        "STUDIES_TEXT_2": "Anyone who uses crypto knows the financial establishment’s limitations can get in the way. Trying to send or receive payments across borders can be a real challenge. Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_2": "something improved",
+        "STUDIES_IMPROVED_2_2": "something improved",
+        "STUDIES_BUTTON_2": "Read case",
+        "STUDIES_CATEGORY_3": "Acquiring system",
+        "STUDIES_TITLE_3": "Martine Jarlgaard, Provenance and A Transparent Company",
+        "STUDIES_TEXT_3": "Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_3": "something improved",
+        "STUDIES_IMPROVED_2_3": "something improved",
+        "STUDIES_BUTTON_3": "Read case",
+        "POWERFUL_HEADER": "Everything you need is ready from day one",
+        "POWERFUL_BLOCK_TITLE_1": "Powerful",
+        "POWERFUL_BLOCK_TEXT_1": "A suite of powerful, flexible and accurate market data endpoints",
+        "POWERFUL_BLOCK_TITLE_2": "Profitable",
+        "POWERFUL_BLOCK_TEXT_2": "Suitable for everyone from demanding enterprise use cases to start-ups",
+        "POWERFUL_BLOCK_TITLE_3": "Universal",
+        "POWERFUL_BLOCK_TEXT_3": "Accurate, timely and reliable cryptocurrency prices",
+        "POWERFUL_BOTTOM": "Confidence, reliability and more hours in the day is what our partners enjoy.<br><br>DSX lets you focus on your business.",
+        "POWERFUL_BUTTON": "Contact us",
+        "SAFE_SUBTITLE": "Safe and secure",
+        "SAFE_TITLE": "Your customers need to feel secure in every transaction they make",
+        "SAFE_TEXT": "DSX is a platform you can trust, with two-factor authentication, cold storage, smart backup and manual withdrawals to ensure funds remain safe and secure.",
+        "QUOTES": [
+            {
+                "TEXT": "I have used DSX as my sole crypto exchange for the past 5 years and would highly recommend them to others. For me, their ease of use, expertise and great customer support is what separates them from the competition.",
+                "AUTHOR": "Peter Wood"
+            },
+            {
+                "TEXT": "During the years of cooperation with DSX, we became convinced of the reliability of this company, professionalism and high level of technical training of its specialists. The colleagues have made all necessary efforts for fruitful cooperation, and we are sincerely grateful to them for their trust.",
+                "AUTHOR": "Anton Chashchin, CBDO of OKONTO"
+            },
+            {
+                "TEXT": "DSX is a very competent and responsive team with great product and business approach.",
+                "AUTHOR": "Aximetria"
+            }
+        ],
+        "FAQ": {
+            "TITLE": "Frequently Asked Questions",
+            "BUTTON": "View all FAQs",
+            "ITEMS": [
+                {
+                    "QUESTION": "Can I try out the DSX trading platform without spending actual money?",
+                    "ANSWER": "Yes! The easiest way to see what we’re all about is to use our demo platform. It’s free to try after you register. Enter your email address, verify it and set up your password, and you’re on your way to unlimited access to our demo. When you log in to the trading platform, look in the lower left corner for the name of the current account selected. If it is ‘Trading demo’, you’re ready to go. If you see any other name, click to choose the demo account instead. Now dive right in and learn the ropes. Put our demo through the paces until you’re ready for the next step. Every journey starts with a single step and dreams only come true when you open your eyes."
+                },
+                {
+                    "QUESTION": "How do I fund my account?",
+                    "ANSWER": "The simple answer is: however you like! Choose from bank transfers, debit and credit cards or our seamless integration with ePayments wallets."
+                },
+                {
+                    "QUESTION": "Can I try out the DSX trading platform without spending actual money?",
+                    "ANSWER": "Yes! The easiest way to see what we’re all about is to use our demo platform. It’s free to try after you register. Enter your email address, verify it and set up your password, and you’re on your way to unlimited access to our demo. When you log in to the trading platform, look in the lower left corner for the name of the current account selected. If it is ‘Trading demo’, you’re ready to go. If you see any other name, click to choose the demo account instead. Now dive right in and learn the ropes. Put our demo through the paces until you’re ready for the next step. Every journey starts with a single step and dreams only come true when you open your eyes."
+                },
+                {
+                    "QUESTION": "Can I withdraw my money immediately?",
+                    "ANSWER": "Blank."
+                }
+            ]
+        },
+        "READY": {
+            "TITLE": "Fancy a chat?",
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg",
+            "TEXT": "Provide us with a few details and a member of our partnership team will be in touch shortly.",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Request Call Back",
+                    "CLASS": "",
+                    "URL": "/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                }
+            ]
+        }
+    },
+    "story": {
+        "HEAD_BACK": "Back",
+        "MORE_ALL": "View All"
+    },
+    "storiesCategories": {
+        "META_TITLE": "Stories | DSX",
+        "META_DESCRIPTION": "Stories categories",
+        "META_IMAGE": "/homepage/assets/img/share/stories-categories.png",
+        "TITLE": "Stories | DSX",
+        "SEARCH": {
+            "LIST": [
+                {
+                    "TITLE": "All",
+                    "URL": "/stories/"
+                },
+                {
+                    "TITLE": "Announcements",
+                    "URL": "/stories/announcements/"
+                },
+                {
+                    "TITLE": "Getting Started",
+                    "URL": "/stories/getting-started/"
+                },
+                {
+                    "TITLE": "Industry",
+                    "URL": "/stories/industry/"
+                },
+                {
+                    "TITLE": "Case Studies",
+                    "URL": "/stories/case-studies/"
+                }
+            ]
+        }
+    },
+    "search": {
+        "PLACEHOLDER": "Search article",
+        "NOT_FOUND": "Nothing found.<br>Try some different keywords.",
+        "MOST_READ": "Most read",
+        "SHOW_MORE": "Show more"
+    },
+    "pro": {
+        "META_TITLE": "Pro | DSX",
+        "META_DESCRIPTION": "Pro",
+        "TITLE": "Pro | DSX",
+        "INTRO_CAPTION": "Professionals",
+        "INTRO_TITLE": "Personal touch",
+        "INTRO_TEXT": "Get your very own DSX account manager, helping you get the most out of the platform",
+        "NAV_TITLE": "Explore Pro Features",
+        "NAV": [
+            {
+                "NUMBER": "01",
+                "TITLE": "Smart APIs",
+                "URL": "anchor1"
+            },
+            {
+                "NUMBER": "02",
+                "TITLE": "Fast onboarding",
+                "URL": "anchor2"
+            },
+            {
+                "NUMBER": "03",
+                "TITLE": "Seamless payments",
+                "URL": "anchor3"
+            },
+            {
+                "NUMBER": "04",
+                "TITLE": "Multiple accounts",
+                "URL": "anchor4"
+            },
+            {
+                "NUMBER": "05",
+                "TITLE": "Bespoke fees",
+                "URL": "anchor5"
+            },
+            {
+                "NUMBER": "06",
+                "TITLE": "Safe and secure",
+                "URL": "anchor6"
+            },
+            {
+                "NUMBER": "07",
+                "TITLE": "Bloomberg integration",
+                "URL": "anchor7"
+            }
+        ],
+        "SERVICES_TITLE_CAPTION": "Smart APIs",
+        "SERVICES_TITLE_TEXT": "Integrate the way you want. From market data and reports through to orders and withdrawals",
+        "SERVICES": [
+            {
+                "TITLE": "Trading API",
+                "TEXT": "It’s the adventure you’ve been lookingffor, with the perfect partner to get you there.",
+                "BUTTON": "Learn more"
+            },
+            {
+                "TITLE": "Market data available anonymously for the entire history of the exchange",
+                "TEXT": "We are ready to design technical integration in parallel with onboarding.",
+                "BUTTON": "Learn more"
+            },
+            {
+                "TITLE": "Exchange API for easy integration",
+                "TEXT": "We will help you understand API and product, based on the case.",
+                "BUTTON": "Learn more"
+            }
+        ],
+        "SERVICES_BUTTON": "Full API documentation",
+        "BENEFITS_TITLE_CAPTION": "Fast onboarding",
+        "BENEFITS": [
+            {
+                "TITLE": "Individual Accounts",
+                "TEXT": "Verification from 15 minutes"
+            },
+            {
+                "TITLE": "Business Accounts",
+                "TEXT": "Verification from 1 business day"
+            },
+            {
+                "TITLE": "Faster Registration",
+                "TEXT": "For ePayments members"
+            }
+        ],
+        "ACCOUNTS_TITLE_CAPTION": "Multiple accounts",
+        "ACCOUNTS_TITLE_TEXT": "We’ll get you the accounts you need to separate your currencies and coins and fine-tune your trading strategies",
+        "ACCOUNTS": [
+            {
+                "NUMBER": "01",
+                "TITLE": "Demo / Practice Account",
+                "TEXT": "It’s the adventure you’ve been looking for, with the perfect partner to get you there."
+            },
+            {
+                "NUMBER": "02",
+                "TITLE": "Trading bot",
+                "TEXT": "We’ll get you the accounts you need to separate your currencies and coins and fine-tune your trading strategies"
+            },
+            {
+                "NUMBER": "03",
+                "TITLE": "Portfolio",
+                "TEXT": "It’s the adventure you’ve been looking for, with the perfect partner to get you there."
+            }
+        ],
+        "ACCOUNTS_INFO_TITLE": "Bespoke fees for market makers",
+        "ACCOUNTS_INFO_TEXT": "You can contact us for special conditions for Market Makers. You have the opportunity to get a tariff even to zero for maker applications",
+        "ACCOUNTS_INFO_BUTTON": "Contact us",
+        "SECURITY_TITLE_CAPTION": "Safe and secure",
+        "SECURITY": [
+            {
+                "ICON": "authentication",
+                "TITLE": "Strong authentication",
+                "TEXT": "Multi-factor authentication using Google Authenticator, Hardware secure keys, Device built-in biometric authentication"
+            },
+            {
+                "ICON": "partners",
+                "TITLE": "Yubico partners",
+                "TEXT": "Top-level protection with hardware security keys for authentication"
+            },
+            {
+                "ICON": "solution",
+                "TITLE": "Custody solution",
+                "TEXT": "Multi-signature cold wallet, completely offline, holds the majority of coins"
+            }
+        ],
+        "READY": {
+            "TITLE": "Test drive DSX?",
+            "TEXT": "Experience the full power of DSX through our demo accounts",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Create account",
+                    "CLASS": "-non-auth",
+                    "URL": "/chooseUserType/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                },
+                {
+                    "CAPTION": "About Us",
+                    "CLASS": "-in-register -auth-non-verified -auth-processing -auth-rejected -auth-verified -add-phone -update-password",
+                    "URL": "/about/",
+                    "INTERNAL": true,
+                    "TARGET": "_self"
+                }
+            ],
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg"
+        }
+    }
+}

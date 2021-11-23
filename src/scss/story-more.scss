@@ -1,0 +1,464 @@
+.dsx-story-more {
+    $root:&;
+
+    position:relative;
+
+    &[data-theme="light"] {
+        background: #f5f5f9;
+
+        h2 {
+            color: #141222;
+        }
+
+        #{$root} {
+
+            &-block {
+                .desktop &:hover,
+                .mobile &:active {
+                    h3 {
+                        color: #3725D3;
+                    }
+                }
+
+                @media #{$big}, #{$desktop}, #{$laptop}, #{$tablet} {
+                    &:nth-child(even) {
+                        margin-right: 0
+                    }
+                }
+
+                time {
+                    color: #ABA9B8;
+                }
+
+                p {
+                    color: #ABA9B8;
+                }
+
+                h3 {
+                    color: #242424;
+
+                }
+            }
+
+        }
+    }
+
+    &[data-theme="purple"] {
+        background: #141222;
+
+        h2 {
+            color: #fff;
+        }
+
+        button {
+            color: $color-base;
+            border: 2px solid #444152;
+        }
+
+        #{$root} {
+
+            &-block {
+                .desktop &:hover,
+                .mobile &:active {
+                    h3 {
+                        color: #FFC602;
+                    }
+                }
+
+                @media #{$big}, #{$desktop}, #{$laptop}, #{$tablet} {
+                    &:nth-child(4n + 4) {
+                        margin-right: 0
+                    }
+                }
+
+                @media #{$big},#{$desktop} {
+                    @include toGridCustomAttribute(desktop, 3, 0, 'width');
+                }
+
+                @media #{$laptop} {
+                    @include toGridCustomAttribute(laptop, 3, 0, 'width');
+                }
+
+                @media #{$tablet} {
+                    @include toGridCustomAttribute(tablet, 3, 0, 'width');
+                }
+
+                &-image {
+                    &-aspect {
+                        position: relative;
+                        height: 0;
+
+                        @media #{$big},#{$desktop} {
+                            padding-top: (100% * 363px / 284px);
+                        }
+
+                        @media #{$laptop} {
+                            padding-top: (100% * 340px / 218px);
+                        }
+
+                        @media #{$tablet} {
+                            padding-top: (100% * 246px / 158px);
+                        }
+
+                        @media #{$phone} {
+                            padding-top: (100% * 281px / 375px);
+                        }
+                    }
+                }
+
+                time {
+                    color: #fff;
+                }
+
+                p {
+                    color: #fff;
+                }
+
+                h3 {
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+
+    &[data-theme="grey"] {
+        background: #87868f;
+
+        h2 {
+            color: #fff;
+        }
+
+        button {
+            color: $color-base;
+            border: 2px solid #9a99a1;
+
+            .desktop &:hover,
+            .mobile &:active {
+                color: #000;
+                background: #FFC602;
+            }
+        }
+
+        #{$root} {
+
+            &-block {
+                .desktop &:hover,
+                .mobile &:active {
+                    h3 {
+                        color: #141222;
+                    }
+                }
+
+                @media #{$big}, #{$desktop}, #{$laptop}, #{$tablet} {
+                    &:nth-child(even) {
+                        margin-right: 0
+                    }
+                }
+
+                time {
+                    color: #141222;
+                }
+
+                p {
+                    color: #141222;
+                }
+
+                h3 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &-wrap {
+        @media #{$big} {
+            padding: 138px 0 151px 0;
+        }
+
+        @media #{$desktop} {
+            padding: 138px 0 151px 0;
+        }
+
+        @media #{$laptop} {
+            padding: 96px 0 113px 0;
+        }
+
+        @media #{$tablet} {
+            padding: 80px 0 96px 0;
+        }
+
+        @media #{$phone} {
+            padding: 48px 0 64px 0;
+        }
+    }
+
+
+    h2 {
+        position: relative;
+        white-space: normal;
+        padding-right: 200px;
+        margin: 0;
+        font-weight: 500;
+
+        @media #{$big}, #{$desktop} {
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.8px;
+        }
+
+        @media #{$laptop} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.75px;
+        }
+
+        @media #{$tablet} {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.75px;
+        }
+
+        @media #{$phone} {
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.27px;
+            padding: 0;
+        }
+    }
+
+    &-top {
+        position: relative;
+
+        a {
+            @media #{$phone} {
+                display: none;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+
+    &-blocks {
+        position: relative;
+        text-align: left;
+
+
+        @media (min-width: 568px) and (max-width: 767px) {
+            //leave as set in dsx grid container
+        }
+
+        @media (max-width: 567px) {
+            width: 100%;
+        }
+    }
+
+    &-block {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        text-decoration: none !important;
+
+        .desktop &:hover,
+        .mobile &:active {
+            .dsx-story-more-block-image-hover {
+                transform: scale(1.05);
+            }
+        }
+
+
+        @media #{$big},#{$desktop} {
+            @include toGridCustomAttribute(desktop, 6, 0, 'width');
+            @include toGridCustomAttribute(desktop, 0, 1, 'margin-right');
+            margin-top: 80px;
+        }
+
+        @media #{$laptop} {
+            @include toGridCustomAttribute(laptop, 6, 0, 'width');
+            @include toGridCustomAttribute(laptop, 0, 1, 'margin-right');
+            margin-top: 64px;
+        }
+
+        @media #{$tablet} {
+            @include toGridCustomAttribute(tablet, 6, 0, 'width');
+            @include toGridCustomAttribute(tablet, 0, 1, 'margin-right');
+            margin-top: 40px;
+        }
+
+        @media #{$phone} {
+            margin-top: 80px;
+            width: 100%;
+
+            &:first-child {
+                margin-top: 40px;
+            }
+        }
+
+
+
+
+        &-image {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            &-aspect {
+                position: relative;
+                height: 0;
+
+                @media #{$big},#{$desktop} {
+                    padding-top: (100% * 363px / 588px);
+                }
+
+                @media #{$laptop} {
+                    padding-top: (100% * 340px / 454px);
+                }
+
+                @media #{$tablet} {
+                    padding-top: (100% * 246px / 329px);
+                }
+
+                @media #{$phone} {
+                    padding-top: (100% * 281px / 375px);
+                }
+
+            }
+
+            &-clipper {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            &-hover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+
+                .desktop & {
+                    transition: 2s transform cubic-bezier(0.19, 1, 0.22, 1);
+                }
+            }
+
+            &-wrapper {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100% * (363px + 40px) / 363px;
+
+                img {
+                    display: block;
+                    @include fill-image();
+                }
+            }
+        }
+
+        &-texts {
+            margin-top: 20px;
+
+            @media #{$big}, #{$desktop} {
+                width: 100%;
+            }
+
+            @media #{$laptop} {
+                width: 100%;
+            }
+
+            @media #{$tablet} {
+                width: 100%;
+            }
+
+            @media (min-width: 568px) and (max-width: 767px) {
+                margin-top: 18px;
+                width: 100%;
+            }
+
+            @media (max-width: 567px) {
+                margin-top: 18px;
+                //leave as set in dsx grid container
+            }
+        }
+
+        time {
+
+        }
+
+        p {
+            position: relative;
+            line-height: 2;
+            font-weight: 500;
+            color: #ABA9B8;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            margin-bottom: -3px;
+
+            @media #{$tablet} {
+                margin-bottom: -1px;
+            }
+
+            @media #{$phone} {
+                margin-bottom: 1px;
+
+                @include toGrid(phone, 6, 0, left, 1, left);
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-weight: 700;
+            margin: 0;
+
+            .desktop & {
+                transition: $d-hover color ease;
+            }
+
+            @media #{$big}, #{$desktop} {
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: -0.2px;
+            }
+
+            @media #{$laptop} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+            }
+
+            @media #{$tablet} {
+                width: 329px;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: -0.14px;
+            }
+
+            @media #{$phone} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+            }
+        }
+    }
+
+
+    &-bottom {
+        text-align: center;
+        margin-top: 63px;
+
+        @media #{$big}, #{$desktop}, #{$laptop}, #{$tablet} {
+            display: none;
+        }
+
+        button {
+            display: inline-block;
+        }
+    }
+}

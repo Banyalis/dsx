@@ -1,0 +1,431 @@
+.dsx-quotes {
+    $root:&;
+
+    @media #{$phone-small} {
+        overflow: hidden; //to prevent scaling with overflowing quote sign
+    }
+
+    &--partners {
+        @media #{$big} {
+            padding-bottom: 243px;
+        }
+
+        @media #{$desktop} {
+            padding-bottom: 195px;
+        }
+
+        @media #{$laptop} {
+            padding-bottom: 102px;
+        }
+
+        @media #{$tablet} {
+            padding-bottom: 80px;
+        }
+
+        @media #{$phone} {
+            padding-bottom: 97px;
+        }
+    }
+
+    position:relative;
+    background: #FDFDFD;
+
+    &-wrap {
+        @media #{$big} {
+            padding: 253px 0 15px 0;
+        }
+
+        @media #{$desktop} {
+            padding: 250px 0 15px 0;
+        }
+
+        @media #{$laptop} {
+            padding: 160px 0 15px 0;
+        }
+
+        @media #{$tablet} {
+            padding: 132px 0 15px 0;
+        }
+
+        @media #{$phone} {
+            padding: 111px 0 15px 0;
+        }
+    }
+
+
+    &-wrapper {
+        text-align: center;
+        white-space: nowrap;
+        font-size: 0;
+
+
+        @media #{$big}, #{$desktop} {
+            // @include toGrid(desktop, 8, 0, center);
+
+            width: 792px;
+            margin: 0 auto;
+        }
+
+        @media #{$laptop} {
+            // @include toGrid(laptop, 8, 2, center);
+
+            width: 652px;
+            margin: 0 auto;
+        }
+
+        @media #{$tablet} {
+            // @include toGrid(tablet, 10, 0, center);
+
+            width: 556px;
+            margin: 0 auto;
+        }
+
+        @media #{$phone} {
+            @include toGrid(phone, 6, 0, center);
+        }
+
+        @media (min-width: 567px) and (max-width: 767px) {
+            @include toGrid(phone, 4, 2, center);
+        }
+    }
+
+    &-item {
+        white-space: normal;
+        width: 100%;
+        margin-left: -100%;
+        display: inline-block;
+        vertical-align: top;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &-text {
+            font-weight: 500;
+            color: #141222;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -0.4px;
+            }
+
+            @media #{$laptop} {
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: -0.31px;
+            }
+
+            @media #{$tablet} {
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.17px;
+            }
+
+            @media #{$phone} {
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: -0.2px;
+            }
+
+            &.splitted span:before,
+            &.splitted span:after {
+                display: none;
+            }
+
+            span {
+                &:before,
+                div:first-child:before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    background: url('/homepage/assets/img/quote-start.svg');
+
+                    @media #{$big}, #{$desktop} {
+                        width: 29px;
+                        height: 24px;
+                        margin: -4px 0 0 -40px;
+                    }
+
+                    @media #{$laptop} {
+                        width: 20px;
+                        height: 16px;
+                        margin: -5px 0 0 -30px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 20px;
+                        height: 16px;
+                        margin: -2px 0 0 -24px;
+                    }
+
+                    @media #{$phone} {
+                        width: 19px;
+                        height: 15px;
+                        margin: -3px 0 0 -23px;
+                    }
+                }
+
+                &:after,
+                div:last-child:after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    background: url('/homepage/assets/img/quote-end.svg');
+
+                    @media #{$big}, #{$desktop} {
+                        width: 29px;
+                        height: 24px;
+                        margin: 1px 0 0 10px;
+                    }
+
+                    @media #{$laptop} {
+                        width: 20px;
+                        height: 16px;
+                        margin: 4px 0 0 8px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 20px;
+                        height: 16px;
+                        margin: 3px 0 0 7px;
+                    }
+
+                    @media #{$phone} {
+                        width: 19px;
+                        height: 15px;
+                        margin: 1px 0 0 5px;
+                    }
+
+                }
+
+
+            }
+        }
+
+        &-author {
+            font-weight: 500;
+            color: #A7A5B8;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 24px;
+                line-height: 56px;
+                letter-spacing: 0.2px;
+                margin-top: 17px;
+            }
+
+            @media #{$laptop} {
+                font-size: 20px;
+                line-height: 56px;
+                letter-spacing: 0.17px;
+                margin-top: 20px;
+            }
+
+            @media #{$tablet} {
+                font-size: 18px;
+                line-height: 56px;
+                letter-spacing: 0.15px;
+                margin-top: 5px;
+            }
+
+            @media #{$phone} {
+                font-size: 20px;
+                line-height: 56px;
+                margin-top: 6px;
+            }
+        }
+    }
+
+    &-controls {
+        text-align: center;
+        white-space: nowrap;
+        font-size: 0;
+
+        @media #{$big}, #{$desktop} {
+            // @include toGrid(laptop, 6, 2, center);
+
+            width: 630px;
+            margin: 57px auto 0;
+        }
+
+        @media #{$laptop} {
+            // @include toGrid(laptop, 8, 2, center);
+
+            width: 650px;
+            margin: 36px auto 0;
+        }
+
+        @media #{$tablet} {
+            // @include toGrid(tablet, 8, 2, center);
+
+            width: 470px;
+            margin: 36px auto 0;
+        }
+
+        @media #{$phone} {
+            margin-top: 22px;
+            @include toGrid(phone, 6, 0, center);
+        }
+
+        @media (min-width: 567px) and (max-width: 767px) {
+            @include toGrid(phone, 4, 2, center);
+        }
+    }
+
+    &-numbers {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        line-height: 1;
+        font-weight: 500;
+
+        span:first-child {
+            color: #000;
+        }
+
+        span:last-child {
+            color: #BEBCCE;
+        }
+
+        @media #{$big}, #{$desktop} {
+            width: 109px;
+            font-size: 20px;
+            letter-spacing: 1.6px;
+        }
+
+        @media #{$laptop} {
+            width: 101px;
+            font-size: 20px;
+            letter-spacing: 1.6px;
+        }
+
+        @media #{$tablet} {
+            width: 92px;
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+
+        @media #{$phone} {
+            width: 64px;
+            font-size: 18px;
+            letter-spacing: 2.4px;
+        }
+    }
+
+    &-progress {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background: #e7e7ef;
+
+        @media #{$big}, #{$desktop} {
+            width: calc(100% - 64px - 85px - 49px);
+            height: 2px;
+            margin-right: 77px;
+            top: 2px;
+        }
+
+        @media #{$laptop} {
+            width: calc(100% - 64px - 85px - 31px);
+            height: 2px;
+            margin-right: 45px;
+            top: 2px;
+        }
+
+        @media #{$tablet} {
+            width: calc(100% - 64px - 85px - 36px);
+            height: 2px;
+            margin-right: 43px;
+            top: 2px;
+        }
+
+        @media #{$phone} {
+            width: calc(100% - 64px - 85px);
+            height: 2px;
+            margin-right: 42px;
+            top: 1px;
+        }
+
+        &-indicator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #000;
+            width: 0%;
+        }
+    }
+
+    &-arrow-left,
+    &-arrow-right {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        height: 16px;
+        top: 2px;
+
+        @media #{$phone} {
+            top: 1px;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -15px;
+            right: -15px;
+            top: -15px;
+            bottom: -15px;
+
+            @media #{$tablet} {
+                left: -17px;
+                right: -17px;
+            }
+
+            @media #{$phone} {
+                left: -11px;
+                right: -11px;
+            }
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            svg {
+                stroke: #3725D3;
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+
+            stroke: #141222;
+
+            .desktop & {
+                transition: $d-hover stroke;
+            }
+
+        }
+    }
+
+    &-arrow-right {
+        @media #{$big}, #{$desktop} {
+            margin-left: 30px;
+        }
+
+        @media #{$laptop} {
+            margin-left: 30px;
+        }
+
+        @media #{$tablet} {
+            margin-left: 34px;
+        }
+
+        @media #{$phone} {
+            margin-left: 22px;
+        }
+
+    }
+}

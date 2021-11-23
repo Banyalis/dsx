@@ -1,0 +1,1019 @@
+{
+    "lang": "ru",
+    "language": "Русский",
+    "home": {
+        "META_TITLE": "DSX | Профессиональная биржа криптовалют",
+        "META_DESCRIPTION": "Торговля криптовалютой еще никогда не была проще и увлекательнее",
+        "META_IMAGE": "/homepage/assets/img/share/home.png",
+        "TITLE": "DSX | Профессиональная биржа криптовалют",
+        "HERO_TITLE": "Какое крипто приключение ожидает вас?",
+        "HERO_TEXT": "Торговля криптовалютой - просто и увлекательно",
+        "HERO_BUTTON": "Создать аккаунт",
+        "NUMBERS_TITLE": "DSX в числах",
+        "NUMBERS_EXCHANGED": "Объем торгов",
+        "NUMBERS_ACTIVE": "Активных клиентов",
+        "NUMBERS_TRADED": "Криптовалют",
+        "NUMBERS_TRADED_VAL": "самых популярных",
+        "NUMBERS_REGISTERED": "Зарегистрированы в FCA (FRN 900410)",
+        "NUMBERS_REGISTERED_VAL": "Регуляция",
+        "NUMBERS_DREAMS": "Мечтаний воплощено",
+        "WHY_TITLE": "Почему DSX - лучший проводник в мир криптовалют?",
+        "WHY_TITLE_NEED": "Мы всегда рядом, когда это необходимо",
+        "WHY_TEXT_NEED": "Наша служба поддержки всегда готова протянуть вам руку помощи.",
+        "WHY_TITLE_TRANSFERS": "Вы решаете, как переводить средства",
+        "WHY_TEXT_TRANSFERS": "Вы сами выбираете удобный метод депозита и вывода.",
+        "WHY_TITLE_COINS": "Множество крипто и фиатных валют",
+        "WHY_TEXT_COINS": "От Bitcoin до USD, от Ether до EUR - вы выбираете нужную вам пару.",
+        "WHY_TITLE_MONEY": "Ваши средства - наша ответственность",
+        "WHY_TEXT_MONEY": "Мы обеспечиваем сохранность ваших средств. Наслаждайтесь торговлей, а не беспокойтесь о безопасности.",
+        "DISCOVER_TITLE": "Знакомы с крипто миром<br>и хотите больше?",
+        "DISCOVER_COMING_SOON": "Coming soon",
+        "DISCOVER_TITLE_PROFESSIONALS": "Профессионалы",
+        "DISCOVER_TEXT_PROFESSIONALS": "Уже давно в торговле? У нас есть, что предложить опытным трейдерам",
+        "DISCOVER_TITLE_PARTNERS": "Партнеры",
+        "DISCOVER_TEXT_PARTNERS": "Необходима крипто помощь вашему бизнесу? Давайте это обсудим",
+        "DISCOVER_BUTTON": "Узнать больше",
+        "QUOTES": [
+            {
+                "TEXT": "DSX была единственной криптобиржей, которую я использовал на протяжении последних 5 лет, и настоятельно рекомендовал знакомым. Простота использования, экспертиза и потрясающая клиентская поддержка - вот, что отличает DSX от конкурентов.",
+                "AUTHOR": "Peter Wood"
+            },
+            {
+                "TEXT": "За годы сотрудничества с DSX мы убедились в надежности этой компании, профессионализме и высоком уровне технической подготовки ее специалистов. Коллеги приложили все необходимые усилия для плодотворного сотрудничества, и мы искренне благодарны им за оказанное доверие.",
+                "AUTHOR": "Anton Chashchin, CBDO of OKONTO"
+            },
+            {
+                "TEXT": "Биржа DSX - превосходный продукт, управляемый отзывчивой командой с компетентным подходом к бизнесу.",
+                "AUTHOR": "Aximetria"
+            }
+        ],
+        "LATEST": {
+            "TITLE": "Свежие статьи",
+            "URL_1": "/stories/1/",
+            "CATEGORY_1": "Getting Started",
+            "TITLE_1": "Understanding crypto: What is a hard fork?",
+            "DATE_1": "20 Aug 2019",
+            "IMAGE_1": "/homepage/assets/img/home/story_1.jpg",
+            "IMAGE2x_1": "/homepage/assets/img/home/story_1@2x.jpg",
+            "URL_2": "/stories/2/",
+            "CATEGORY_2": "Getting Started",
+            "TITLE_2": "What is the Initiative for CryptoCurrencies & Contracts (IC3)?",
+            "DATE_2": "7 Aug 2019",
+            "IMAGE_2": "/homepage/assets/img/home/story_2.jpg",
+            "IMAGE2x_2": "/homepage/assets/img/home/story_2@2x.jpg",
+            "BUTTON": "Больше статей",
+            "BUTTON_URL": "/stories/"
+        },
+        "FAQ": {
+            "TITLE": "Часто задаваемые вопросы",
+            "BUTTON": "Узнать больше",
+            "ITEMS": [
+                {
+                    "QUESTION": "Какие валюты и монеты поддерживает DSX?",
+                    "ANSWER": "Мы постоянно ищем новые крипто и фиатные валюты, которые можно добавить на нашу платформу. В настоящее время мы поддерживаем USD, EUR, GBP, RUB, TRY, BTC, LTC, ETH, BCH, BTG, EURS, USDT, BSV, EOS, XRP."
+                },
+                {
+                    "QUESTION": "Как мне пополнить свой аккаунт?",
+                    "ANSWER": "Ответ прост: как вам удобнее! Вы можете выбирать между банковскими переводами, дебетовыми и кредитными картами или нашей интеграцией с кошельками ePayments."
+                },
+                {
+                    "QUESTION": "Мои средства в безопасности?",
+                    "ANSWER": "Мы предоставляем двухфакторную аутентификацию, холодное хранение, интеллектуальное резервное копирование и ручной вывод средств, чтобы гарантировать, что DSX является самой безопасной платформой для криптотрейдинга."
+
+                },
+                {
+                    "QUESTION": "Быстро ли исполняются заявки?",
+                    "ANSWER": "Мгновенно! Все сделки происходят мгновенно, и мы предоставляем данные вплоть до level II market data, чтобы вы могли быстро реагировать на изменения."
+                }
+            ]
+        },
+        "READY": {
+            "TITLE": "Готовы к завтрашнему дню?",
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Создать аккаунт",
+                    "CLASS": "-non-auth",
+                    "URL": "/chooseAccountType/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                },
+                {
+                    "CAPTION": "О нас",
+                    "CLASS": "-in-register -auth-non-verified -auth-processing -auth-rejected -auth-verified -add-phone -update-password",
+                    "URL": "/about/",
+                    "INTERNAL": true,
+                    "TARGET": "_self"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "META_TITLE": "Контакты | DSX",
+        "META_DESCRIPTION": "Вы можете написать нам или позвонить.<br>Как вам будет удобнее.",
+        "META_IMAGE": "/homepage/assets/img/share/contact.png",
+        "TITLE": "Контакты | DSX",
+        "TEXT": "Добрый день! <br>Пообщаемся?",
+        "DESCRIPTION": "Вы можете написать нам или позвонить.<br>Как вам будет удобнее.",
+        "ADDRESS_STREET": "24 Savile Row",
+        "ADDRESS_LOCALITY": "London, W1S 2ES",
+        "ADDRESS_COUNTRY": "United Kingdom",
+        "FORM_NAME": "Имя",
+        "FORM_EMAIL": "Email",
+        "FORM_PHONE": "Номер телефона",
+        "FORM_MSG": "Ваше сообщение",
+        "FORM_SUBMIT": "Отправить",
+        "INFO_EMAIL": "Email для общих запросов",
+        "INFO_LIVE_CHAT": "Онлайн чат",
+        "INFO_PHONE": "Номер телефона",
+        "INFO_ADDRESS": "Адрес"
+    },
+    "about": {
+        "META_TITLE": "О нас | DSX",
+        "META_DESCRIPTION": "Наша миссия - помочь вам торговать так, как вам удобнее.",
+        "META_IMAGE": "/homepage/assets/img/share/about.png",
+        "TITLE": "О нас | DSX",
+        "DESCRIPTION": "Наша миссия - помочь вам торговать так, как вам удобнее.",
+        "MISSION_QUESTION": "Чего мы хотим добиться <span>?</span>",
+        "MISSION_ANSWER1": "Наша миссия - помочь <span>вам</span> торговать так, как <span>вам</span> будет удобнее.",
+        "MISSION_ANSWER2": "Дать вам чувство <span>уверенности</span>, которое <span>вы </span><span>никогда </span><span>не </span><span>почувствуете </span> ни на одной другой бирже.",
+        "STANDOUT_TITLE": "Профессиональная платформа для криптовалютных трейдеров.",
+        "STANDOUT_TEXT": "На DSX мы хотели создать среду, которая соединяет в себе захватывающий дух крипто-вселенной и платформу, которая является безопасной, надежной и удобной в использовании. Мы создали платформу, которая является помощником для тех, кто делает первые шаги.<br><br>Мы собрали команду, которая помогает трейдерам реализовать свои мечты, а нашим партнерам - бизнес задачи. Мы сделали так, что процесс обмена, торговли и использования криптовалют стал максимально простым, чтобы вы смогли сосредоточиться на своих целях.",
+        "STANDOUT_NAME": "Mike Rymanov,",
+        "STANDOUT_POSITION": "CEO и основатель",
+        "SPONTANEOUS_TEXT": "<span>Самая</span> передовая, </span>самая <span>вдохновляющая </span>и <span>интуитивная </span><span>крипто </span><span>технология </span><span>в </span><span>мире. </span>Это то, чем вы захотите поделиться со своими друзьями.",
+        "SERVICES_TITLE": "Узнайте обо всех наших услугах",
+        "SERVICES_COMING_SOON": "Coming soon",
+        "SERVICES_ITEM_TITLE_1": "Первопроходцы",
+        "SERVICES_ITEM_TEXT_1": "Ищете проводника в крипто мир для вашего бизнеса? Давайте это обсудим",
+        "SERVICES_ITEM_TITLE_2": "Профессионалы",
+        "SERVICES_ITEM_TEXT_2": "Вы уже давно в торговле? У нас есть, что предложить опытным трейдерам",
+        "SERVICES_ITEM_TITLE_3": "Партнеры",
+        "SERVICES_ITEM_TEXT_3": "Ищете проводника в крипто мир для вашего бизнеса? Давайте это обсудим",
+        "TEAM_TITLE": "Команда DSX",
+        "TEAM_TEXT_TOP": "Банкинг без бюрократии. <br>Технологии, доступные каждому. <br>Долгожданная прозрачность.",
+        "TEAM_TEXT_BOTTOM": "Будучи основанной в Лондоне, компания DSX постигла суть криптовалют и объединила ее с профессионализмом традиционного финансового мира. <br><br>Это приключение, которое вы искали, с идеальным партнером, чтобы помочь вам.",
+        "PERSONS": [
+            {
+                "IMAGE": "01-Mike",
+                "NAME": "Mike",
+                "JOB": "CEO",
+                "INFO": "Я гарантирую, что DSX обеспечивает крипто опыт, который является безопасным, надежным и удобным в использовании."
+            },
+            {
+                "IMAGE": "02-George",
+                "NAME": "George",
+                "JOB": "COO",
+                "INFO": "Я веду всех в одном направлении, гарантируя, что мы реализуем лучшее из крипто мира."
+            },
+            {
+                "IMAGE": "03-Ivan",
+                "NAME": "Ivan",
+                "JOB": "CXO",
+                "INFO": "Я бесконечно увлечен созданием простых решений для сложных проблем, чтобы сделать жизнь наших клиентов легче."
+            },
+            {
+                "IMAGE": "07-Comrade-Alex",
+                "NAME": "Alex",
+                "JOB": "Account Manager",
+                "INFO": "Я - помощник наших клиентов, гарантирующий, что они извлекут максимум пользы из возможностей, которые может предложить мир криптовалют."
+            },
+            {
+                "IMAGE": "09-Alexandr",
+                "NAME": "Alexander",
+                "JOB": "CTO/Chief Architect",
+                "INFO": "Sapienti sat"
+            },
+            {
+                "IMAGE": "11-Sergei",
+                "NAME": "Serg",
+                "JOB": "Head of QA",
+                "INFO": "Я неустанно тружусь над тем, чтобы мы делали правильные вещи правильно и с правильными результатами."
+            },
+            {
+                "IMAGE": "13-Valentina",
+                "NAME": "Valentina",
+                "JOB": "Head of Customer Services ",
+                "INFO": "Без клиентов платформа бессмысленна. Я слежу за тем, чтобы клиентский опыт соответствовал обещаниям, которые дает наш бизнес."
+            },
+            {
+                "IMAGE": "17-Thony",
+                "NAME": "Thony",
+                "JOB": "QA Engineer",
+                "INFO": "Я слежу за тем, чтобы ваш опыт в мобильном приложении соответствовал высшим стандартам."
+            },
+            {
+                "IMAGE": "15-Aleksey",
+                "NAME": "Aleksey",
+                "JOB": "Software Architect",
+                "INFO": "Я создаю то, что заставляет нашу платформу работать - и я делаю все правильно с первого раза"
+            },
+            {
+                "IMAGE": "19-Semen",
+                "NAME": "Semen",
+                "JOB": "QA Engineer",
+                "INFO": "Я гарантирую, что наш сайт предоставит лучший в своем классе опыт использования"
+            },
+            {
+                "IMAGE": "21-Pavel",
+                "NAME": "Pavel",
+                "JOB": "Back&#8209end Developer",
+                "INFO": "Я гарантирую, что наш код соответствует вашим ожиданиям"
+            },
+            {
+                "IMAGE": "23-Dmitrii",
+                "NAME": "Dmitrii",
+                "JOB": "Web Developer",
+                "INFO": "Все имеет свое начало, а ваше путешествие с DSX начинается с моего кода"
+            },
+            {
+                "IMAGE": "24-Alina",
+                "NAME": "Alina",
+                "JOB": "Office Manager",
+                "INFO": "Я создаю атмосферу, в которой создается платформа"
+            },
+            {
+                "IMAGE": "16-Phil",
+                "NAME": "Phil",
+                "JOB": "Blockchain Developer",
+                "INFO": "Блокчейн - будущее. Я один из тех, кто помогает претворить задумки в реальность"
+            },
+            {
+                "IMAGE": "20-Evgeniia",
+                "NAME": "Evgeniia",
+                "JOB": "Web Developer",
+                "INFO": "Я пишу код, который помогает вам в вашем крипто путешествии"
+            },
+            {
+                "IMAGE": "22-Ekaterina",
+                "NAME": "Ekaterina",
+                "JOB": "Back&#8209end Developer",
+                "INFO": "Я пишу лучшие скрипты в DSX"
+            },
+            {
+                "IMAGE": "18-Anthony",
+                "NAME": "Anthony",
+                "JOB": "Web Developer",
+                "INFO": "Я нахожу решения вызовам, что встают на пути."
+            },
+            {
+                "IMAGE": "14-Igor",
+                "NAME": "Igor",
+                "JOB": "Product Manager",
+                "INFO": "Я решаю любые проблемы: от малых до гигантских"
+            },
+            {
+                "IMAGE": "12-Alena",
+                "NAME": "Alena",
+                "JOB": "QA Engineer",
+                "INFO": "Что-то не так с платформой? Я это выясню!"
+            },
+            {
+                "IMAGE": "10-Anton",
+                "NAME": "Anton",
+                "JOB": "QA Engineer",
+                "INFO": "Я выискиваю баги и радую команду"
+            },
+            {
+                "IMAGE": "08-Vladimir",
+                "NAME": "Vladimir",
+                "JOB": "iOS Developer",
+                "INFO": "Где бы вы ни находились, вы заслуживаете лучшего. Я работаю над тем, чтобы так и было"
+            },
+            {
+                "IMAGE": "06-Alex",
+                "NAME": "Alex",
+                "JOB": "Account Manager",
+                "INFO": "Каждый, отправляющийся в путешествие, нуждается в руке друга, который поможет на протяжении всего пути"
+            },
+            {
+                "IMAGE": "04-Nikita",
+                "NAME": "Nik",
+                "JOB": "Data Analyst",
+                "INFO": "Я слежу за всем, что происходит в DSX, и держу команду в курсе того, что это для нас значит"
+            },
+            {
+                "IMAGE": "05-Evgeny",
+                "NAME": "Eugene",
+                "JOB": "Lead Devops Engineer",
+                "INFO": "Я гарантирую, что команда выполняет свои обещания"
+            }
+        ],
+        "LATEST": {
+            "TITLE": "Свежие статьи",
+            "URL_1": "/stories/1/",
+            "CATEGORY_1": "Getting Started",
+            "TITLE_1": "Understanding crypto: What is a hard fork?",
+            "DATE_1": "20 Aug 2019",
+            "IMAGE_1": "/homepage/assets/img/home/story_1.jpg",
+            "IMAGE2x_1": "/homepage/assets/img/home/story_1@2x.jpg",
+            "URL_2": "/stories/2/",
+            "CATEGORY_2": "Getting Started",
+            "TITLE_2": "What is the Initiative for CryptoCurrencies & Contracts (IC3)?",
+            "DATE_2": "7 Aug 2019",
+            "IMAGE_2": "/homepage/assets/img/home/story_2.jpg",
+            "IMAGE2x_2": "/homepage/assets/img/home/story_2@2x.jpg",
+            "BUTTON": "Больше статей",
+            "BUTTON_URL": "/stories/"
+        }
+    },
+    "legal": {
+        "META_TITLE": "Правовые документы | DSX",
+        "META_DESCRIPTION": "Правовые документы",
+        "META_IMAGE": "/homepage/assets/img/share/legal.png",
+        "TITLE": "Правовые документы | DSX",
+        "HEADER": "Условия и конфиденциальность",
+        "LINK": "Читать документ",
+        "DIGITAL_WALLET_TERMS": "Условия пользования",
+        "AML_POLICY": "AML & CTF Policy",
+        "COMPLAINTS_POLICY": "Политика жалоб",
+        "REFUND_POLICY": "Политика возвратов",
+        "RISK_WARNING": "Уведомление о рисках",
+        "PRIVACY_NOTES": "Политика конфиденциальности",
+        "COOKIE_NOTES": "Условия использования cookie-файлов",
+        "COOKIE_LIST": "Список файлов cookie"
+    },
+    "cookies": {
+        "TEXT": "Данный сайт использует файлы cookies, чтобы гарантировать вам наилучшее обслуживание на нашем сайте. ",
+        "LINK": "Подробнее",
+        "OK": "Хорошо"
+    },
+    "footer": {
+        "DISCLAMER": "Электронные деньги, привязанные к вашему счету в DSX, эмитируются компанией ePayments Systems Limited. Деятельность ePayments Systems Limited по выпуску электронных денег регулируется Ассоциацией по контролю за деятельностью финансовых организаций Великобритании (FCA) в соответствии с Положением об обращении электронных денег от 2011 г. (рег. номер 900172).",
+        "COPYRIGHT": "© Digital Securities Exchange <br>Limited, 2014-2020. Все права защищены.",
+        "LEGAL": "Правовые документы",
+        "COOKIE_POLICY": "Условия использования cookie-файлов",
+        "USEFUL_INFORMATION": "Полезная информация",
+        "API_DOCUMENTATION": "API Документация",
+        "GITHUB": "GitHub",
+        "STATUS": "Статус",
+        "FEES": "Комиссии",
+        "PRIVACY_POLICY": "Политика конфиденциальности",
+        "TERMS_AND_CONDITIONS": "Условия пользования",
+        "HELP_CENTRE": "Справочный центр",
+        "COMPANY": "Компания",
+        "ABOUT": "О нас",
+        "STORIES": "Статьи",
+        "CONTACT": "Контакты",
+        "LANGUAGE": "Язык",
+        "RU": "Русский",
+        "EN": "Английский",
+        "TR": "Турецкий"
+    },
+    "navbar": {
+        "ABOUT": "О нас",
+        "STORIES": "Статьи",
+        "HELP": "Помощь",
+        "CONTACT": "Контакты",
+        "ADD_FUNDS": "Депозит",
+        "CONTINUE_REGISTRATION": "Продолжить регистрацию",
+        "CONTINUE_VERIFICATION": "Продолжить верификацию",
+        "DEMO_TRADE": "Демо торговля",
+        "EXCHANGE": "Обмен",
+        "FIX_ISSUES": "Исправить",
+        "LOG_OUT": "Выход",
+        "PROFILE": "Профиль",
+        "REGISTER": "Регистрация",
+        "CREATE_ACCOUNT": "Создать аккаунт",
+        "SETTINGS": "Настройки",
+        "SIGN_IN": "Войти"
+    },
+    "generic": {
+        "INTRO_BACK": "Назад",
+        "DOWNLOAD_TITLE": "Скачать"
+    },
+    "TermsConditions": {
+        "META_TITLE": "Условия пользования | DSX",
+        "META_DESCRIPTION": "Условия пользования",
+        "META_IMAGE": "/homepage/assets/img/share/terms-conditions.png",
+        "TITLE": "Условия пользования | DSX",
+        "INTRO_TITLE": "Условия пользования",
+        "DOWNLOAD_LINK": "/homepage/docs/terms_and_conditions.docx",
+        "DOWNLOAD_TYPE": "Docx",
+        "DOWNLOAD_SIZE": "98 kb",
+        "CONTENTS_TITLE": "Содержание"
+    },
+    "AmlPolicy": {
+        "META_TITLE": "Политика AML & CTF | DSX",
+        "META_DESCRIPTION": "Политика DSX по противодействию отмыванию средств и финансированию терроризма",
+        "META_IMAGE": "/homepage/assets/img/share/aml-policy.png",
+        "TITLE": "Политика AML & CTF | DSX",
+        "INTRO_TITLE": "Политика DSX по противодействию отмыванию средств и финансированию терроризма",
+        "DOWNLOAD_LINK": "/homepage/docs/aml_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "49 kb",
+        "CONTENTS_TITLE": "Содержание"
+    },
+    "ComplaintsPolicy": {
+        "META_TITLE": "Политика жалоб | DSX",
+        "META_DESCRIPTION": "Политика жалоб ePayments Systems limited в отношении аккаунтов DSX",
+        "META_IMAGE": "/homepage/assets/img/share/complaints-policy.png",
+        "TITLE": "Политика жалоб | DSX",
+        "INTRO_TITLE": "Политика жалоб ePayments Systems limited в отношении аккаунтов DSX",
+        "DOWNLOAD_LINK": "/homepage/docs/complaints_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "25 kb"
+    },
+    "RefundPolicy": {
+        "META_TITLE": "Политика возврата средств | DSX",
+        "META_DESCRIPTION": "Политика возврата средств",
+        "META_IMAGE": "/homepage/assets/img/share/refund-policy.png",
+        "TITLE": "Политика возврата средств | DSX",
+        "INTRO_TITLE": "Политика возврата средств",
+        "DOWNLOAD_LINK": "/homepage/docs/refund_policy.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "33 kb"
+    },
+    "RiskWarning": {
+        "META_TITLE": "Предупреждение о рисках | DSX",
+        "META_DESCRIPTION": "DSX website disclaimer and risk statement",
+        "META_IMAGE": "/homepage/assets/img/share/risk-warning.png",
+        "TITLE": "Предупреждение о рисках | DSX",
+        "INTRO_TITLE": "DSX website disclaimer and risk statement",
+        "DOWNLOAD_LINK": "/homepage/docs/risk_warning.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "49 kb"
+    },
+    "PrivacyNotice": {
+        "META_TITLE": "Политика конфиденциальности | DSX",
+        "META_DESCRIPTION": "Digital Securities Exchange Limited Privacy Notice",
+        "META_IMAGE": "/homepage/assets/img/share/privacy-notice.png",
+        "TITLE": "Политика конфиденциальности | DSX",
+        "INTRO_TITLE": "Digital Securities Exchange Limited Privacy Notice",
+        "DOWNLOAD_LINK": "/homepage/docs/privacy_notice.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "238 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "CookieNotice": {
+        "META_TITLE": "Cookie Notice | DSX",
+        "META_DESCRIPTION": "Cookie Notice",
+        "META_IMAGE": "/homepage/assets/img/share/cookie-notice.png",
+        "TITLE": "Cookie Notice | DSX",
+        "INTRO_TITLE": "Cookies Notice",
+        "DOWNLOAD_LINK": "/homepage/docs/cookie_notice.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "197 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "CookieList": {
+        "META_TITLE": "Cookie List | DSX",
+        "META_DESCRIPTION": "Cookie List",
+        "META_IMAGE": "/homepage/assets/img/share/cookie-list.png",
+        "TITLE": "Cookie List | DSX",
+        "INTRO_TITLE": "Cookie List",
+        "DOWNLOAD_LINK": "/homepage/docs/cookie_list.pdf",
+        "DOWNLOAD_TYPE": "Pdf",
+        "DOWNLOAD_SIZE": "217 kb",
+        "CONTENTS_TITLE": "Contents"
+    },
+    "fees": {
+        "META_TITLE": "Комисии | DSX",
+        "META_DESCRIPTION": "Комиссия за открытие и ведение счета",
+        "META_IMAGE": "/homepage/assets/img/share/fees.png",
+        "TITLE": "Комисии | DSX",
+        "INTRO_TITLE": "Комиссия за открытие и ведение счета",
+        "INTRO_TEXT": "Мы не взимаем комиссию за открытие, содержание или закрытие аккаунта.",
+        "INTRO_BENEFITS": [
+            {
+                "TITLE": "Открытие и ведение счета",
+                "TEXT": "0"
+            },
+            {
+                "TITLE": "Закрытие счета",
+                "TEXT": "0"
+            },
+            {
+                "TITLE": "Неиспользуемый счет <div class=\"dsx-fees-intro-benefits__item-decor\">после 12 месяцев отсутствия активности</div>",
+                "TEXT": "€5/месяц"
+            }
+        ],
+        "CALCULATION_TITLE": "Комиссии за торговые операции",
+        "CALCULATION_TRADE_TITLE": "Объем торгов",
+        "CALCULATION_TRADE_TEXT": "Средний объем за последние 30 дней",
+        "CALCULATION_STANDART": "Стандартный",
+        "CALCULATION_REFERRAL": "Реферальный",
+        "CALCULATION_MAKER": "Мейкер",
+        "CALCULATION_TAKER": "Тейкер",
+        "COMMISSION_TITLE": "Комиссии криптовалют",
+        "COMMISSION_BUTTON": "Больше",
+        "COMMISSION_TEXT": "В случае кроссчейн депозита или перевода на DSX неподдерживаемых токенов есть вероятность, что мы сможем отправить их обратно на ваш кошелек. В данном случае комиссия за обработку подобного запроса составит 10% от всей суммы перевода (мин. 5$ и макс. 100$).",
+        "COMMISSION_DEPOSIT": "Депозит",
+        "COMMISSION_WITHDRAW": "Вывод",
+        "COMMISSION_NETWORK": "Минимум подтверждений сети",
+        "METHODS_TITLE": "Платежные методы и комиссии",
+        "METHODS_DEPOSIT": "Депозит",
+        "METHODS_WITHDRAW": "Вывод",
+        "METHODS_TRANSFER": "Банковский перевод (SWIFT)",
+        "METHODS_WALLET": "Кошелек ePayments",
+        "METHODS_CARD": "Банковская карта",
+        "FREE": "0",
+        "OFFER_TITLE": "У вас появились вопросы?",
+        "OFFER_TEXT": "Мы будем рады помочь",
+        "OFFER_BUTTON": "Справочный центр",
+        "READY": {
+            "TITLE": "У вас появились вопросы?",
+            "TEXT": "Мы с радостью вам ответим",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Справочный центр",
+                    "CLASS": "",
+                    "URL": "https://docs.dsx.uk/dsx/en",
+                    "INTERNAL": false,
+                    "TARGET": "_blank"
+                }
+            ],
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg"
+        }
+    },
+    "stories": {
+        "META_TITLE": "Статьи | DSX",
+        "META_DESCRIPTION": "Список статей",
+        "META_IMAGE": "/homepage/assets/img/share/stories.png",
+        "TITLE": "Статьи | DSX",
+        "SEARCH": {
+            "LIST": [
+                {
+                    "TITLE": "Объявления",
+                    "URL": "/stories/announcements/"
+                },
+                {
+                    "TITLE": "Getting Started",
+                    "URL": "/stories/getting-started/"
+                },
+                {
+                    "TITLE": "Industry",
+                    "URL": "/stories/industry/"
+                },
+                {
+                    "TITLE": "Case Studies",
+                    "URL": "/stories/case-studies/"
+                }
+            ]
+        },
+        "GENERAL_ARTICLES": [
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/13.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/13@2x.jpg",
+                "TYPE": "Industry",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/12.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/12@2x.jpg",
+                "TYPE": "News",
+                "TITLE": "Understanding crypto: What is a hard fork?"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TYPE": "Industry",
+                "TITLE": "What is a… CBDC (Central Bank Digital Currency)?"
+            }
+        ],
+        "ANNOUNCEMENTS_TITLE": "Объявления",
+        "ANNOUNCEMENTS_BUTTON": "Посмотреть все",
+        "ANNOUNCEMENTS_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/10.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/10@2x.jpg",
+                "DATE": "4 Sep 2019",
+                "TITLE": "DSX announces a partnership with Yubico"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/11.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/11@2x.jpg",
+                "DATE": "22 Aug 2019",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "DATE": "20 Feb 2019",
+                "TITLE": "EOS is now available on DSX"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/10.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/10@2x.jpg",
+                "DATE": "4 Sep 2019",
+                "TITLE": "DSX announces a partnership with Yubico"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/11.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/11@2x.jpg",
+                "DATE": "22 Aug 2019",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "DATE": "20 Feb 2019",
+                "TITLE": "EOS is now available on DSX"
+            }
+        ],
+        "STARTED_TITLE": "Getting Started",
+        "STARTED_BUTTON": "View All",
+        "STARTED_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/6.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/6@2x.jpg",
+                "TITLE": "DSX on Crypto Pro"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/7.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/7@2x.jpg",
+                "TITLE": "Understanding crypto: What is a hard fork?"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/8.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/8@2x.jpg",
+                "TITLE": "How to understand… public-key cryptography"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/9.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/9@2x.jpg",
+                "TITLE": "Crypto Guide: Why do cryptocurrencies have a finite number of coins?"
+            }
+        ],
+        "STUDIES_TITLE": "Case Studies",
+        "STUDIES_BUTTON": "View All",
+        "STUDIES_ARTICLES": [
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/3@2x.jpg",
+                "TYPE": "Food Industry",
+                "TITLE": "Case study: How blockchain is improving trust and transparency in the food industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/5.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/3@2x.jpg",
+                "TYPE": "Food Industry",
+                "TITLE": "Case study: How blockchain is improving trust and transparency in the food industry"
+            },
+            {
+                "MODIFIER": "--large",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/5.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            },
+            {
+                "MODIFIER": "--medium",
+                "IMAGE": "/homepage/assets/img/stories/3.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/4@2x.jpg",
+                "TYPE": "Shipping Industry",
+                "TITLE": "Case study: Blockchain in the shipping industry"
+            },
+            {
+                "MODIFIER": "--small",
+                "IMAGE": "/homepage/assets/img/stories/4.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/5@2x.jpg",
+                "TYPE": "IT Industry",
+                "TITLE": "Case study: Everipedia"
+            }
+        ],
+        "INDUSTRY_TITLE": "Industry",
+        "INDUSTRY_BUTTON": "View All",
+        "INDUSTRY_ARTICLES": [
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/1.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/1@2x.jpg",
+                "TITLE": "Blockchain for loyalty points: How would it work?",
+                "TEXT": "We are happy to announce that DSX is now fully integrated with Crypto Pro."
+            },
+            {
+                "IMAGE": "/homepage/assets/img/stories/2.jpg",
+                "IMAGE2X": "/homepage/assets/img/stories/2@2x.jpg",
+                "TITLE": "How could cryptocurrencies help with financial inclusion?",
+                "TEXT": "We are happy to announce that"
+            }
+        ],
+        "OFFER_TITLE": "Получайте наше последние новости",
+        "OFFER_BUTTON": "Подписаться"
+    },
+    "partners": {
+        "META_TITLE": "Партнеры | DSX",
+        "META_DESCRIPTION": "Партнерство с DSX",
+        "META_IMAGE": "/homepage/assets/img/share/partners.png",
+        "TITLE": "Партнеры | DSX",
+        "HERO_TITLE": "Партнерство с DSX",
+        "HERO_TEXT": "Безопасные и мгновенные обмены и конверсии для ваших клиентов. Ваш бизнес - это наш бизнес.",
+        "STUDIES_HEADER": "Case studies",
+        "STUDIES_CATEGORY_1": "ePayments",
+        "STUDIES_TITLE_1": "Keeping the money moving",
+        "STUDIES_TEXT_1": "Anyone who uses crypto knows the financial establishment’s limitations can get in the way. Trying to send or receive payments across borders can be a real challenge. Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_1": "something improved",
+        "STUDIES_IMPROVED_2_1": "something improved",
+        "STUDIES_BUTTON_1": "Read case",
+        "STUDIES_CATEGORY_2": "Energy industry",
+        "STUDIES_TITLE_2": "LO3 Energy and the Brooklyn Microgrid",
+        "STUDIES_TEXT_2": "Anyone who uses crypto knows the financial establishment’s limitations can get in the way. Trying to send or receive payments across borders can be a real challenge. Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_2": "something improved",
+        "STUDIES_IMPROVED_2_2": "something improved",
+        "STUDIES_BUTTON_2": "Read case",
+        "STUDIES_CATEGORY_3": "Acquiring system",
+        "STUDIES_TITLE_3": "Martine Jarlgaard, Provenance and A Transparent Company",
+        "STUDIES_TEXT_3": "Founded in 2011, ePayments is a provider of electronic cash money that is in business to relieve that pain.",
+        "STUDIES_IMPROVED_1_3": "something improved",
+        "STUDIES_IMPROVED_2_3": "something improved",
+        "STUDIES_BUTTON_3": "Read case",
+        "POWERFUL_HEADER": "Все, что вам необходимо, уже готово",
+        "POWERFUL_BLOCK_TITLE_1": "Мощный",
+        "POWERFUL_BLOCK_TEXT_1": "Набор мощных, гибких и точных endpoints для данных рынка",
+        "POWERFUL_BLOCK_TITLE_2": "Прибыльный",
+        "POWERFUL_BLOCK_TEXT_2": "Подходит для всех - от требовательных корпораций до стартапов",
+        "POWERFUL_BLOCK_TITLE_3": "Универсальный",
+        "POWERFUL_BLOCK_TEXT_3": "Точные, своевременные и надежные цены криптовалют",
+        "POWERFUL_BOTTOM": "Уверенность, надежность и больше свободных часов в день - это то, что нравится нашим партнерам.<br><br>DSX позволяет вам сосредоточиться на вашем бизнесе.",
+        "POWERFUL_BUTTON": "Свяжитесь с нами",
+        "SAFE_SUBTITLE": "Безопасный",
+        "SAFE_TITLE": "Ваши клиенты должны чувствовать себя в безопасности при каждой сделке, которую они совершают",
+        "SAFE_TEXT": "DSX - это платформа, которой можно доверять, с двухфакторной аутентификацией, холодным хранением, интеллектуальным резервным копированием и ручным выводом средств, чтобы гарантировать сохранность и безопасность.",
+        "QUOTES": [
+            {
+                "TEXT": "DSX была единственной криптобиржей, которую я использовал на протяжении последних 5 лет, и настоятельно рекомендовал знакомым. Простота использования, экспертиза и потрясающая клиентская поддержка - вот, что отличает DSX от конкурентов.",
+                "AUTHOR": "Peter Wood"
+            },
+            {
+                "TEXT": "За годы сотрудничества с DSX мы убедились в надежности этой компании, профессионализме и высоком уровне технической подготовки ее специалистов. Коллеги приложили все необходимые усилия для плодотворного сотрудничества, и мы искренне благодарны им за оказанное доверие.",
+                "AUTHOR": "Anton Chashchin, CBDO of OKONTO"
+            },
+            {
+                "TEXT": "Биржа DSX - превосходный продукт, управляемый отзывчивой командой с компетентным подходом к бизнесу.",
+                "AUTHOR": "Aximetria"
+            }
+        ],
+        "FAQ": {
+            "TITLE": "Часто задаваемые вопросы",
+            "BUTTON": "Посмотреть все",
+            "ITEMS": [
+                {
+                    "QUESTION": "Могу ли я попробовать торговую платформу DSX, не тратя реальные деньги?",
+                    "ANSWER": "Конечно! Самый простой способ - это использовать нашу демо-платформу. Вы можете бесплатно пользоваться ею сразу после регистрации. Введите свой адрес электронной почты, подтвердите его, установите пароль, и вам уже доступен неограниченный доступ к нашей демо-платформе. Когда вы войдете на торговую платформу, проверьте в левом нижнем углу название текущего выбранного счета. Если это \"Trading demo\", вы можете приступать к торговле. Если вы видите другое название, нажмите на него, чтобы выбрать демо-счет. "
+                },
+                {
+                    "QUESTION": "Как мне пополнить свой аккаунт?",
+                    "ANSWER": "Ответ прост: как вам удобнее! Вы можете выбирать между банковскими переводами, дебетовыми и кредитными картами или нашей интеграцией с кошельками ePayments."
+                },
+                {
+                    "QUESTION": "Могу ли я попробовать торговую платформу DSX, не тратя реальные деньги?",
+                    "ANSWER": "Конечно! Самый простой способ - это использовать нашу демо-платформу. Вы можете бесплатно пользоваться ею сразу после регистрации. Введите свой адрес электронной почты, подтвердите его, установите пароль, и вам уже доступен неограниченный доступ к нашей демо-платформе. Когда вы войдете на торговую платформу, проверьте в левом нижнем углу название текущего выбранного счета. Если это \"Trading demo\", вы можете приступать к торговле. Если вы видите другое название, нажмите на него, чтобы выбрать демо-счет. "
+                },
+                {
+                    "QUESTION": "Могу ли я моментально вывести средства?",
+                    "ANSWER": "Blank."
+                }
+            ]
+        },
+        "READY": {
+            "TITLE": "Пообщаемся?",
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg",
+            "TEXT": "Оставьте свои данные, и мы очень скоро с вами свяжемся.",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Заказать звонок",
+                    "CLASS": "",
+                    "URL": "/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                }
+            ]
+        }
+    },
+    "story": {
+        "HEAD_BACK": "Назад",
+        "MORE_ALL": "Посмотреть все"
+    },
+    "storiesCategories": {
+        "META_TITLE": "Статьи | DSX",
+        "META_DESCRIPTION": "Категории статей",
+        "META_IMAGE": "/homepage/assets/img/share/stories-categories.png",
+        "TITLE": "Статьи | DSX",
+        "SEARCH": {
+            "LIST": [
+                {
+                    "TITLE": "Все",
+                    "URL": "/stories/"
+                },
+                {
+                    "TITLE": "Announcements",
+                    "URL": "/stories/announcements/"
+                },
+                {
+                    "TITLE": "Getting Started",
+                    "URL": "/stories/getting-started/"
+                },
+                {
+                    "TITLE": "Industry",
+                    "URL": "/stories/industry/"
+                },
+                {
+                    "TITLE": "Case Studies",
+                    "URL": "/stories/case-studies/"
+                }
+            ]
+        }
+    },
+    "search": {
+        "PLACEHOLDER": "Поиск статьи",
+        "NOT_FOUND": "Ничего не найдено.<br>Попробуйте искать по другим ключевым словам.",
+        "MOST_READ": "Самые популярные",
+        "SHOW_MORE": "Показать больше"
+    },
+    "pro": {
+        "META_TITLE": "Профессионалы | DSX",
+        "META_DESCRIPTION": "Профессионалы",
+        "TITLE": "Профессионалы | DSX",
+        "INTRO_CAPTION": "Профессионалы",
+        "INTRO_TITLE": "Индивидуальный подход",
+        "INTRO_TEXT": "Мы представим вам личного помощника на DSX, который сможет ответить на любые вопросы",
+        "NAV_TITLE": "Узнать больше",
+        "NAV": [
+            {
+                "NUMBER": "01",
+                "TITLE": "Мощный API",
+                "URL": "anchor1"
+            },
+            {
+                "NUMBER": "02",
+                "TITLE": "Быстрая верификация",
+                "URL": "anchor2"
+            },
+            {
+                "NUMBER": "03",
+                "TITLE": "Мгновенные операции",
+                "URL": "anchor3"
+            },
+            {
+                "NUMBER": "04",
+                "TITLE": "Несколько субаккаунтов",
+                "URL": "anchor4"
+            },
+            {
+                "NUMBER": "05",
+                "TITLE": "Лучшие комиссии",
+                "URL": "anchor5"
+            },
+            {
+                "NUMBER": "06",
+                "TITLE": "Безопасность",
+                "URL": "anchor6"
+            },
+            {
+                "NUMBER": "07",
+                "TITLE": "Интеграция с Bloomberg",
+                "URL": "anchor7"
+            }
+        ],
+        "SERVICES_TITLE_CAPTION": "Мощный API",
+        "SERVICES_TITLE_TEXT": "Интегрируйте всё, что захотите, начиная от рыночных данных и заканчивая управление отчетами и заявками",
+        "SERVICES": [
+            {
+                "TITLE": "Торговый API",
+                "TEXT": "Это то, что вам всегда было нужно, а мы - тот самый партнер, который поможет вам этого достичь.",
+                "BUTTON": "Узнать больше"
+            },
+            {
+                "TITLE": "Рыночные данные, доступные без авторизации, и включающие в себя все сделки со дня рождения нашей биржи",
+                "TEXT": "Мы поможем вам реализовать все ваши интеграционные мечты до окончания верификации",
+                "BUTTON": "Узнать больше"
+            },
+            {
+                "TITLE": "Доступная интеграция с API для операций обмена",
+                "TEXT": "Мы проанализируем ваши потребности и поможем вам выстроить интеграцию, чтобы решить ваши проблемы.",
+                "BUTTON": "Узнать больше"
+            }
+        ],
+        "SERVICES_BUTTON": "Полная документация API",
+        "BENEFITS_TITLE_CAPTION": "Быстрая верификация",
+        "BENEFITS": [
+            {
+                "TITLE": "Личный счет",
+                "TEXT": "Верификация от 15 минут"
+            },
+            {
+                "TITLE": "Бизнес счет",
+                "TEXT": "Верификация от 1 рабочего дня"
+            },
+            {
+                "TITLE": "Упрощенная регистрация",
+                "TEXT": "Для клиентов ePayments"
+            }
+        ],
+        "ACCOUNTS_TITLE_CAPTION": "Несколько счетов",
+        "ACCOUNTS_TITLE_TEXT": "Мы дадим вам несколько аккаунтов, чтобы вы могли удобно управляться всеми вашими валютами и с тонкостью настраивать ваши торговые операции",
+        "ACCOUNTS": [
+            {
+                "NUMBER": "01",
+                "TITLE": "Демо / Тестовый счет",
+                "TEXT": "Это то, что вам всегда было нужно, а мы - тот самый партнер, который поможет вам этого достичь."
+            },
+            {
+                "NUMBER": "02",
+                "TITLE": "Автоматизированная торговля",
+                "TEXT": "Мы дадим вам несколько аккаунтов, чтобы вы могли удобно управляться всеми вашими валютами и с тонкостью настраивать ваши торговые операции"
+            },
+            {
+                "NUMBER": "03",
+                "TITLE": "Портфолио",
+                "TEXT": "Это то, что вам всегда было нужно, а мы - тот самый партнер, который поможет вам этого достичь."
+            }
+        ],
+        "ACCOUNTS_INFO_TITLE": "Персональные условия для маркетмейкеров",
+        "ACCOUNTS_INFO_TEXT": "Свяжитесь с нами, чтобы узнать об особых условиях для маркетмейкеров. Для маркетмейкеров мы нередко выставляем и вовсе нулевые тарифы!",
+        "ACCOUNTS_INFO_BUTTON": "Свяжитесь с нами",
+        "SECURITY_TITLE_CAPTION": "Доверие и безопасность",
+        "SECURITY": [
+            {
+                "ICON": "Аутентификация",
+                "TITLE": "Сильная аутентификация",
+                "TEXT": "Мы поддерживаем методы многофакторной аутентификации, включая Google Authenticator, физические ключи безопасности и биометрическую аутентификацию через ваше устройство."
+            },
+            {
+                "ICON": "Партнёры",
+                "TITLE": "Партнёры Yubico",
+                "TEXT": "Высочайший уровень защиты, достигаемый благодаря физическим ключам безопасности."
+            },
+            {
+                "ICON": "Решение",
+                "TITLE": "Хранение",
+                "TEXT": "Холодное хранение на кошельке с мультиподписью, офлайн-хранение, поддержка практически любых валют"
+            }
+        ],
+        "READY": {
+            "TITLE": "Хотите попробовать DSX?",
+            "TEXT": "Наш демо-счет позволит вам ощутить всю мощь платформы DSX",
+            "BUTTONS": [
+                {
+                    "CAPTION": "Открыть аккаунт",
+                    "CLASS": "-non-auth",
+                    "URL": "/chooseAccountType/",
+                    "INTERNAL": false,
+                    "TARGET": "_self"
+                },
+                {
+                    "CAPTION": "О нас",
+                    "CLASS": "-in-register -auth-non-verified -auth-processing -auth-rejected -auth-verified -add-phone -update-password",
+                    "URL": "/about/",
+                    "INTERNAL": true,
+                    "TARGET": "_self"
+                }
+            ],
+            "IMAGE": "/homepage/assets/img/home/ready.jpg",
+            "IMAGE2x": "/homepage/assets/img/home/ready@2x.jpg"
+        }
+    }
+}

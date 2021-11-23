@@ -1,0 +1,25 @@
+block variables
+doctype html
+html(lang=__.lang, class="no-js loading")
+    head
+        include head
+        script(src=`/homepage/assets/js/loader.js`)
+
+    body
+        include mixins/svgsprite
+        include mixins/generic
+        include mixins/quotes
+        include mixins/latest
+        include mixins/faq
+        include mixins/ready
+        include mixins/search
+        include mixins/picture
+        include navbar
+        include loader
+        include footer
+        include cookies
+
+        block content
+            span no content provied
+
+        include scripts

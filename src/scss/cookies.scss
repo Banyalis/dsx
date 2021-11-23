@@ -1,0 +1,304 @@
+.dsx-cookies {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99999;
+    padding: 68px 0 12px;
+
+    transform: translateY(100%);
+    transition: transform .2s;
+    pointer-events: none;
+
+    @media #{$tablet} {
+        padding: 52px 0 28px;
+
+    }
+
+    @media #{$phone} {
+        padding: 80px 0 20px;
+    }
+
+    .dsx-cookies-gradient {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1s opacity cubic-bezier(0.19, 1, 0.22, 1);
+        opacity: 0;
+
+        &--white {
+            opacity: 1;
+
+            .-cookie-dark &,
+            .-cookie-purple &,
+            .-cookie-grey & {
+                opacity: 0;
+            }
+
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.8) 68.5%, #FFFFFF 99.58%);
+
+            @media #{$tablet} {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.68) 21.51%, rgba(255, 255, 255, 0.95) 43.93%, #FFFFFF 99.58%);
+            }
+
+            @media #{$phone} {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.68) 21.51%, rgba(255, 255, 255, 0.95) 45.42%, #FFFFFF 99.58%);
+            }
+        }
+
+        &--dark {
+            .-cookie-dark &,
+            .-cookie-purple & {
+                opacity: 1;
+            }
+
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.8) 68.5%, #000 99.58%);
+
+            @media #{$tablet} {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.68) 21.51%, rgba(0, 0, 0, 0.95) 43.93%, #000 99.58%);
+            }
+
+            @media #{$phone} {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.68) 21.51%, rgba(0, 0, 0, 0.95) 45.42%, #000 99.58%);
+            }
+        }
+
+        &--grey {
+            .-cookie-grey & {
+                opacity: 1;
+            }
+
+            background: linear-gradient(180deg, rgba(135, 134, 143, 0.0001) 0%, rgba(135, 134, 143, 0.8) 68.5%, #87868F 99.58%);
+
+            @media #{$tablet} {
+                background: linear-gradient(180deg, rgba(135, 134, 143, 0.0001) 0%, rgba(135, 134, 143, 0.68) 21.51%, rgba(135, 134, 143, 0.95) 43.93%, #87868F 99.58%);
+            }
+
+            @media #{$phone} {
+                background: linear-gradient(180deg, rgba(135, 134, 143, 0.0001) 0%, rgba(135, 134, 143, 0.68) 21.51%, rgba(135, 134, 143, 0.95) 45.42%, #87868F 99.58%);
+            }
+        }
+    }
+
+
+
+    &-wrapper {
+        position: relative;
+        z-index: 1;
+
+        @media #{$tablet} {
+            text-align: left;
+            width: 704px;
+            margin: 0 auto;
+        }
+
+        @media #{$phone} {
+            text-align: left;
+            width: 100%;
+            max-width: 415px;
+            padding: 0 24px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &-text {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: all;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.2px;
+        color: #141222;
+        transition: 1s color cubic-bezier(0.19, 1, 0.22, 1);
+        white-space: nowrap;
+
+        .-cookie-dark &,
+        .-cookie-purple &,
+        .-cookie-grey & {
+            color: #fff;
+        }
+
+        @media #{$tablet} {
+            width: 325px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+        }
+
+        @media #{$phone} {
+            width: 243px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            white-space: normal;
+        }
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+
+        @media #{$phone} {
+            display: inline-block;
+            margin-bottom: 9px;
+        }
+    }
+
+    &-link {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 4px;
+        line-height: 28px;
+        pointer-events: all;
+        font-weight: bold;
+        color: #141222;
+        text-decoration: none;
+        border-bottom: 2px solid rgba(#3725D3, 0); //to preserve alignment
+        margin-top: 1px;
+
+        transition: 1s color cubic-bezier(0.19, 1, 0.22, 1);
+
+        .-cookie-dark &,
+        .-cookie-purple &,
+        .-cookie-grey & {
+            color: #fff;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(#3725D3, 0.12);
+            transition: 1s background cubic-bezier(0.19, 1, 0.22, 1);
+
+            @media #{$tablet} {
+                bottom: -4px;
+            }
+
+            @media #{$phone} {
+                bottom: -2px;
+            }
+
+            .-cookie-dark &,
+            .-cookie-purple & {
+                background: rgba(209, 203, 255, 0.24);
+            }
+
+            .-cookie-grey & {
+                background: rgba(#141222, 0.12);
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: 0 0;
+            background: rgba(#3725D3, 1);
+            transform: scaleX(0);
+            transition: 1s transform cubic-bezier(0.19, 1, 0.22, 1);
+
+            @media #{$tablet} {
+                bottom: -4px;
+            }
+
+            @media #{$phone} {
+                bottom: -2px;
+            }
+
+            .-cookie-dark &,
+            .-cookie-purple &,
+            .-cookie-grey & {
+                background: rgba(#FFC602, 1);
+            }
+        }
+
+        @media #{$tablet} {
+            margin-left: 4px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+        }
+
+        @media #{$phone} {
+            margin-left: 0px;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            text-decoration: none;
+
+            &:after {
+                transform: none;
+            }
+        }
+    }
+
+    button {
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: all;
+        margin-left: 14px;
+
+        transition: 1s color cubic-bezier(0.19, 1, 0.22, 1), 1s border-color cubic-bezier(0.19, 1, 0.22, 1);
+
+        .-cookie-dark &,
+        .-cookie-purple & {
+            color: #fff;
+            border-color: rgba(209, 203, 255, 0.24);
+        }
+
+        .-cookie-grey & {
+            color: #fff;
+            border-color: rgba(#141222, 0.12);
+        }
+
+        .-cookie-dark.desktop &:hover,
+        .-cookie-dark.mobile &:active,
+        .-cookie-purple.desktop &:hover,
+        .-cookie-purple.mobile &:active,
+        .-cookie-grey.desktop &:hover,
+        .-cookie-grey.mobile &:active {
+            background: rgba(#FFC602, 1);
+            border: 2px solid transparent;
+            color: #141222;
+        }
+
+        @media #{$tablet} {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            margin-left: 17px;
+        }
+
+        @media #{$phone} {
+            margin-top: 0px;
+            margin-left: 13px;
+        }
+    }
+
+    &.-visible {
+        transform: none;
+    }
+}

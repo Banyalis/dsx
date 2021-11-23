@@ -1,0 +1,125 @@
+extends /_includes/layout
+
+block title
+    title #{story.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=story.META_TITLE)
+    meta(property="og:description" content=story.META_DESCRIPTION)
+    meta(property="og:image" content=story.META_IMAGE)
+
+block content
+    +loader()
+    +navbar({navActive: 2})
+    .dsx-view(data-controller="storyController")#view-main
+        article.dsx-story
+            .dsx-navbar-outer
+
+                header.dsx-story-head(data-theme={'Case Study':'light','Getting Started':'purple','Announcements':'grey'}[story.HEAD_CATEGORY])
+                    .dsx-story-head-bg
+                    .dsx-story-head-wrap
+                        .dsx-story-head-container.dsx-grid-container
+                            .dsx-story-head-texts
+                                a(href="").dsx-story-head-texts-back
+                                    +svgsprite("arrow-left")
+                                    | !{__.story.HEAD_BACK}
+                                h1 #{story.HEAD_TITLE}
+                                .dsx-story-head-texts-meta
+                                    span.dsx-story-head-texts-meta-date #{story.HEAD_DATE}
+                                    span.dsx-story-head-texts-meta-read #{story.HEAD_READ}
+                                    br
+                                    span.dsx-story-head-texts-meta-category #{story.HEAD_CATEGORY}
+                        .dsx-story-head-image
+                            .dsx-story-head-image-aspect
+                                .dsx-story-head-image-clipper
+                                    .dsx-story-head-image-wrapper
+                                        img(src=story.HEAD_IMAGE, srcset=story.HEAD_IMAGE2x + " 2x", alt="")
+
+                section.dsx-story-content(data-theme="light", data-category=story.HEAD_CATEGORY)
+                    .dsx-story-content-top
+                        +svgsprite("top")
+                    .dsx-story-content-wrap
+                        .dsx-story-content-container
+                            .dsx-story-content-inner
+                                each item in story["CONTENT"]
+                                    if item["TYPE"] == "h2"
+                                        .dsx-grid-container
+                                            h2 !{item["CONTENT"]}
+                                    if item["TYPE"] == "h3"
+                                        .dsx-grid-container
+                                            h3 !{item["CONTENT"]}
+                                    if item["TYPE"] == "h4"
+                                        .dsx-grid-container
+                                            h4 !{item["CONTENT"]}
+                                    if item["TYPE"] == "hr"
+                                        .dsx-grid-container.--fullphone
+                                            .dsx-story-content-hr
+                                    if item["TYPE"] == "text"
+                                        .dsx-grid-container
+                                            p !{item["CONTENT"]}
+                                    if item["TYPE"] == "note"
+                                        .dsx-grid-container
+                                            .dsx-story-content-note !{item["CONTENT"]}
+                                    if item["TYPE"] == "list"
+                                        .dsx-grid-container
+                                            ul(class=item["MODIFIER"])
+                                                each list in item["LIST"]
+                                                    li !{list["CONTENT"]}
+                                    if item["TYPE"] == "image"
+
+                                            figure
+                                                .dsx-grid-container.--fullphone
+                                                    img(src=item["CONTENT"]["1x"], srcset=item["CONTENT"]["2x"] + ' 2x', alt=item["CONTENT"]["CAPTION"] || "")
+                                                if item["CONTENT"]["CAPTION"]
+                                                    figcaption(class="dsx-grid-container")
+                                                        div !{item["CONTENT"]["CAPTION"]}
+
+                            .dsx-grid-container
+                                .dsx-story-content-social
+                                    ul
+                                        li
+                                            div(data-sharer="facebook" data-title=story.HEAD_TITLE data-url=story.HEAD_URL)
+                                                +svgsprite('story-fb')
+                                        li
+                                            div(data-sharer="twitter" data-title=story.HEAD_TITLE data-url=story.HEAD_URL)
+                                                +svgsprite('story-tw')
+                                        li
+                                            div(data-sharer="vk" data-title=story.HEAD_TITLE data-url=story.HEAD_URL)
+                                                +svgsprite('story-vk')
+                                        li
+                                            div(data-sharer="telegram" data-title=story.HEAD_TITLE data-url=story.HEAD_URL)
+                                                +svgsprite('story-tg')
+                                        li
+                                            div(data-sharer="whatsapp" data-title=story.HEAD_TITLE data-url=story.HEAD_URL)
+                                                +svgsprite('story-wa')
+
+
+                section.dsx-story-more(data-theme={'Case Study':'light','Getting Started':'purple','Announcements':'grey'}[story.HEAD_CATEGORY])
+                    .dsx-story-more-wrap
+                        .dsx-story-more-top.dsx-grid-container
+                            h2 #{story.MORE_TITLE}
+                            a(internal href=link(story.MORE_ALL_URL))
+                                button.dsx-btn.dsx-btn_stroke-blue #{__.story.MORE_ALL}
+
+                        .dsx-story-more-blocks.dsx-grid-container
+                            each item in story["MORE_CONTENT"]
+                                a.dsx-story-more-block(internal  href=link(item.URL))
+                                    .dsx-story-more-block-image
+                                        .dsx-story-more-block-image-aspect
+                                            .dsx-story-more-block-image-clipper
+                                                .dsx-story-more-block-image-hover
+                                                    .dsx-story-more-block-image-wrapper
+                                                        img(src=item.IMAGE, srcset=item.IMAGE2x + " 2x", alt="")
+                                    .dsx-story-more-block-texts.dsx-grid-container
+                                        if item["TIME"]
+                                            time #{item["TIME"]}
+                                        if item["CATEGORY"]
+                                            p #{item["CATEGORY"]}
+                                        h3 #{item["TITLE"]}
+
+                        .dsx-story-more-bottom.dsx-grid-container
+                            a(internal href=link(story.MORE_ALL_URL))
+                                button.dsx-btn.dsx-btn_stroke-blue #{story.MORE_ALL}
+        +cookies
+        +footer

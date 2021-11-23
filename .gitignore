@@ -1,0 +1,14 @@
+.idea/
+nbproject/
+node_modules/
+bower_components/
+dist/
+tmp/
+src/scss/generated
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.env
+!config-templates/.env
+/src/js/credentials.js
+log/

@@ -1,0 +1,69 @@
+mixin generic-page(page)
+    +navbar
+    .dsx-view(data-controller="genericController")#view-main
+        .dsx-navbar-outer
+            .dsx-generic
+                section.dsx-generic-intro(data-theme="purple")
+                    .dsx-generic-intro__container.dsx-grid-container
+                        .dsx-generic-intro__content
+                            a(href="/legal").dsx-generic-intro__back
+                                +svgsprite("arrow-left")
+                                | !{__.generic.INTRO_BACK}
+                            h1.dsx-generic-intro__title !{page.INTRO_TITLE}
+                            if page.INTRO_TEXT
+                                p.dsx-generic-intro__text !{page.INTRO_TEXT}
+                            if page.CONTENTS_TITLE
+                                .dsx-generic-intro-contents
+                                    .dsx-generic-intro-contents__title !{page.CONTENTS_TITLE}
+                                    .dsx-generic-intro-contents__nav
+                                        each item in page["GENERIC"]
+                                            if item["TITLE_ANCHOR"] == "true"
+                                                a(href="#"+ item["ID_ANCHOR"]).dsx-generic-intro-contents__nav-item.dsx-generic-js-link-anchor= item["CONTENT"]
+                        a(href=""+ page.DOWNLOAD_LINK).dsx-generic-intro__download
+                            .dsx-generic-intro__download-icon
+                                +svgsprite("arrow-bottom")
+                            .dsx-generic-intro__download-inner
+                                .dsx-generic-intro__download-title !{__.generic.DOWNLOAD_TITLE}
+                                .dsx-generic-intro__download-size
+                                    | !{page.DOWNLOAD_TYPE}
+                                    .dsx-generic-intro__download-dot
+                                    | !{page.DOWNLOAD_SIZE}
+
+                section.dsx-generic-content(data-theme="light")
+                    if page.CONTENTS_TITLE
+                        nav.dsx-generic-content-nav
+                    .dsx-generic-content__inner
+                        each item in page["GENERIC"]
+                            if item["TYPE"] == "title"
+                                .dsx-grid-container
+                                    .dsx-generic-content__container
+                                        div(class="dsx-generic-content__title", class= item["MODIFIER"])= item["CONTENT"]
+                            if item["TYPE"] == "text"
+                                .dsx-grid-container
+                                    .dsx-generic-content__container
+                                        p.dsx-generic-content__text !{item["CONTENT"]}
+                            if item["TYPE"] == "quote"
+                                .dsx-grid-container
+                                    .dsx-generic-content__container
+                                        .dsx-generic-content__quote= item["CONTENT"]
+                            if item["TYPE"] == "list"
+                                .dsx-grid-container
+                                    .dsx-generic-content__container
+                                        ul(class="dsx-generic-content__list", class= item["MODIFIER"])
+                                            each list in item["LIST"]
+                                                li.dsx-generic-content__list-item !{list["CONTENT"]}
+                                                    if list["NESTED"]
+                                                        ul.dsx-generic-content__list
+                                                            each nested in list["NESTED"]
+                                                                li.dsx-generic-content__list-item !{nested["CONTENT"]}
+                            if item["TYPE"] == "table"
+                                .dsx-generic-content-table 
+                                    .dsx-grid-container 
+                                        .dsx-generic-content-table__inner !{item["CONTENT"]}
+                        if page.CONTENT_CHANGE
+                            .dsx-grid-container
+                                .dsx-generic-content__change !{page.CONTENT_CHANGE}
+                    .dsx-generic-scroll-top
+                        +svgsprite("arrow-top")
+        +cookies
+        +footer

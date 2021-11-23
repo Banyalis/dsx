@@ -1,0 +1,95 @@
+extends ../_includes/layout
+
+block title
+    title !{__.pro.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.pro.META_TITLE)
+    meta(property="og:description" content=__.pro.META_DESCRIPTION)
+    meta(property="og:image" content=__.pro.META_IMAGE)
+
+block content
+    +loader
+    +navbar
+    .dsx-view(data-controller="proController")#view-main
+        .dsx-pro.dsx-navbar-outer
+            section.dsx-pro-intro(data-theme="white")
+                .dsx-pro-intro__container.dsx-grid-container
+                    .dsx-pro-intro__image
+                    .dsx-pro-intro__content
+                        .dsx-pro-intro__caption !{__.pro.INTRO_CAPTION}
+                        h1.dsx-pro-intro__title !{__.pro.INTRO_TITLE}
+                        p.dsx-pro-intro__text !{__.pro.INTRO_TEXT}
+            section.dsx-pro-services(data-theme="dark")
+                .dsx-grid-container
+                    .dsx-pro-services-nav
+                        .dsx-pro-services-nav__item
+                            .dsx-pro-services-nav__title !{__.pro.NAV_TITLE}
+                        each item in __.pro.NAV
+                            a(href="#"+ item["URL"] internal).dsx-pro-services-nav__item
+                                .dsx-pro-services-nav__item-inner
+                                    .dsx-pro-services-nav__item-number= item["NUMBER"]
+                                    .dsx-pro-services-nav__item-title= item["TITLE"]
+                    .dsx-pro-services__container#anchor1
+                        .dsx-pro-services__content
+                            .dsx-pro-services-title
+                                .dsx-pro-services-title__caption !{__.pro.SERVICES_TITLE_CAPTION}
+                                p.dsx-pro-services-title__text !{__.pro.SERVICES_TITLE_TEXT}
+                            .dsx-pro-services-list
+                                each item in __.pro.SERVICES
+                                    .dsx-pro-services-list__item
+                                        .dsx-pro-services-list__item-content
+                                            .dsx-pro-services-list__item-title= item["TITLE"]
+                                            p.dsx-pro-services-list__item-text= item["TEXT"]
+                                            a(href="" internal).dsx-pro-services-list__item-button= item["BUTTON"]
+                                        .dsx-pro-services-list__item-image
+                            a(href="" internal).dsx-pro-services__button !{__.pro.SERVICES_BUTTON}
+                        .dsx-pro-services__video
+            section.dsx-pro-benefits(data-theme="white")#anchor2
+                .dsx-pro-benefits__container.dsx-grid-container
+                    .dsx-pro-benefits-title
+                        .dsx-pro-benefits-title__caption !{__.pro.BENEFITS_TITLE_CAPTION}
+                    .dsx-pro-benefits-list
+                        each item in __.pro.BENEFITS
+                            .dsx-pro-benefits-list__item
+                                .dsx-pro-benefits-list__item-title= item["TITLE"]
+                                p.dsx-pro-benefits-list__item-text= item["TEXT"]
+            section(data-theme="dark")#anchor3
+                .dsx-grid-container
+            section.dsx-pro-accounts(data-theme="white")#anchor4
+                .dsx-grid-container
+                    .dsx-pro-accounts__container
+                        .dsx-pro-accounts__content
+                            .dsx-pro-accounts-title
+                                .dsx-pro-accounts-title__caption !{__.pro.ACCOUNTS_TITLE_CAPTION}
+                                p.dsx-pro-accounts-title__text !{__.pro.ACCOUNTS_TITLE_TEXT}
+                            .dsx-pro-accounts-list
+                                each item in __.pro.ACCOUNTS
+                                    .dsx-pro-accounts-list__item
+                                        .dsx-pro-accounts-list__item-number= item["NUMBER"]
+                                        .dsx-pro-accounts-list__item-title= item["TITLE"]
+                                        p.dsx-pro-accounts-list__item-text= item["TEXT"]
+                                        .dsx-pro-accounts-list__item-image
+                        .dsx-pro-accounts__video
+                    .dsx-pro-accounts-info#anchor5
+                        .dsx-pro-accounts-info__image
+                            +picture("/homepage/assets/img/fees/intro.jpg", "/homepage/assets/img/fees/intro@2x.jpg")
+                        .dsx-pro-accounts-info__content
+                            .dsx-pro-accounts-info__title !{__.pro.ACCOUNTS_INFO_TITLE}
+                            p.dsx-pro-accounts-info__text !{__.pro.ACCOUNTS_INFO_TEXT}
+                            a(href="/contact" internal).dsx-pro-accounts-info__button !{__.pro.ACCOUNTS_INFO_BUTTON}
+            section.dsx-pro-security(data-theme="white")#anchor6
+                .dsx-grid-container
+                    .dsx-pro-security-title
+                        .dsx-pro-security-title__caption !{__.pro.SECURITY_TITLE_CAPTION}
+                    .dsx-pro-security-list
+                        each item in __.pro.SECURITY
+                            .dsx-pro-security-list__item
+                                +svgsprite(""+ item["ICON"])
+                                .dsx-pro-security-list__item-title= item["TITLE"]
+                                p.dsx-pro-security-list__item-text= item["TEXT"]
+            section(data-theme="dark")
+            +ready(__.pro.READY)
+        +cookies
+        +footer

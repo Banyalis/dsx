@@ -1,0 +1,190 @@
+.dsx-partnering {
+    $root:&;
+
+    position:relative;
+
+    &-wrap {
+        padding: 0 0 0 0;
+
+        @media #{$big}, #{$desktop} {
+            padding-bottom: calc(48.47vw + -698px);
+        }
+        @media (min-width: 1630px) {
+            padding-bottom: 92px;
+        }
+        @media #{$laptop} {
+            padding-bottom: calc(63.87vw + -654px);
+        }
+        @media #{$tablet} {
+            padding-bottom: calc(100vw + -768px);
+        }
+    }
+
+    &-texts {
+        position: relative;
+
+        @media #{$big}, #{$desktop} {
+            padding-top: 138px;
+            padding-bottom: 135px;
+        }
+
+        @media #{$laptop} {
+            padding-top: 112px;
+            padding-bottom: 98px;
+        }
+
+        @media #{$tablet} {
+            padding-top: 159px;
+            padding-bottom: 118px;
+        }
+
+        @media #{$phone} {
+            margin: 0;
+            padding-top: 73px;
+            padding-bottom: 62px;
+        }
+
+        h1 {
+            font-weight: 700;
+
+            @media #{$big}, #{$desktop} {
+                font-size: 64px;
+                letter-spacing: -0.4px;
+                line-height: 64px;
+
+                @include toGrid(desktop, 4, 1, left, 8, left);
+            }
+
+            @media #{$laptop} {
+                font-size: 48px;
+                letter-spacing: -0.3px;
+                line-height: 48px;
+
+                @include toGrid(laptop, 4, 1, left, 7, left);
+            }
+
+            @media #{$tablet} {
+                font-size: 40px;
+                letter-spacing: -0.25px;
+                line-height: 40px;
+
+                @include toGrid(tablet, 5, 0, left, 7, left);
+            }
+
+            @media #{$phone} {
+                font-size: 40px;
+                letter-spacing: -0.4px;
+                line-height: 40px;
+
+                @include toGrid(phone, 5, 0, left, 1, left);
+            }
+        }
+
+        p {
+            @media #{$big}, #{$desktop} {
+                @include toGrid(desktop, 4, 1, left, 8, left);
+
+                font-size: 24px;
+                line-height: 36px;
+                margin-top: 32px;
+            }
+
+            @media #{$laptop} {
+                @include toGrid(laptop, 5, 0, left, 7, left);
+
+                font-size: 22px;
+                line-height: 36px;
+                margin-top: 24px;
+            }
+
+            @media #{$tablet} {
+                @include toGrid(tablet, 6, 0, left, 7, left);
+
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 16px;
+            }
+
+            @media #{$phone} {
+                @include toGrid(phone, 6, 0, left, 1, left);
+
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    &-image {
+        position: absolute;
+        overflow: hidden;
+        z-index: 1; //to be above next section
+        top: 0;
+        left: 0;
+
+        @media #{$big}, #{$desktop} {
+            width: 100% * 629px / 1440px;
+            max-width: 709px;
+        }
+
+        @media (min-width: 1630px) {
+            left: 50%;
+            margin-left: (-1630px / 2) + 13px;
+        }
+
+        @media #{$laptop} {
+            width: 100% * 423px / 1024px;
+        }
+
+        @media #{$tablet} {
+            width: 100% * 320px / 768px;
+        }
+
+        @media #{$phone} {
+            position: relative;
+            width: 100%;
+        }
+
+        &-aspect {
+            position: relative;
+            height: 0;
+            padding-top: (100% * 704px / 629px);
+
+            @media #{$laptop} {
+                padding-top: (100% * 568px / 423px);
+            }
+
+            @media #{$tablet} {
+                padding-top: (100% * 569px / 320px);
+            }
+
+            @media #{$phone} {
+                padding-top: 100%;
+            }
+        }
+
+        &-clipper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100% * (814px + 40px) / 814px;
+
+            @media #{$phone} {
+                width: 160%;
+            }
+
+            img {
+                display: block;
+                @include fill-image();
+            }
+        }
+    }
+}

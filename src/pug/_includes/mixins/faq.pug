@@ -1,0 +1,17 @@
+mixin faq(data, className="")
+    section.dsx-faq(class=className, data-theme="dark")
+        .dsx-faq-wrap
+            .dsx-faq-container.dsx-grid-container
+                .dsx-faq-left
+                    h2 #{data.TITLE}
+                    a(href="https://docs.dsx.uk/dsx/en" target="_blank")
+                        button.dsx-btn.dsx-btn_stroke-yellow #{data.BUTTON}
+                .dsx-faq-right
+                    each item in data.ITEMS
+                        .dsx-faq-item
+                            .dsx-faq-item-question
+                                span #{item.QUESTION}
+                            .dsx-faq-item-wrapper
+                                .dsx-faq-item-answer #{item.ANSWER}
+                    a(href="https://docs.dsx.uk/dsx/en" target="_blank")
+                        button.dsx-btn.dsx-btn_stroke-yellow #{data.BUTTON}

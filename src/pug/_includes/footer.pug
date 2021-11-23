@@ -1,0 +1,105 @@
+mixin footer
+    footer#footer.dsx-footer
+        .dsx-footer-wrap
+            .dsx-footer-container.dsx-grid-container(data-theme="dark")
+                .dsx-footer-top
+                    .dsx-footer-links-block
+                        .dsx-footer-links-block-category
+                            p #{__.footer.USEFUL_INFORMATION}
+                            ul
+                                li
+                                    a(href="https://dsx.uk/developers/publicApi" target="_blank") #{__.footer.API_DOCUMENTATION}
+                                li
+                                    a(href="https://github.com/dsx-tech" target="_blank") #{__.footer.GITHUB}
+                                //- li
+                                //-     a(href="https://dsx.uk/performance") #{__.footer.STATUS}
+                                li
+                                    a(internal href=link("/fees/")) #{__.footer.FEES}
+                                li
+                                    a(internal href=link("/legal/privacy-notice/")) #{__.footer.PRIVACY_POLICY}
+                                li
+                                    a(internal href=link("/legal/terms-conditions/")) #{__.footer.TERMS_AND_CONDITIONS}
+                                li
+                                    a(href="https://docs.dsx.uk/dsx/en" target="_blank") #{__.footer.HELP_CENTRE}
+                                li
+                                    a(internal  href=link("/legal/")) #{__.footer.LEGAL}
+                                li
+                                    a(href="/homepage/docs/cookie_notice.pdf") #{__.footer.COOKIE_POLICY}
+                        .dsx-footer-links-block-category
+                            p #{__.footer.COMPANY}
+                            ul
+                                li
+                                    a(internal href=link("/about/")) #{__.footer.ABOUT}
+                                //- li
+                                //-     a(internal href=link("/stories/")) #{__.footer.STORIES}
+                                li
+                                    a(internal href=link("/contact/")) #{__.footer.CONTACT}
+
+                    .dsx-footer-description-block
+                        img(src="/homepage/assets/img/logo.png", srcset="/homepage/assets/img/logo@2x.png 2x", alt)
+                        p !{__.footer.COPYRIGHT}
+
+                        .dsx-footer-social-block
+                            ul
+                                li
+                                    a.-facebook(href="https://www.facebook.com/dsx.uk" target="_blank" rel="noopener noreferrer")
+                                        +svgsprite('facebook')
+                                li
+                                    a.-twitter(href="https://twitter.com/dsx_uk" target="_blank" rel="noopener noreferrer")
+                                        +svgsprite('twitter')
+                                li
+                                    a.-linkedin(href="https://www.linkedin.com/company/digital-securities-exchange" target="_blank" rel="noopener noreferrer")
+                                        +svgsprite('linkedin')
+                                li
+                                    a.-vk(href="https://vk.com/dsx_uk" target="_blank" rel="noopener noreferrer")
+                                        +svgsprite('vk')
+
+                    //- .dsx-footer-copyright-block
+                    //-     p !{__.footer.COPYRIGHT}
+
+
+
+            .dsx-footer-bottom(data-theme="light")
+                .dsx-footer-container.dsx-grid-container
+                    .dsx-footer-payment-block
+                        ul
+                            li
+                                img.-visa(src='/homepage/assets/img/visa.png',
+                                srcset='/homepage/assets/img/visa@2x.png 2x', alt="VISA")
+                            li
+                                img.-mastercard(src='/homepage/assets/img/mastercard.png',
+                                srcset='/homepage/assets/img/mastercard@2x.png 2x', alt="Mastercard")
+                            li
+                                img.-visa_secure(src='/homepage/assets/img/visa_secure.png',
+                                srcset='/homepage/assets/img/visa_secure@2x.png 2x', alt="Verified by VISA")
+                            li
+                                img.-mastercard_secure(src='/homepage/assets/img/mastercard_secure.png',
+                                srcset='/homepage/assets/img/mastercard_secure@2x.png 2x', alt="Verified by MASTERCARD")
+
+                    .dsx-footer-language
+                        .dsx-footer-language-label #{__.footer.LANGUAGE}
+                        .dsx-footer-language-dropdown
+                            .dsx-dropdown-lang(data-dropdown)
+                                a.dsx-dropdown-lang-toggle(data-dropdown-toggle)
+                                    span.dsx-dropdown-lang-toggle-text #{__.language}
+                                    span.dsx-dropdown-lang-toggle-arr: +svgsprite('dropdown-arrow')
+                                .dsx-dropdown-lang-menu.-lang-dropdown
+                                    a.dsx-dropdown-lang-menu-item(data-lang='ru' data-current=__.language == __.footer.RU ? 'true' : 'false')
+                                        span #{__.footer.RU}
+                                    a.dsx-dropdown-lang-menu-item(data-lang='en' data-current=__.language == __.footer.EN ? 'true' : 'false')
+                                        span #{__.footer.EN}
+                                    a.dsx-dropdown-lang-menu-item(data-lang='tr' data-current=__.language == __.footer.TR ? 'true' : 'false')
+                                        span #{__.footer.TR}
+
+                    .dsx-meta-org(itemscope itemtype='http://schema.org/Organization')
+                        span(itemprop='name') DSX
+                        .dsx-meta-org-address(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+                            span(itemprop='streetAddress') #{__.contact.ADDRESS_STREET}
+                            br
+                            span(itemprop='addressLocality') #{__.contact.ADDRESS_LOCALITY}
+                            | ,
+                            span(itemprop='postalCode') #{__.contact.ADDRESS_POSTAL_CODE}
+                            br
+                            span(itemprop='addressCountry') #{__.contact.ADDRESS_COUNTRY}
+                        a.dsx-contacts-box-tel(href='tel:+443338806060' itemprop='telephone') +44 333-880-6060
+        .dsx-footer-overlay

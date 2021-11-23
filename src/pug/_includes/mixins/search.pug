@@ -1,0 +1,49 @@
+mixin search(data, category="All")
+    section.dsx-search(data-category=category data-theme={'All':'dark','Case Studies':'light','Industry':'light','Getting Started':'purple','Announcements':'grey'}[category])
+        .dsx-search-panel
+            .dsx-search-panel-bg
+            .dsx-search-panel-wrapper
+                .dsx-grid-container
+                    .dsx-search-panel-input-wrapper
+                        .dsx-search-panel-input
+                            input(type="text" placeholder=__.search.PLACEHOLDER)
+                        .dsx-search-panel-close
+                            +svgsprite("close-search-big")
+                            +svgsprite("close-search-small")
+                .dsx-search-panel-scroll
+                    .dsx-grid-container
+                        .dsx-search-panel-list-wrapper
+                            ul.dsx-search-panel-list
+                                li.dsx-search-panel-list__item
+                                    .dsx-search-panel-list__action.-make-search
+                                        +svgsprite("search")
+                                each item in data.LIST
+                                    li.dsx-search-panel-list__item(class=(item["TITLE"]==category ? "-active" : ''))
+                                        a(href=link(item["URL"]) internal).dsx-search-panel-list__action= item["TITLE"]
+                .dsx-search-panel-not-found !{__.search.NOT_FOUND}
+
+        .dsx-search-results
+            a.dsx-search-results-block.-template(internal)
+                .dsx-search-results-block-image
+                    .dsx-search-results-block-image-aspect
+                        .dsx-search-results-block-image-clipper
+                            .dsx-search-results-block-image-hover
+                                .dsx-search-results-block-image-wrapper
+                                    img(src='', srcset='', alt="")
+                .dsx-search-results-block-texts
+                    time
+                    p
+                    h3
+                    div
+
+            .dsx-grid-container
+                h2 #{__.search.MOST_READ}
+
+            .dsx-search-results-container.dsx-grid-container
+
+            .dsx-search-pagination.dsx-grid-container
+                .dsx-search-pagination-pages
+                button.dsx-btn.dsx-btn_stroke-blue #{__.search.SHOW_MORE}
+
+
+

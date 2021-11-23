@@ -1,0 +1,5 @@
+mixin picture(img1x, img2x, imgMobile)
+    picture
+        source(srcset=imgMobile || img1x, media="(max-width: 414px)")
+        source(srcset=img1x + ", " + img2x + " 2x")
+        img(src=img1x alt="")

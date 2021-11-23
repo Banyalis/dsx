@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icons / Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="breakpoints" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="1920" transform="translate(-458.000000, -190.000000)" fill-rule="nonzero">
+            <g id="Group-5">
+                <g id="Group" transform="translate(456.000000, 184.000000)">
+                    <g id="Icons-/-Search-Glyph" transform="translate(0.000000, 4.000000)">
+                        <path d="M13.5,2.25 C19.7132034,2.25 24.75,7.28679656 24.75,13.5 C24.75,15.9749083 23.9508257,18.2631595 22.5964615,20.1207692 L29.2374369,26.7625631 L26.7625631,29.2374369 L20.1207692,22.5964615 C18.2631595,23.9508257 15.9749083,24.75 13.5,24.75 C7.28679656,24.75 2.25,19.7132034 2.25,13.5 C2.25,7.28679656 7.28679656,2.25 13.5,2.25 Z M13.5,5.75 C9.21979319,5.75 5.75,9.21979319 5.75,13.5 C5.75,17.7802068 9.21979319,21.25 13.5,21.25 C17.7802068,21.25 21.25,17.7802068 21.25,13.5 C21.25,9.21979319 17.7802068,5.75 13.5,5.75 Z" id="Path-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

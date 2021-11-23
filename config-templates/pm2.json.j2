@@ -1,0 +1,15 @@
+{
+    "apps": [{
+        "name": {{ apps_name|default('dsx-homepage') }},
+        "script": {{ apps_script|default('server/index.js') }},
+        "args": {{ apps_args|default('[]') }},
+        "env": {
+            "NODE_ENV": {{ apps_env_node_env|default('production') }}
+        },
+        "error_file": {{ apps_error_file|default('/var/log/dsx/homepage/stderr.log') }},
+        "out_file": {{ apps_out_file|default('/var/log/dsx/homepage/stdout.log') }},
+        "instances": {{ apps_instances|default(1) }},
+        "exec_mode": {{ apps_exec_mode|default('cluster') }},
+        "min_uptime": {{ apps_min_uptime|default(2000) }}
+    }]
+}

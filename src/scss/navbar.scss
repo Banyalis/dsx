@@ -1,0 +1,558 @@
+.dsx-navbar {
+    $root:&;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483000 - 1; //below intercom then menu is closed
+
+    &.-collapsed &-wrap,
+    &.-forced-minimize &-wrap {
+        @media #{$big}, #{$desktop} {
+            height: 88px;
+        }
+
+        @media #{$laptop} {
+            height: 82px;
+        }
+
+        // @media #{$tablet} {
+        //     height: 82px;
+        // }
+
+        // @media #{$phone} {
+        //     height: 50px;
+        // }
+    }
+
+    &-outer {
+        @media #{$big} {
+            padding: 120px 0 0 0;
+        }
+
+        @media #{$desktop} {
+            padding: 120px 0 0 0;
+        }
+
+        @media #{$laptop} {
+            padding: 112px 0 0 0;
+        }
+
+        @media #{$tablet} {
+            padding: 82px 0 0 0;
+        }
+
+        @media #{$phone} {
+            padding: 68px 0 0 0;
+        }
+    }
+
+    &-wrap {
+        position: relative;
+        z-index: 2;
+        background: $color-base;
+        transition: $d-menu height;
+
+        .desktop & {
+            transition: $d-hover background, $d-menu height;
+        }
+
+        .-menu-dark & {
+            background: #000;
+        }
+
+        .-menu-purple & {
+            background: $color-text;
+        }
+
+        .-menu-grey & {
+            background: #87868F;
+        }
+
+        @media #{$big}, #{$desktop} {
+            height: 120px;
+        }
+
+        @media #{$laptop} {
+            height: 112px;
+        }
+
+        @media #{$tablet} {
+            height: 82px;
+        }
+
+        @media #{$phone} {
+            height: 68px;
+        }
+    }
+
+
+    &-container {
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+
+        @media #{$big}, #{$desktop} {
+            width: 1343px;
+            left: 10px;
+        }
+
+        @media #{$laptop} {
+            width: 100%;
+            padding: 0 40px;
+        }
+
+        @media #{$tablet} {
+            width: 100%;
+            padding: 0 25px;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            padding: 0 24px;
+        }
+    }
+
+    &-links {
+        position: relative;
+        float: left;
+        top: 50%;
+        margin-top: -13px;
+
+        @media #{$laptop} {
+            margin-top: -11px;
+        }
+
+        @media #{$tablet} {
+            margin-top: -10px;
+
+            #{$root} {
+                &-nav-item {
+                    display: none;
+                }
+            }
+        }
+
+        @media #{$phone} {
+            margin-top: -10px;
+
+            #{$root} {
+                &-nav-item {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    &-actions {
+        position: relative;
+        float: right;
+        top: 50%;
+        margin-top: -28px;
+
+        @media #{$laptop} {
+            margin-top: -26px;
+        }
+
+        @media #{$tablet} {
+            margin-top: -22px;
+        }
+
+        @media #{$phone} {
+            margin-top: -20px;
+            margin-right: 2px;
+
+            #{$root}-nav-item,
+            a.dsx-btn_menu {
+                display: none !important;
+            }
+        }
+
+        #{$root} {
+            &-nav-item {
+                margin-right: 0;
+            }
+        }
+
+        a.dsx-btn {
+            margin-left: 25px;
+            display: inline-block;
+            vertical-align: middle;
+
+            @media #{$laptop} {
+                margin-left: 23px;
+            }
+
+            @media #{$tablet} {
+                margin-left: 17px;
+            }
+        }
+
+        .dsx-dropdown-user {
+            margin-left: 8px;
+
+            @media #{$tablet} {
+               margin-left: 14px;
+            }
+        }
+    }
+
+
+    &-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 72px;
+        width: 88px;
+        height: 22px;
+
+        @media #{$tablet}, #{$phone} {
+            width: 72px;
+            height: 18px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: #141222;
+
+            .desktop & {
+                transition: $d-hover fill;
+            }
+
+            .-menu-dark &,
+            .-menu-purple &,
+            .-menu-grey & {
+                fill: $color-base;
+            }
+        }
+    }
+
+    &-nav-item {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 500;
+        color: #141222;
+        text-decoration: none !important;
+        line-height: 1.25;
+
+        .-menu-dark &,
+        .-menu-purple &,
+        .-menu-grey & {
+            color: $color-base;
+        }
+
+        &.-active {
+            pointer-events: none;
+            color: #3725D3;
+
+            .-menu-dark &,
+            .-menu-purple &,
+            .-menu-grey & {
+                color: #FFC602;
+            }
+        }
+
+        .desktop & {
+            transition: $d-hover color;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            color: #3725D3;
+        }
+
+        .-menu-dark.desktop &:hover,
+        .-menu-purple.desktop &:hover,
+        .-menu-grey.desktop &:hover,
+        .-menu-dark.mobile &:active,
+        .-menu-purple.mobile &:active,
+        .-menu-grey.mobile &:active {
+            color: #FFC602;
+        }
+
+        @media #{$big}, #{$desktop} {
+            font-size: 20px;
+            margin-right: 44px;
+        }
+
+        @media #{$laptop} {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            margin-right: 39px;
+        }
+
+        @media #{$tablet} {
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            font-weight: 700;
+        }
+    }
+
+    .dsx-dropdown-user {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    &-toggle {
+        border: none;
+        padding: 0;
+        margin: 0;
+        appearance: none;
+        outline: 0;
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-left: 12px;
+        margin-right: -10px;
+        background: transparent;
+
+        @media #{$tablet} {
+            margin-left: 6px;
+        }
+
+        @media #{$phone} {
+            margin-left: 0px;
+        }
+
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            width: 20px;
+            height: 2px;
+            background: #000;
+            transition: $d-menu transform;
+
+            .-menu-dark &,
+            .-menu-purple &,
+            .-menu-grey & {
+                background: $color-base;
+            }
+
+            .desktop & {
+                transition: $d-hover background;
+            }
+        }
+
+        &:after {
+            top: auto;
+            bottom: 15px;
+        }
+
+        @media #{$tablet}, #{$phone} {
+            display: inline-block;
+        }
+    }
+
+    &-menu {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        //height: js;
+        visibility: hidden;
+        transition: visibility $d-menu ease-in-out;
+
+
+        @media #{$big}, #{$desktop}, #{$laptop}  {
+            display: none;
+        }
+
+
+        &-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $color-base;
+            transform: translateY(-100%);
+            transition: transform $d-menu ease-in-out;
+
+            .-menu-dark & {
+                background: #000;
+            }
+
+            .-menu-purple & {
+                background: $color-text;
+            }
+
+            .-menu-grey & {
+                background: #87868F;
+            }
+
+            .desktop & {
+                transition: $d-hover background, transform $d-menu ease-in-out;
+            }
+        }
+
+        &-scrollbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        &-content {
+            // position: relative;
+            min-height: 100%;
+            // margin: 0 auto;
+
+            // @media #{$tablet} {
+            //     width: 718px;
+            // }
+
+            // @media #{$phone} {
+            //     width: 100%;
+            //     max-width: 415px;
+            //     padding: 0 24px;
+            // }
+        }
+
+        &-links {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-start;
+            padding: 90px 0 40px;
+
+            @media #{$phone} {
+                padding: 80px 0 139px;
+            }
+
+            @media #{$phone-small} {
+                padding: 80px 0 159px;
+            }
+        }
+
+        &-actions {
+            position: absolute;
+            bottom: 19px;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            & > * {
+                margin: 10px 14px 10px !important;
+            }
+
+            #{$root} {
+                &-menu {
+                    &-nav-item {
+                        font-size: 20px;
+                        letter-spacing: 0;
+                        line-height: 1.25;
+                    }
+                }
+            }
+
+            @media #{$tablet} {
+                display: none;
+            }
+
+            @media #{$phone} {
+                .dsx-dropdown-user {
+                    display: none !important;
+                }
+            }
+        }
+
+
+        &-nav-item {
+            display: inline-block;
+            font-size: 64px;
+            letter-spacing: 0.4px;
+            line-height: 88px;
+
+            a {
+                text-decoration: none !important;
+                color: $color-text;
+
+                .-menu-dark &,
+                .-menu-purple &,
+                .-menu-grey & {
+                    color: $color-base;
+                }
+
+                .desktop & {
+                    transition: $d-hover color;
+                }
+
+                .desktop &:hover,
+                .mobile &:active {
+                    color: #3725D3;
+                }
+
+                .-menu-dark.desktop &:hover,
+                .-menu-purple.desktop &:hover,
+                .-menu-grey.desktop &:hover,
+                .-menu-dark.mobile &:active,
+                .-menu-purple.mobile &:active,
+                .-menu-grey.mobile &:active {
+                    color: #FFC602;
+                }
+
+                &.-active {
+                    pointer-events: none;
+                    color: #3725D3;
+
+                    .-menu-dark &,
+                    .-menu-purple &,
+                    .-menu-grey & {
+                        color: #FFC602;
+                    }
+                }
+            }
+
+            @media #{$phone} {
+                font-size: 40px;
+                letter-spacing: 0.4px;
+                line-height: 64px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &.-open {
+        z-index: 2147483000 + 1; //above intercom then menu is opened
+
+        #{$root} {
+            &-menu {
+                visibility: inherit;
+                transition: visibility 0s;
+
+                &-body {
+                    transform: translate(0, 0);
+                }
+
+                &-scrollbox {
+                    -webkit-overflow-scrolling: touch; //there is a bug on ios when inner smooth scrolls inside elements hidden with visibility are visible, so we turn with smoooth scrolling on only when needed
+                }
+            }
+
+            &-toggle {
+                &:before {
+                    transform: translateY(4px) rotate(45deg) scaleX(0.92);
+                }
+
+                &:after {
+                    transform: translateY(-4px) rotate(-45deg) scaleX(0.92);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+mixin ready(data, className="")
+    section.dsx-ready(class=className, data-theme="dark")
+        .dsx-ready-wrap
+            .dsx-ready-container
+                .dsx-ready-image
+                    .dsx-ready-image-clipper(data-pos="0")
+                        .dsx-ready-image-wrapper
+                            +picture(data.IMAGE, data.IMAGE2x)
+                    .dsx-ready-image-text-wrapper.dsx-grid-container
+                        .dsx-ready-image-text
+                            h2 #{data.TITLE}
+                            if data.TEXT
+                                p #{data.TEXT}
+                            each button in data.BUTTONS
+                                a(internal=button.INTERNAL target=button.TARGET href=(button.INTERNAL ? link(button.URL) : button.URL) class=button.CLASS)
+                                    button.dsx-btn.dsx-btn_fill_blue #{button.CAPTION}

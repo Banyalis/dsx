@@ -1,0 +1,51 @@
+buildscript {
+  repositories {
+    maven {
+      url "${nexusUrl}/repository/maven-public/"
+      credentials {
+        username = "${nexusUsername}"
+        password = "${nexusPassword}"
+      }
+    }
+  }
+
+  dependencies {
+    classpath 'gradle.plugin.net.nemerosa:versioning:2.8.2'
+  }
+}
+
+apply plugin: 'net.nemerosa.versioning'
+
+versioning {
+  scm = 'git'
+  releases = ['rc', 'production']
+  dirty = { t -> t }
+  gitRepoRootDir = "$rootDir/.."
+  //current version
+  full = { scmInfo ->
+    println("Fetched tag: ${scmInfo.lastTag}")
+    switch (scmInfo.branch) {
+      case "rc":
+      case "production":
+        return "${scmInfo.lastTag}"
+      default:
+        return "${scmInfo.branch.replace("/","-")}-SNAPSHOT"
+    }
+  }
+  //next version
+  releaseParser = { scmInfo, separator = '.' ->
+    switch (scmInfo.branch) {
+      case "rc":
+      case "production":
+        List<String> part = scmInfo.lastTag.split('\\.') + ''
+        return new net.nemerosa.versioning.ReleaseInfo(type: scmInfo.branch, base: part[0] + '.' + part[1])
+      default:
+        return new net.nemerosa.versioning.ReleaseInfo(type: scmInfo.branch, base: '')
+    }
+  }
+  lastTagPattern = /(\d+).(\d+).(\d+)$/
+}
+
+task setVersionTag {
+  println "##teamcity[setParameter name='nextVersion' value='${versioning.info.display}']"
+}

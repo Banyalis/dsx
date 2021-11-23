@@ -1,0 +1,22 @@
+extends ../_includes/layout
+
+block title
+    title !{__.storiesCategories.TITLE}
+
+block meta
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=__.storiesCategories.META_TITLE)
+    meta(property="og:description" content=__.storiesCategories.META_DESCRIPTION)
+    meta(property="og:image" content=__.storiesCategories.META_IMAGE)
+
+block content
+    +loader()
+    +navbar({navActive: 2})
+
+    .dsx-view(data-controller="storiesCategoriesController")#view-main
+        .dsx-storiesCategories.dsx-navbar-outer
+
+            +search(__.storiesCategories.SEARCH, category)
+
+        +cookies
+        +footer

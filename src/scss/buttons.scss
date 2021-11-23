@@ -1,0 +1,252 @@
+.dsx-btn {
+    position:relative;
+    display: inline-block;
+    font: inherit;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    text-decoration: none !important;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 32px 2px;
+    line-height: 53px;
+    cursor: pointer;
+
+    @media #{$big}, #{$desktop} {
+        font-size: 20px;
+        height: 60px;
+        border-radius: 30px;
+        padding: 0 32px 2px;
+        line-height: 53px;
+    }
+
+    @media #{$laptop}, #{$tablet} {
+        font-size: 16px;
+        height: 52px;
+        border-radius: 26px;
+        padding: 0 28px 2px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        line-height: 46px;
+    }
+
+    @media #{$phone} {
+        font-size: 16px;
+        height: 48px;
+        border-radius: 24px;
+        padding: 0 24px 2px;
+        font-weight: 700;
+        line-height: 42px;
+    }
+
+
+    &_small {
+        font-weight: 700;
+        font-size: 16px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 0 18px 2px;
+        line-height: 34px;
+
+        @media #{$big}, #{$desktop} {
+            font-weight: 700;
+            font-size: 16px;
+            height: 40px;
+            border-radius: 20px;
+            padding: 0 18px 2px;
+            line-height: 34px;
+        }
+
+        @media #{$laptop}, #{$tablet} {
+            font-weight: 700;
+            font-size: 14px;
+            height: 36px;
+            border-radius: 18px;
+            padding: 0 14px 2px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+
+        @media #{$phone} {
+            font-weight: 700;
+            font-size: 14px;
+            height: 36px;
+            border-radius: 18px;
+            padding: 0 18px 2px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+
+    &_menu {
+        vertical-align: middle;
+
+        @media #{$big}, #{$desktop}, #{$tablet}, #{$phone} {
+            font-size: 20px;
+            height: 56px;
+            border-radius: 28px;
+            padding: 0 22px 2px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 50px;
+        }
+
+        @media #{$laptop} {
+            font-size: 16px;
+            height: 52px;
+            border-radius: 26px;
+            padding: 0 22px 2px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            line-height: 46px;
+        }
+
+        @media #{$tablet} {
+            font-size: 16px;
+            height: 44px;
+            border-radius: 22px;
+            padding: 0 19px 2px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            line-height: 38px;
+        }
+
+        background: transparent;
+        color: #000;
+        border: 2px solid rgba($color-button-bg, 0.12);
+
+        .-menu-dark &,
+        .-menu-purple & {
+            color: $color-base;
+            border: 2px solid #444152;
+        }
+
+        .-menu-grey & {
+            color: $color-base;
+            border: 2px solid rgba(#141222, 0.16);
+        }
+
+        .desktop & {
+            transition: $d-hover background ease, $d-hover border ease, $d-hover color ease;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            background: rgba($color-button-bg, 1);
+            border: 2px solid transparent;
+            color: $color-base;
+        }
+
+        .desktop.-menu-dark &:hover,
+        .mobile.-menu-dark &:active,
+        .desktop.-menu-purple &:hover,
+        .mobile.-menu-purple &:active,
+        .desktop.-menu-grey &:hover,
+        .mobile.-menu-grey &:active {
+            color: #000;
+            background: #FFC602;
+        }
+    }
+
+
+    &_stroke-blue {
+        background: transparent;
+        color: #000;
+        border: 2px solid rgba($color-button-bg, 0.08);
+
+        @media #{$laptop}, #{$tablet}, #{$phone} {
+            font-weight: 700;
+        }
+
+        .desktop & {
+            transition: $d-hover background ease, $d-hover border ease, $d-hover color ease;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            background: rgba($color-button-bg, 1);
+            border: 2px solid transparent;
+            color: $color-base;
+        }
+    }
+
+
+    &_stroke-yellow {
+        background: transparent;
+        color: $color-base;
+        border: 2px solid rgba(209, 203, 255, 0.24);
+
+        @media #{$laptop}, #{$tablet}, #{$phone} {
+            font-weight: 700;
+        }
+
+
+        .desktop & {
+            transition: $d-hover background ease, $d-hover border ease, $d-hover color ease;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            background: #FFC602;
+            border: 2px solid transparent;
+            color: #242424;
+        }
+    }
+
+
+    &_fill_blue {
+        background: $color-button-bg;
+        color: $color-base;
+
+        .desktop & {
+            transition: $d-hover background ease;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            background: $color-button-bg-hover;
+        }
+    }
+
+
+    &_fill_yellow {
+        background: $color-button-bg;
+        color: $color-base;
+
+        .desktop & {
+            transition: $d-hover background ease;
+        }
+
+        .desktop &:hover,
+        .mobile &:active {
+            background: $color-button-bg-hover;
+        }
+
+        @media #{$big} {
+            padding: 0 40px 2px;
+        }
+
+        @media #{$desktop} {
+            padding: 0 40px 2px;
+        }
+
+        @media #{$laptop} {
+            padding: 0 32px 2px;
+        }
+
+        @media #{$tablet} {
+            padding: 0 33px 4px 32px;
+            letter-spacing: 0.4px;
+        }
+
+        @media #{$phone} {
+            padding: 0 28px;
+        }
+    }
+}
